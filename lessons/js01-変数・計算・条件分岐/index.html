@@ -1,0 +1,685 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="../../images/js/variable.png"/><link rel="preload" as="image" href="../../images/js/name-camel.jpeg"/><link rel="preload" as="image" href="../../images/js/name-snake.jpeg"/><link rel="preload" as="image" href="../../images/js/name-kebab.jpeg"/><link rel="modulepreload" href="/gs-textbook-php/assets/manifest-3e21a0cd.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/root-DhgomBNp.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons._slug-DdYyauY5.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/mermaid-vendor-CpAEI21m.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons-CuJlLEab.js"/><meta name="robots" content="noindex"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><title>Lessons</title><meta name="robots" content="index,follow"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-32x32.png" sizes="32x32"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-192x192.png" sizes="192x192"/><link rel="apple-touch-icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-180x180.png"/><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="/gs-textbook-php/assets/root-C_FDEAqU.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"/><script>
+              window.Prism = window.Prism || {};
+              window.Prism.manual = true;
+            </script></head><body style="font-family:&#x27;M PLUS 1p&#x27;"><div class="relative from-slate-200 bg-gradient-to-b to-slate-300"><div class="grid transition-all duration-300 ease-in-out" style="grid-template-columns:280px 1fr"><aside class="h-screen sticky top-0 transition-all duration-300 ease-in-out w-[280px] pr-4 overflow-hidden border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-800 px-4"><div class="py-2"><div class="flex items-center justify-between mb-3"><h2 class="text-sm font-semibold transition-opacity duration-300 ease-in-out opacity-100">授業資料一覧</h2><button class="p-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded transition-colors duration-200" title="折りたたみ"><svg class="w-4 h-4 transform transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button></div><div class="mb-3 px-2"><button class="flex items-center gap-2 w-full text-xs text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 py-2 px-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700" title="全て開く"><svg class="w-3 h-3 transition-transform duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg><span>全て開く</span></button></div><nav class="space-y-1 transition-opacity duration-300 ease-in-out opacity-100"></nav></div></aside><main class="prose dark:prose-invert max-w-none bg-white dark:bg-slate-800 rounded w-5xl p-12 my-4 
+  mx-auto"><div class="relative"><div style="display:block"><h1 class="text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-2">#01 JavaScript - JavaScript入門・jQuery</h1>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回のゴール</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">JavaScriptの使い方を理解する<!-- -->
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">変数の宣言・計算</li>
+<li class="relative ml-2">条件分岐</li>
+<li class="relative ml-2">Math オブジェクト</li>
+<li class="relative ml-2">DOM操作の基本</li>
+</ul>
+</li>
+<li class="relative ml-2">jQueryの使い方を理解する</li>
+</ul></div></details>
+<div class="my-6 p-4 rounded-lg border bg-gray-50 dark:bg-gray-900/20 border-gray-200 dark:border-gray-700 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-gray-800 dark:text-gray-200">配布コード</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">zipファイルをダウンロード後に展開し、VSCodeで開いてください！</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">講義内資料: <a class="text-slate-600 dark:text-slate-400 underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="../../zip/js01.zip">js01.zip</a></li>
+<li class="relative ml-2">課題ファイル: <a class="text-slate-600 dark:text-slate-400 underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="../../zip/js01-janken.zip">js01-janken.zip</a></li>
+</ul></div></div></div>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">JavaScriptとは何か？</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">JavaScriptとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">静的なHTMLページに<strong class="font-semibold text-slate-900 dark:text-slate-100">動き</strong>や<strong class="font-semibold text-slate-900 dark:text-slate-100">インタラクション</strong>を加えるプログラミング言語</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-3 gap-4 max-w-lg mx-auto"><div class="text-center p-4 bg-blue-50 rounded border border-blue-200"><div class="w-12 h-12 bg-blue-500 rounded mx-auto mb-2 flex items-center justify-center"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><div class="font-medium text-slate-800">HTML</div><div class="text-sm text-slate-600">構造</div></div><div class="text-center p-4 bg-orange-50 rounded border border-orange-200"><div class="w-12 h-12 bg-orange-500 rounded mx-auto mb-2 flex items-center justify-center"><div class="text-white font-bold text-sm">{ }</div></div><div class="font-medium text-slate-800">CSS</div><div class="text-sm text-slate-600">見た目</div></div><div class="text-center p-4 bg-red-50 rounded border-2 border-red-400"><div class="w-12 h-12 bg-red-500 rounded mx-auto mb-2 flex items-center justify-center"><div class="text-white font-bold text-sm">JS</div></div><div class="font-medium text-slate-800">JavaScript</div><div class="text-sm text-slate-600">機能</div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">ブラウザで動作する最強言語、JavaScript！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptの最大の特徴は、<strong class="font-semibold text-slate-900 dark:text-slate-100">ブラウザ上で直接動作する</strong>こと！<br/>
+<!-- -->ブラウザには <strong class="font-semibold text-slate-900 dark:text-slate-100">JavaScriptエンジン</strong> という「JSを実行する機能」が内蔵されているんです</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">JavaScriptでできること</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">ボタンをクリックしたときの処理</li>
+<li class="relative ml-2">フォームの入力チェック</li>
+<li class="relative ml-2">アニメーション効果</li>
+<li class="relative ml-2">データの取得と表示</li>
+<li class="relative ml-2">ゲームやアプリケーションの作成</li>
+</ul></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">JavaScript入門</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">JavaScriptの記述場所パターン</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">1. HTML直接パターン（インライン）</h4><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">HTMLファイル内に直接JavaScriptを記述</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-html !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;JavaScript練習&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;JavaScriptテスト&lt;/h1&gt;
+    
+    &lt;!-- HTML内に直接JavaScriptを記述 --&gt;
+    &lt;script&gt;
+        alert(&quot;Hello World!&quot;);
+        console.log(&quot;コンソールに表示されました&quot;);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">2. 外部ファイル読み込みパターン</h4><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">JavaScriptを別ファイル（.jsファイル）として作成</li>
+<li class="relative ml-2">HTMLから読み込む</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">js/script.js</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// script.jsファイルの内容
+alert(&quot;Hello World!&quot;);
+console.log(&quot;外部ファイルから読み込まれました&quot;);
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">index.html</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-html !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;JavaScript練習&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;JavaScriptテスト&lt;/h1&gt;
+    
+    &lt;!-- 外部のJavaScriptファイルを読み込み --&gt;
+    &lt;script src=&quot;./js/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">演習での記述方法について</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">この教材の演習では、<strong class="font-semibold text-slate-900 dark:text-slate-100">わかりやすさを重視してHTML直接パターン</strong>を使用します。1つのHTMLファイルで完結するため、初心者の方でも混乱せずに学習を進められます。<br/>
+<!-- -->実際の開発現場では外部ファイル読み込みパターンがよく使われますが、まずは基本をしっかりと身につけましょう！</p></div></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">JavaScriptの読み込み場所について</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptはHTMLに対する指示（DOM操作）を含むことが多いため、読み込み場所に注意が必要です。</p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">推奨される配置方法：</strong></p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&lt;/body&gt;</code>の直前に配置する</strong></li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">defer</code>属性を使用</strong> （<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code>）し、HTML解析完了後に実行させる</li>
+</ol><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これにより、「要素が見つからない」といったエラーを防げます！</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">まずは文字を表示してみよう</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">プログラミングの第一歩は、文字を表示することから始まります。JavaScriptには2つの基本的な表示方法があります。</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// ポップアップで表示
+alert(&quot;Hello World!&quot;);
+
+// 開発者ツールのコンソールに表示
+console.log(&quot;Hello World!&quot;);
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">以降は console.log() を使おう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">alert()</code>はユーザーの操作を止めてしまうため、開発中は<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">console.log()</code>を使うのが一般的です。コンソールは開発者だけが見る場所なので、デバッグ情報を自由に出力できます。</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">コメントの書き方</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">コードに説明を加えたいときに利用する</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 1行のコメント
+
+/*
+複数行に渡って
+コメントを書く
+*/
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ショートカットキー</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">Windows: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Ctrl</code> + <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">/</code></li>
+<li class="relative ml-2">Mac: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Cmd</code> + <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">/</code></li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-400 dark:bg-slate-400/30 text-slate-100 dark:text-slate-900 rounded-full h-full">補足</span> セミコロン( <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">;</code> ) の役割</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">式の終わりを示すもの</li>
+<li class="relative ml-2">JavaScriptの場合はセミコロンがついていなくてもプログラムは動作するのでどちらでもOK</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// セミコロンありの例
+console.log(&quot;Hello World!&quot;);
+let name = &quot;田中&quot;;
+
+// セミコロンなしでも動作する
+console.log(&quot;Hello World!&quot;)
+let name = &quot;田中&quot;
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-400 dark:bg-slate-400/30 text-slate-100 dark:text-slate-900 rounded-full h-full">補足</span> ダブルクォート ( <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code> ) と シングルクォート ( <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code> ) の違い</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">プログラムでは、文字や文字列（テキスト）をコンピューターに「これは文字だよ」と伝えるために、クォート（引用符）で囲む</li>
+<li class="relative ml-2">JSでは <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code> (ダブルクォート) と <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code> (シングルクォート) のどちらを使ってもOK</li>
+<li class="relative ml-2">ただし、<strong class="font-semibold text-slate-900 dark:text-slate-100">前後の記号は必ず一致</strong>させること！</li>
+<li class="relative ml-2">バッククォート（`）で囲ってもOK</li>
+</ul><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">正しい書き方</div><div class="text-slate-700 dark:text-slate-300"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// OK: ダブルクォートで囲む
+&quot;hello world!&quot;
+
+// OK: シングルクォートで囲む
+&#x27;hello world!&#x27;
+
+// OK: バッククォートで囲む（テンプレートリテラル）
+`hello world!`
+</code></pre></div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">よくある間違い</div><div class="text-slate-700 dark:text-slate-300"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// NG: 最初が &quot;, 最後が &#x27; と一致していない
+&quot;hello world!&#x27;
+
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">前後の記号が一致していないため、エラーが発生</p></div></div></div><div class="my-6 p-4 rounded-lg border bg-gray-50 dark:bg-gray-900/20 border-gray-200 dark:border-gray-700 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-gray-800 dark:text-gray-200">他の言語との違い</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptでは <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code> と <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code> を区別しませんが、他の言語では挙動が変わる場合があります！</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">PHP</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code> のみ変数展開を実施する</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">C言語</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code> は文字、<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code> は文字列に使用する</li>
+</ul></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">変数と定数</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">変数とは - データをしまう『箱』</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">プログラムで使うデータを一時的にしまっておくための<strong class="font-semibold text-slate-900 dark:text-slate-100">箱</strong>のようなもの</li>
+<li class="relative ml-2">箱に名前を付けておくことで、中身を自由に取り出したり、入れ替えたりできる</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="text-center max-w-xl mx-auto"><div class="mb-2"><img src="../../images/js/variable.png" alt="変数の概念図：名前のついた箱にデータを入れるイメージ" class="w-full rounded border border-slate-200"/></div><div class="text-sm text-slate-600"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">変数は「名前のついた箱」のようなもの。データを保存して、後で取り出すことができる</p></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">変数 <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">let</code></summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">基本的な使い方</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 変数の宣言と代入
+let userName = &quot;田中太郎&quot;;
+let userAge = 25;
+
+// 変数の中身を表示
+console.log(userName); // &quot;田中太郎&quot;
+console.log(userAge);  // 25
+
+// 変数の中身を変更（再代入）
+userAge = 26;
+console.log(userAge);  // 26
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">letの由来</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">英語の使役動詞「let」（〜させる）が由来です。  <strong class="font-semibold text-slate-900 dark:text-slate-100">Let userName be &quot;田中太郎&quot;</strong>（userName を 田中太郎 とする） ってことですね！</p></div></div></div><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">var</code> という記述を見かけたら...</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptには<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">var</code>という古い変数宣言もありますが、現在は<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">let</code>を使うのが推奨されています。<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">let</code>の方がスコープ（変数が使える範囲）が明確で、バグを防ぎやすいからです。詳しくは ES6文法を調べてみましょう！</p></div></details><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">変数に入れられるもの</h4><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">変数には様々な種類のデータを入れることができます。</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 文字列（String）
+let message = &quot;こんにちは&quot;;
+
+// 数値（Number）
+let price = 1500;
+
+// 真偽値（Boolean）
+let isStudent = true;
+
+// 配列（Array）
+let fruits = [&quot;りんご&quot;, &quot;バナナ&quot;, &quot;オレンジ&quot;];
+
+// オブジェクト（Object）
+let user = {
+  name: &quot;太郎&quot;,
+  age: 25
+};
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">定数 <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">const</code></summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">基本的な使い方</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 定数の宣言
+const TAX_RATE = 10;
+
+// 定数は再代入できない
+// TAX_RATE = 5; // エラーが発生！
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">let と const の使い分け</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">const</strong>: 値が変わらないもの（税率、サイト名など）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">let</strong>: 値が変わる可能性があるもの（カウンター、ユーザー入力など）</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">基本的には<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">const</code>を使い、再代入が必要な場合のみ<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">let</code>を使うのがベストプラクティスです。</p></div></div></div><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-400 dark:bg-slate-400/30 text-slate-100 dark:text-slate-900 rounded-full h-full">補足</span> 配列やオブジェクトでのconstの動作</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">配列やオブジェクトを<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">const</code>で宣言した場合、<strong class="font-semibold text-slate-900 dark:text-slate-100">参照</strong>は変更できませんが、<strong class="font-semibold text-slate-900 dark:text-slate-100">中身</strong>は変更可能</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const fruits = [&quot;りんご&quot;, &quot;バナナ&quot;];
+
+// 中身の変更は可能
+fruits.push(&quot;オレンジ&quot;);
+console.log(fruits); // [&quot;りんご&quot;, &quot;バナナ&quot;, &quot;オレンジ&quot;]
+
+// 参照の変更は不可能
+// fruits = [&quot;ぶどう&quot;]; // エラー！
+</code></pre></div></div></div></details></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">変数名のつけ方</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">変数名は<strong class="font-semibold text-slate-900 dark:text-slate-100">英語</strong>で、<strong class="font-semibold text-slate-900 dark:text-slate-100">内容が分かりやすい名前</strong>をつけよう！</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 良い例
+const userName = &quot;太郎&quot;;
+const totalPrice = 1500;
+const isVisible = true;
+
+// 悪い例
+const x = &quot;太郎&quot;;     // 何の値か不明
+const price = 1500;   // 総額なのか単価なのか不明
+const flag = true;    // 何のフラグか不明
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">JSの変数名はキャメルケースで書こう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptでは、複数単語の変数名を書くときに「キャメルケース」を使います。<br/>
+<!-- -->（例：<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">userName</code>, <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">totalPrice</code>, <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">isLoggedIn</code>）<br/>
+<!-- -->慣例なので必須ではありませんが、多くの開発者が使っているので合わせておきましょう！</p><div class="my-6 "><div class="infographic-content"><div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="bg-slate-100"><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">名前</th><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">記述方法</th><th class="p-3 text-center font-medium text-slate-800 border border-slate-200">イメージ</th><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">主な言語</th><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">備考</th></tr></thead><tbody><tr class="bg-white"><td class="p-3 font-medium text-slate-800 border border-slate-200">キャメルケース</td><td class="p-3 font-mono text-slate-700 border border-slate-200">camelCase</td><td class="p-3 text-center border border-slate-200"><img src="../../images/js/name-camel.jpeg" alt="ラクダ" class="w-16 h-12 object-cover rounded mx-auto"/></td><td class="p-3 text-slate-700 border border-slate-200">Java, JavaScript</td><td class="p-3 text-sm text-slate-600 border border-slate-200">JSのクラス名はパスカルケース</td></tr><tr class="bg-slate-50"><td class="p-3 font-medium text-slate-800 border border-slate-200">パスカルケース</td><td class="p-3 font-mono text-slate-700 border border-slate-200">PascalCase</td><td class="p-3 text-center border border-slate-200"><div class="w-16 h-12 bg-slate-200 rounded mx-auto flex items-center justify-center text-slate-500 text-xs">-</div></td><td class="p-3 text-slate-700 border border-slate-200">Pascal</td><td class="p-3 text-sm text-slate-600 border border-slate-200">別名: アッパーキャメルケース</td></tr><tr class="bg-white"><td class="p-3 font-medium text-slate-800 border border-slate-200">スネークケース</td><td class="p-3 font-mono text-slate-700 border border-slate-200">snake_case</td><td class="p-3 text-center border border-slate-200"><img src="../../images/js/name-snake.jpeg" alt="蛇" class="w-16 h-12 object-cover rounded mx-auto"/></td><td class="p-3 text-slate-700 border border-slate-200">Python</td><td class="p-3 text-sm text-slate-600 border border-slate-200">Python（大蛇）だからスネークケース</td></tr><tr class="bg-slate-50"><td class="p-3 font-medium text-slate-800 border border-slate-200">ケバブケース</td><td class="p-3 font-mono text-slate-700 border border-slate-200">kebab-case</td><td class="p-3 text-center border border-slate-200"><img src="../../images/js/name-kebab.jpeg" alt="ケバブ" class="w-16 h-12 object-cover rounded mx-auto"/></td><td class="p-3 text-slate-700 border border-slate-200">HTML, CSS</td><td class="p-3 text-sm text-slate-600 border border-slate-200">Lispケースと呼ばれることも<br/>JSでは使えない</td></tr></tbody></table></div></div></div></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">計算</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">数値の計算</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">数学と同じような記号を使って計算ができる</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// ---------------------
+// 数値の計算
+// ---------------------
+let a = 5;
+let b = 3;
+
+console.log(a + b); // 足し算: 8
+console.log(a - b); // 引き算: 2
+console.log(a * b); // 掛け算: 15
+console.log(a / b); // 割り算: 1.6666666666666667
+console.log(a % b); // 余り: 2
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">余り（%）の使い道</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">余り（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">%</code>）は意外と便利な演算子！ 例えばこんな使い方をします</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">偶数・奇数の判定（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">数値 % 2</code> が0なら偶数、1なら奇数）</li>
+<li class="relative ml-2">時間計算（24時間を超えたら0時に戻るなど）</li>
+</ul></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">文字列の結合</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">文字と文字をくっつけることを「文字列の結合」と言います。JavaScriptでは <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">+</code> を使って文字を結合できます。</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// ---------------------
+// 文字列の結合
+// ---------------------
+let sei = &quot;田中&quot;;
+let mei = &quot;太郎&quot;;
+console.log(sei + mei); // &quot;田中太郎&quot;
+
+// スペースを入れたい場合
+console.log(sei + &quot; &quot; + mei); // &quot;田中 太郎&quot;
+
+// 挨拶文を作る
+let aisatsu = &quot;こんにちは、&quot; + sei + mei + &quot;さん！&quot;;
+console.log(aisatsu); // &quot;こんにちは、田中太郎さん！&quot;
+</code></pre></div></div><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-400 dark:bg-slate-400/30 text-slate-100 dark:text-slate-900 rounded-full h-full">補足</span> テンプレートリテラル（バッククォート）での文字列結合</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">バッククォート（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">`</code>）を使うと、より読みやすく文字列を結合できます：</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">let sei = &quot;田中&quot;;
+let mei = &quot;太郎&quot;;
+let age = 25;
+
+// 従来の方法
+let message1 = &quot;こんにちは、&quot; + sei + mei + &quot;さん（&quot; + age + &quot;歳）です。&quot;;
+
+// テンプレートリテラル
+let message2 = `こんにちは、${sei}${mei}さん（${age}歳）です。`;
+
+console.log(message1); // &quot;こんにちは、田中太郎さん（25歳）です。&quot;
+console.log(message2); // &quot;こんにちは、田中太郎さん（25歳）です。&quot;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">${}</code> の中に変数や式を書くことで、文字列の中に値を埋め込むことができます。</p></div></details></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">制御構文 - 条件分岐</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">制御構文とは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">プログラムの実行順序を制御する特別な構文のこと</li>
+<li class="relative ml-2">条件によって処理を分岐させたり、同じ処理を繰り返すことが可能</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-slate-50 p-6 rounded border border-slate-200"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 text-blue-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><h4 class="text-lg font-semibold text-slate-800">条件分岐系</h4></div><div class="space-y-2 text-sm text-slate-700"><div class="flex items-start gap-2"><code class="bg-white px-2 py-1 rounded text-blue-600 font-mono">if</code><span>条件によって処理を分岐</span></div><div class="flex items-start gap-2"><code class="bg-white px-2 py-1 rounded text-blue-600 font-mono">switch</code><span>複数の条件を効率的に分岐</span></div></div></div><div class="bg-slate-50 p-6 rounded border border-slate-200"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 text-green-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></div><h4 class="text-lg font-semibold text-slate-800">繰り返し系</h4></div><div class="space-y-2 text-sm text-slate-700"><div class="flex items-start gap-2"><code class="bg-white px-2 py-1 rounded text-green-600 font-mono">for</code><span>指定回数の繰り返し</span></div><div class="flex items-start gap-2"><code class="bg-white px-2 py-1 rounded text-green-600 font-mono">while</code><span>条件を満たす間の繰り返し</span></div><div class="flex items-start gap-2"><code class="bg-white px-2 py-1 rounded text-green-600 font-mono">do...while</code><span>最低1回は実行する繰り返し</span></div></div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">まずは...</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">if</code>文から学んでいきましょう！</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">条件分岐とは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">プログラムに「もし〜なら」という判断をさせる</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">例: 年齢によって成人か未成年かを判断する場合</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div></div></details>
+<!-- -->
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">if文の基本文法</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">if (条件式) {
+  // 処理1
+} else if (条件式) {
+  // 処理2
+} else {
+  // 処理3
+}
+</code></pre></div></div><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-400 dark:bg-slate-400/30 text-slate-100 dark:text-slate-900 rounded-full h-full">補足</span> 波括弧の後にはセミコロンが不要！</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptでは、if文の波括弧<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">{}</code>の後にセミコロン<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">;</code>は<strong class="font-semibold text-slate-900 dark:text-slate-100">つけません</strong>。</p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">なぜセミコロンが不要なのか？</strong></p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptには「式（Expression）」と「文（Statement）」という2つの概念があります：</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">式（Expression）</strong>: 値を生成するもの → セミコロンが必要</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">文（Statement）</strong>: 処理のステップを表すもの → セミコロンは不要</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">覚え方のコツ</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">波括弧<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">{}</code>で終わる構文（if文、for文、関数定義など）→ セミコロン不要</li>
+<li class="relative ml-2">それ以外（変数宣言、関数呼び出しなど）→ セミコロンが必要</li>
+</ul></div></details></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">if</code>文（条件が真の時だけ実行）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-gray-50 dark:bg-gray-900/20 border-gray-200 dark:border-gray-700 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-gray-800 dark:text-gray-200">採点システムを作ってみよう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">採点システムを作成したい</strong>と想定してif文を書いてみましょう！<br/>
+<!-- -->まずは<strong class="font-semibold text-slate-900 dark:text-slate-100">80点以上だったら合格である</strong>、という条件で分岐させてみましょう。</p></div></div></div><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const score = 85;
+
+if (score &gt;= 80) {
+  console.log(&quot;合格です！&quot;);
+}
+// 条件が真（score が 80以上）の場合のみ「合格です！」が表示される
+// 条件が偽の場合は何も表示されない
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">80点未満の場合は...？</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">80点未満の場合は何も表示されないことを確認しましょう！</p></div></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">&gt;= とは？</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">数学記号で言うところの <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">≧</code> です。 <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">≧</code> は特殊文字のため、横並びにして <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&gt;=</code> と書きます。</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">if</code>-<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">else</code>文（条件によって2つの処理を分岐）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-gray-50 dark:bg-gray-900/20 border-gray-200 dark:border-gray-700 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-gray-800 dark:text-gray-200">不合格の場合も表示してみよう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">さっきは不合格の場合は何も表示されませんでした。そこで、<strong class="font-semibold text-slate-900 dark:text-slate-100">不合格の場合も「不合格」と表示してみましょう！</strong></p></div></div></div><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const score = 85;
+
+if (score &gt;= 80) {
+  console.log(&quot;合格です！&quot;);
+} else {
+  console.log(&quot;不合格です&quot;);
+}
+// score が 80以上なら「合格です！」
+// そうでなければ「不合格です」が表示される
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">if</code>-<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">else if</code>-<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">else</code>文（複数の条件を順番にチェック）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-gray-50 dark:bg-gray-900/20 border-gray-200 dark:border-gray-700 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-gray-800 dark:text-gray-200">さらに細かく条件を分けてみよう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">さらに条件を追加して、<strong class="font-semibold text-slate-900 dark:text-slate-100">60点以上80点未満だったら「合格までもう少し！」</strong>、という条件も追加してみましょう！</p></div></div></div><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const score = 85;
+
+if (score &gt;= 80) {
+  console.log(&quot;合格です！&quot;);
+} else if (score &gt;= 60) {
+  console.log(&quot;合格までもう少し！&quot;);
+} else {
+  console.log(&quot;不合格です&quot;);
+}
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">条件チェックの順番</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">条件は<strong class="font-semibold text-slate-900 dark:text-slate-100">上から順番に</strong>チェックされます。最初に真になった条件の処理が実行され、その後の条件はチェックされません。</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">if文の活用例</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">例: ユーザーの年齢で表示を変える</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// ユーザーの年齢で表示を変える
+const userAge = 20;
+
+if (userAge &gt;= 20) {
+  console.log(&quot;成人です&quot;);
+  console.log(&quot;すべてのコンテンツが利用できます&quot;);
+} else if (userAge &gt;= 13) {
+  console.log(&quot;ティーンエイジャーです&quot;);
+  console.log(&quot;一部のコンテンツが制限されます&quot;);
+} else {
+  console.log(&quot;子供です&quot;);
+  console.log(&quot;キッズ向けコンテンツのみ利用できます&quot;);
+}
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">例: 気温による服装提案</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 気温による服装提案
+const temperature = 15;
+
+if (temperature &gt;= 25) {
+  console.log(&quot;暑いです&quot;);
+  console.log(&quot;半袖がおすすめです&quot;);
+} else if (temperature &gt;= 15) {
+  console.log(&quot;過ごしやすい気温です&quot;);
+  console.log(&quot;長袖がおすすめです&quot;);
+} else {
+  console.log(&quot;寒いです&quot;);
+  console.log(&quot;コートを着ましょう&quot;);
+}
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">比較演算子</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">条件分岐で使う比較の記号を覚えましょう。</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const score = 100;
+
+// 等しい
+score == 100;   // true
+score != 100;   // false（等しくない） ≠
+
+// 大小比較
+score &lt; 100;    // false
+score &lt;= 100;   // true（以下） ≦
+score &gt; 100;    // false
+score &gt;= 100;   // true（以上） ≧
+
+// 厳密な比較
+score === 100;  // true（型も含めて等しい）
+score !== 100;  // false（型も含めて等しくない） ≠
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">== と === の違い</div><div class="text-slate-700 dark:text-slate-300"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">100 == &quot;100&quot;   // true（値が同じ）
+100 === &quot;100&quot;  // false（型が違う）
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">===</code>は型も含めて比較するため、より安全です。基本的には<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">===</code>を使いましょう。</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">複数条件の組み合わせ</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const age = 25;
+const hasLicense = true;
+
+// AND条件（両方満たす）
+if (age &gt;= 18 &amp;&amp; hasLicense) {
+  console.log(&quot;運転できます&quot;);
+}
+
+// OR条件（どちらか一方を満たす）
+const day = &quot;土曜日&quot;;
+if (day === &quot;土曜日&quot; || day === &quot;日曜日&quot;) {
+  console.log(&quot;週末です&quot;);
+}
+</code></pre></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">Mathオブジェクト</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">数学的な計算を行う</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">Mathオブジェクトとは？</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">JavaScriptには、便利な機能をまとめた<strong class="font-semibold text-slate-900 dark:text-slate-100">組み込みオブジェクト</strong>が用意されています。<br/>
+<!-- -->そのひとつが <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Math</code> で、数学的な計算に役立つ機能がまとまっています。<br/>
+<strong class="font-semibold text-slate-900 dark:text-slate-100">「数学用の便利ツール箱」</strong> と考えるとイメージしやすいですね！</p></div></div></div><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">const num = 4.7;
+
+// 切り捨て
+console.log(Math.floor(num));  // 4
+
+// 切り上げ
+console.log(Math.ceil(num));   // 5
+
+// 四捨五入
+console.log(Math.round(num));  // 5
+
+// ランダムな数（0以上1未満）
+console.log(Math.random());    // 0.123456...（毎回違う値）
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-800 dark:bg-slate-100/30 text-slate-100 dark:text-slate-900 rounded-full h-full">演習</span> 0〜4の整数を生成しよう</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">課題</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Math.random()</code>と<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Math.floor()</code>を使って、0, 1, 2, 3, 4のいずれかの整数をランダムに生成して<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">console.log()</code>で表示してください。</p><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">解答例</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 0, 1, 2, 3, 4 のいずれかの整数を生成
+const randomNum = Math.floor(Math.random() * 5);
+console.log(randomNum);
+</code></pre></div></div><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Math.random()</code> → 0以上1未満の小数（例: 0.567）</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">* 5</code> → 0以上5未満の小数（例: 2.835）</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">Math.floor()</code> → 切り捨てて0〜4の整数（例: 2）</li>
+</ol></div></details><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">おみくじアプリを作ってみよう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">この0〜4の数字を使って、おみくじアプリを作ってみましょう！</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// おみくじアプリ概要 ver.1(console.log版) ---------------------------
+// - おみくじの結果がconsoleに表示される
+// - おみくじの結果は大吉、中吉、小吉、末吉、凶のいずれか
+// - おみくじの結果はランダムに表示される
+// --------------------------------------------------------------
+</code></pre></div></div></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">DOM操作入門</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">DOMとは何か？</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">Document Object Model の略語</li>
+<li class="relative ml-2">HTMLの要素をJavaScriptから操作するための仕組み</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-plaintext !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-plaintext">// JavaScriptの世界ではHTMLがこのように見えている
+
+document
+└── html
+    ├── head
+    │   ├── title
+    │   ├── meta
+    │   └── script
+    └── body
+        ├── h1 (id=&quot;title&quot;)
+        ├── p (class=&quot;text&quot;)
+        ├── div (class=&quot;container&quot;)
+        │   ├── button (id=&quot;btn1&quot;)
+        │   └── span (class=&quot;message&quot;)
+        └── footer
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">よく使うDOM操作</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 要素を取得
+const element = document.querySelector(&#x27;.my-class&#x27;);
+const allElements = document.querySelectorAll(&#x27;.item&#x27;);
+
+// 要素の中身を変更
+element.textContent = &quot;新しいテキスト&quot;;
+element.innerHTML = &quot;&lt;strong&gt;太字のテキスト&lt;/strong&gt;&quot;;
+
+// スタイルを変更
+element.style.color = &quot;red&quot;;
+element.style.fontSize = &quot;20px&quot;;
+
+// クラスを操作
+element.classList.add(&#x27;active&#x27;);
+element.classList.remove(&#x27;hidden&#x27;);
+element.classList.toggle(&#x27;selected&#x27;);
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">イベントを設定する</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// ボタンをクリックしたときの処理
+const button = document.querySelector(&#x27;#myButton&#x27;);
+button.addEventListener(&#x27;click&#x27;, function() {
+  console.log(&#x27;ボタンがクリックされました！&#x27;);
+});
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">注意</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">DOM操作のコードは、HTMLの要素が読み込まれた後に実行する必要があります。<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&lt;script&gt;</code>タグを<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&lt;/body&gt;</code>の直前に置くか、<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">DOMContentLoaded</code>イベントを使いましょう。</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold"><span class="inline-flex items-center px-2 mr-1 text-sm font-medium bg-slate-800 dark:bg-slate-100/30 text-slate-100 dark:text-slate-900 rounded-full h-full">演習</span>検証ツールを使ってサイトをハックしてみよう！</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">検証ツールを使ってサイトをハックしてみよう！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">検証ツールを使うと、今見ているページに対して自分で書いたJavaScriptを直接実行できちゃいます！</p></div></div></div><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">検証ツールの「Console」タブを開く<br/>
+<!-- -->デベロッパーツール内のConsoleタブをクリック</p>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">上記コードをコピー&amp;ペースト<br/>
+<!-- -->JavaScriptコードをコンソールに貼り付け</p>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">Enterキーで実行！</p>
+</li>
+</ol><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">
+// ページのタイトルを変更
+document.title = &quot;タイトルを変更！&quot;;
+
+// 背景色を変更
+document.body.style.backgroundColor = &quot;lightblue&quot;;
+
+// クリックした要素が消える機能
+document.body.addEventListener(&#x27;click&#x27;, function(e) {
+  e.target.style.display = &#x27;none&#x27;;
+});
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">変な表示になったらリロード！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">リロードすると上記の変更が元に戻ります！JavaScriptがブラウザ上で実行される様子を楽しんでみよう♪</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">jQuery入門</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">jQueryとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-4 p-4 border border-slate-200 dark:border-slate-700 rounded-lg animate-pulse"><div class="flex gap-3"><div class="w-20 h-20 bg-slate-200 dark:bg-slate-700 rounded"></div><div class="flex-1 space-y-2"><div class="h-4 bg-slate-200 dark:bg-slate-700 rounded w-3/4"></div><div class="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/2"></div><div class="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/3"></div></div></div></div><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">DOM操作を簡単に書けるようにしたJavaScriptライブラリ</li>
+<li class="relative ml-2">アニメーションやイベント処理も簡単に書くことができる</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-red-50 rounded border border-red-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-red-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div><div class="font-medium text-red-800">純粋なJavaScript</div></div><div class="text-sm text-red-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="bg-red-100 px-1 rounded text-xs">document.querySelector(&#x27;.box&#x27;).style.display = &#x27;none&#x27;;</code><br/>
+<!-- -->長くて覚えにくい...</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div><div class="font-medium text-green-800">jQuery</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="bg-green-100 px-1 rounded text-xs">$(&#x27;.box&#x27;).hide();</code><br/>
+<!-- -->短くて直感的！</p></div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">jQueryって今でも使うの？</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">jQueryは成熟期を迎えている <strong class="font-semibold text-slate-900 dark:text-slate-100">まだまだ現役</strong> の技術！DOM操作の基本を理解するのに最適なツールです</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">jQueryの読み込み方法</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">1. CDN</h4><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">インターネット経由でjQueryを読み込む方法</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-html !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;jQuery練習&lt;/title&gt;
+    &lt;!-- jQueryをCDNで読み込み --&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;jQueryテスト&lt;/h1&gt;
+    &lt;button id=&quot;myButton&quot;&gt;クリックしてね&lt;/button&gt;
+    
+    &lt;script&gt;
+        // jQueryが使用可能
+        $(&#x27;#myButton&#x27;).click(function() {
+            alert(&#x27;jQueryが動いています！&#x27;);
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">2. ダウンロードして読み込み</h4><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">jQueryファイルをダウンロードして、プロジェクトフォルダに保存する方法</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">フォルダ構成例：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-plaintext !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-plaintext">project/
+├── index.html
+└── js/
+    └── jquery-3.7.1.min.js
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">index.html</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-html !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;jQuery練習&lt;/title&gt;
+    &lt;!-- ローカルのjQueryファイルを読み込み --&gt;
+    &lt;script src=&quot;./js/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;jQueryテスト&lt;/h1&gt;
+    &lt;button id=&quot;myButton&quot;&gt;クリックしてね&lt;/button&gt;
+    
+    &lt;script&gt;
+        // jQueryが使用可能
+        $(&#x27;#myButton&#x27;).click(function() {
+            alert(&#x27;jQueryが動いています！&#x27;);
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">CDNと読み込み方法の選択</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">CDN</strong>: 簡単で最新版を利用可能。インターネット接続が必要</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">ダウンロード</strong>: オフライン環境でも動作。ファイル管理が必要</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">はじめはCDNがおすすめです！</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">パターン１：「何を、どうする」</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">「何を（セレクタ）、どうする（メソッド）」で整理することがポイント</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="flex justify-around items-center flex-wrap gap-4 max-w-md mx-auto"><div class="flex justify-between items-center flex-wrap gap-4 w-full"><div class="text-center p-4 bg-slate-50 rounded border border-slate-200 w-2/5"><div class="w-16 h-16 mx-auto mb-2 bg-blue-50 rounded border border-blue-200 flex items-center justify-center"><code class="text-blue-600 font-mono text-lg font-bold">$()</code></div><div class="font-medium text-slate-800">何を</div><div class="text-sm text-slate-600 mb-2">セレクタ</div><code class="bg-white px-2 py-1 rounded text-blue-600 font-mono text-sm">$(&#x27;#myId&#x27;)</code></div><div class="text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div><div class="text-center p-4 bg-slate-50 rounded border border-slate-200 w-2/5"><div class="w-16 h-16 mx-auto mb-2 bg-green-50 rounded border border-green-200 flex items-center justify-center"><div class="w-8 h-8 text-green-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div></div><div class="font-medium text-slate-800">どうする</div><div class="text-sm text-slate-600 mb-2">メソッド</div><code class="bg-white px-2 py-1 rounded text-green-600 font-mono text-sm">.hide()</code></div></div><div class="text-center w-full"><div class="bg-white p-4 rounded border border-slate-200 max-w-md mx-auto"><code class="text-lg font-mono text-slate-800">$(&#x27;#myId&#x27;).hide();</code></div><div class="text-sm text-slate-600 mt-2">ID「myId」の要素を隠す</div></div></div></div></div><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セレクターの詳細</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">jQueryのセレクターは、CSSセレクターと同じ書き方</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">#id</code> → ID</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">.class</code> → クラス</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">tag</code> → タグ名</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">[attribute]</code> → 属性</li>
+</ul></div></details><details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">メソッドチェーン</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">メソッドを連続して書くことも可能</li>
+</ul><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">$(&#x27;.box&#x27;)
+  .fadeIn()
+  .addClass(&#x27;active&#x27;)
+  .text(&#x27;完了！&#x27;);
+</code></pre></div></div></div></details></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">パターン２：「何を、いつ、どうする」</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">イベント処理は「何を（セレクタ）、いつ（イベント）、どうする（メソッド）」の3要素で構成される</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="flex justify-around items-center flex-wrap gap-4 max-w-xl mx-auto"><div class="flex justify-between items-center flex-wrap gap-2 w-full"><div class="text-center p-4 bg-slate-50 rounded border border-slate-200 flex-1 min-w-20"><div class="w-16 h-16 mx-auto mb-2 bg-blue-50 rounded border border-blue-200 flex items-center justify-center"><code class="text-blue-600 font-mono text-lg font-bold">$()</code></div><div class="font-medium text-slate-800">何を</div><div class="text-sm text-slate-600 mb-2">セレクタ</div><code class="bg-white px-2 py-1 rounded text-blue-600 font-mono text-sm">$(&#x27;button&#x27;)</code></div><div class="text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div><div class="text-center p-4 bg-slate-50 rounded border border-slate-200 flex-1 min-w-20"><div class="w-16 h-16 mx-auto mb-2 bg-orange-50 rounded border border-orange-200 flex items-center justify-center"><div class="w-8 h-8 text-orange-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div></div><div class="font-medium text-slate-800">いつ</div><div class="text-sm text-slate-600 mb-2">イベント</div><code class="bg-white px-2 py-1 rounded text-orange-600 font-mono text-sm">click</code></div><div class="text-slate-400"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div><div class="text-center p-4 bg-slate-50 rounded border border-slate-200 flex-1 min-w-20"><div class="w-16 h-16 mx-auto mb-2 bg-green-50 rounded border border-green-200 flex items-center justify-center"><div class="w-8 h-8 text-green-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div></div><div class="font-medium text-slate-800">どうする</div><div class="text-sm text-slate-600 mb-2">メソッド</div><code class="bg-white px-2 py-1 rounded text-green-600 font-mono text-sm">alert()</code></div></div><div class="w-full"><div class="bg-white p-4 rounded border border-slate-200 flex justify-center"><code class="text-lg font-mono text-slate-800 text-left mx-auto inline-block">$(&#x27;button&#x27;).click(function() {<br/>　　alert(&#x27;押された！&#x27;)<br/>});</code></div><div class="text-sm text-slate-600 mt-2 text-center">ボタンがクリックされたら「押された！」とアラート表示</div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">jQueryの使い方例</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">要素の取得と操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// IDで要素を取得
+$(&#x27;#myId&#x27;)
+
+// クラスで要素を取得
+$(&#x27;.myClass&#x27;)
+
+// 要素の中身を変更（HTMLタグ付き）
+$(&#x27;#title&#x27;).html(&#x27;&lt;strong&gt;新しいタイトル&lt;/strong&gt;&#x27;);
+$(&#x27;#title&#x27;).html(&#x27;&lt;img src=&quot;./img/title.png&quot; alt=&quot;タイトル&quot;&gt;&#x27;);
+
+// 要素の中身を変更（テキストのみ）
+$(&#x27;#message&#x27;).text(&#x27;こんにちは&#x27;);
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">アニメーション効果</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// フェードイン・フェードアウト
+$(&#x27;.box&#x27;).fadeIn();
+$(&#x27;.box&#x27;).fadeOut();
+
+// スライド
+$(&#x27;.panel&#x27;).slideDown();
+$(&#x27;.panel&#x27;).slideUp();
+
+// 表示・非表示
+$(&#x27;.element&#x27;).show();
+$(&#x27;.element&#x27;).hide();
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">スタイルの変更</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// CSSスタイルを設定
+$(&#x27;.box&#x27;).css(&#x27;background-color&#x27;, &#x27;red&#x27;);
+$(&#x27;.box&#x27;).css(&#x27;width&#x27;, &#x27;200px&#x27;);
+
+// 複数のスタイルを一度に設定
+$(&#x27;.box&#x27;).css({
+  &#x27;background-color&#x27;: &#x27;blue&#x27;,
+  &#x27;width&#x27;: &#x27;300px&#x27;,
+  &#x27;height&#x27;: &#x27;100px&#x27;
+});
+
+// スタイルの値を取得
+const color = $(&#x27;.box&#x27;).css(&#x27;background-color&#x27;);
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">属性とフォーム操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 属性を設定・取得
+$(&#x27;img&#x27;).attr(&#x27;src&#x27;, &#x27;new-image.jpg&#x27;);  // 画像を差し替え
+$(&#x27;a&#x27;).attr(&#x27;href&#x27;, &#x27;https://example.com&#x27;);
+const imageSrc = $(&#x27;img&#x27;).attr(&#x27;src&#x27;);  // 属性値を取得
+
+// フォームの値を設定・取得
+$(&#x27;#name&#x27;).val(&#x27;田中太郎&#x27;);  // input要素に値を設定
+const userName = $(&#x27;#name&#x27;).val();  // input要素の値を取得
+
+// チェックボックスの操作
+$(&#x27;#checkbox&#x27;).prop(&#x27;checked&#x27;, true);  // チェックを入れる
+const isChecked = $(&#x27;#checkbox&#x27;).prop(&#x27;checked&#x27;);  // チェック状態を取得
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">イベント処理</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// クリックイベント
+$(&#x27;#button&#x27;).on(&#x27;click&#x27;, function() {
+  console.log(&#x27;ボタンがクリックされました&#x27;);
+  $(&#x27;.result&#x27;).text(&#x27;クリックされました！&#x27;);
+});
+
+// マウスオーバー
+$(&#x27;.card&#x27;).on(&#x27;mouseenter&#x27;, function() {
+  $(this).addClass(&#x27;hover&#x27;);
+});
+
+$(&#x27;.card&#x27;).on(&#x27;mouseleave&#x27;, function() {
+  $(this).removeClass(&#x27;hover&#x27;);
+});
+
+// フォーム送信時の処理
+$(&#x27;#form&#x27;).on(&#x27;submit&#x27;, function(e) {
+  e.preventDefault();  // デフォルトの送信を停止
+  const inputValue = $(&#x27;#input&#x27;).val();
+  alert(&#x27;入力値: &#x27; + inputValue);
+});
+</code></pre></div></div></div></details>
+<!-- -->
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">よく使うメソッド</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">テキスト・HTML操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// テキストを取得・設定
+$(&#x27;#title&#x27;).text();           // テキストを取得
+$(&#x27;#title&#x27;).text(&#x27;新しいタイトル&#x27;); // テキストを設定
+
+// HTMLを取得・設定
+$(&#x27;#content&#x27;).html();         // HTML内容を取得
+$(&#x27;#content&#x27;).html(&#x27;&lt;p&gt;新しい内容&lt;/p&gt;&#x27;); // HTML内容を設定
+
+// 内容を追加
+$(&#x27;#content&#x27;).append(&#x27;&lt;p&gt;内容を追加&lt;/p&gt;&#x27;); // 内容を追加
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">属性操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 属性を取得・設定
+$(&#x27;img&#x27;).attr(&#x27;src&#x27;);         // src属性を取得
+$(&#x27;img&#x27;).attr(&#x27;src&#x27;, &#x27;new.jpg&#x27;); // src属性を設定
+
+// 複数の属性を一度に設定
+$(&#x27;img&#x27;).attr({
+    &#x27;src&#x27;: &#x27;image.jpg&#x27;,
+    &#x27;alt&#x27;: &#x27;画像の説明&#x27;
+});
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">CSS・スタイル操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// CSSプロパティを取得・設定
+$(&#x27;.box&#x27;).css(&#x27;color&#x27;);       // 色を取得
+$(&#x27;.box&#x27;).css(&#x27;color&#x27;, &#x27;red&#x27;); // 色を設定
+
+// 複数のCSSプロパティを一度に設定
+$(&#x27;.box&#x27;).css({
+    &#x27;color&#x27;: &#x27;blue&#x27;,
+    &#x27;font-size&#x27;: &#x27;20px&#x27;,
+    &#x27;background-color&#x27;: &#x27;yellow&#x27;
+});
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">クラス操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// クラスを追加・削除・切り替え
+$(&#x27;.item&#x27;).addClass(&#x27;active&#x27;);    // クラスを追加
+$(&#x27;.item&#x27;).removeClass(&#x27;active&#x27;); // クラスを削除
+$(&#x27;.item&#x27;).toggleClass(&#x27;active&#x27;); // クラスを切り替え
+$(&#x27;.item&#x27;).hasClass(&#x27;active&#x27;);    // クラスがあるかチェック
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">表示・非表示</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 要素の表示・非表示
+$(&#x27;.popup&#x27;).show();          // 表示
+$(&#x27;.popup&#x27;).hide();          // 非表示
+$(&#x27;.popup&#x27;).toggle();        // 表示・非表示を切り替え
+
+// アニメーション付きで表示・非表示
+$(&#x27;.popup&#x27;).fadeIn();        // フェードイン
+$(&#x27;.popup&#x27;).fadeOut();       // フェードアウト
+$(&#x27;.popup&#x27;).slideDown();     // スライドダウン
+$(&#x27;.popup&#x27;).slideUp();       // スライドアップ
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">イベント処理</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// クリックイベント
+$(&#x27;#button&#x27;).click(function() {
+    alert(&#x27;ボタンがクリックされました！&#x27;);
+});
+
+// その他のイベント
+$(&#x27;#input&#x27;).focus(function() {
+    console.log(&#x27;入力欄にフォーカスしました&#x27;);
+});
+
+$(&#x27;#input&#x27;).blur(function() {
+    console.log(&#x27;入力欄からフォーカスが外れました&#x27;);
+});
+</code></pre></div></div><h4 class="text-lg font-medium mb-2 mt-4 text-slate-700 dark:text-slate-300">フォーム操作</h4><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 入力値を取得・設定
+$(&#x27;#name&#x27;).val();            // 入力値を取得
+$(&#x27;#name&#x27;).val(&#x27;山田太郎&#x27;);   // 入力値を設定
+
+// チェックボックス・ラジオボタン
+$(&#x27;#checkbox&#x27;).prop(&#x27;checked&#x27;, true);  // チェックを付ける
+$(&#x27;#checkbox&#x27;).prop(&#x27;checked&#x27;, false); // チェックを外す
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">メソッドはまだまだたくさん！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">ここで紹介したのは、jQueryメソッドのほんの一部です。実際にはもっとたくさんの便利なメソッドが用意されています。どんどん使って試してみましょう！公式ドキュメントや検索で新しいメソッドを発見するのも楽しいですよ♪</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">エラー対応</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">エラーの声を聞こう！トラブルシューティング</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">プログラミングのコツ</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">プログラミングでエラーは日常茶飯事。大切なのは<strong class="font-semibold text-slate-900 dark:text-slate-100">エラーが何を教えてくれているか</strong>を理解することです！</p></div></div></div><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-slate-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><div><div class="font-medium text-slate-800">1. VSCodeの警告をチェック</div><div class="text-sm text-slate-600 mt-1"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><span class="text-red-600 font-medium">赤い波線</span>: 文法エラーやタイポ /
+<span class="text-yellow-600 font-medium">黄色い波線</span>: 改善提案 /
+<span class="text-blue-600 font-medium">電球マーク</span>: 修正案</p></div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-slate-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3-3m0 0l-3 3m3-3v12"></path></svg></div><div><div class="font-medium text-slate-800">2. ファイルを保存</div><div class="text-sm text-slate-600 mt-1"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><kbd class="px-2 py-1 bg-slate-200 rounded text-xs">Ctrl + S</kbd> でファイルを保存</p></div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-slate-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div><div class="font-medium text-slate-800">3. ブラウザのコンソールを確認</div><div class="text-sm text-slate-600 mt-1"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><kbd class="px-2 py-1 bg-slate-200 rounded text-xs">F12</kbd> でデベロッパーツールを開く →
+<strong>Console</strong>タブでエラーの<strong>行番号</strong>と<strong>原因</strong>を確認</p></div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-slate-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div><div class="font-medium text-slate-800">4. 動作をチェック</div><div class="text-sm text-slate-600 mt-1"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">期待した通りに動いていない場合は、コードのロジックを見直そう</p></div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">よくあるエラー</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">Uncaught SyntaxError</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">原因</strong>: 文法エラー（括弧の閉じ忘れ、セミコロン忘れなど）
+<strong class="font-semibold text-slate-900 dark:text-slate-100">対処</strong>: エラーが示す行番号の前後を確認</p></div></div></div><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">Uncaught ReferenceError</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">原因</strong>: 宣言していない変数を使用
+<strong class="font-semibold text-slate-900 dark:text-slate-100">対処</strong>: 変数名のスペルミス、宣言忘れを確認</p></div></div></div><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">Uncaught TypeError</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">原因</strong>: 型が合わない操作（nullのプロパティにアクセスなど）
+<strong class="font-semibold text-slate-900 dark:text-slate-100">対処</strong>: 変数の中身をconsole.logで確認</p></div></div></div></div></details></div><div></div></div></main></div></div><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/gs-textbook-php","future":{"unstable_middleware":false,"unstable_optimizeDeps":false,"unstable_splitRouteModules":false,"unstable_subResourceIntegrity":false,"unstable_viteEnvironmentApi":false},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/gs-textbook-php/assets/manifest-3e21a0cd.js";
+import * as route0 from "/gs-textbook-php/assets/root-DhgomBNp.js";
+import * as route1 from "/gs-textbook-php/assets/lessons._slug-DdYyauY5.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"routes/lessons.$slug":route1};
+
+import("/gs-textbook-php/assets/entry.client-DtWayQEr.js");</script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RC=function(b,c,e){c=document.getElementById(c);c.parentNode.removeChild(c);var a=document.getElementById(b);if(a){b=a.previousSibling;if(e)b.data="$!",a.setAttribute("data-dgst",e);else{e=b.parentNode;a=b.nextSibling;var f=0;do{if(a&&8===a.nodeType){var d=a.data;if("/$"===d)if(0===f)break;else f--;else"$"!==d&&"$?"!==d&&"$!"!==d||f++}d=a.nextSibling;e.removeChild(a);a=d}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data="$"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>

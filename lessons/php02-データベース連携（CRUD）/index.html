@@ -1,0 +1,857 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="modulepreload" href="/gs-textbook-php/assets/manifest-3e21a0cd.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/root-DhgomBNp.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/entry.client-DtWayQEr.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons._slug-DdYyauY5.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/mermaid-vendor-CpAEI21m.js"/><link rel="modulepreload" href="/gs-textbook-php/assets/lessons-CuJlLEab.js"/><meta name="robots" content="noindex"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><title>Lessons</title><meta name="robots" content="index,follow"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-32x32.png" sizes="32x32"/><link rel="icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-192x192.png" sizes="192x192"/><link rel="apple-touch-icon" href="https://g-s.dev/uploads/cropped-g-s_fabicon-2-180x180.png"/><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="/gs-textbook-php/assets/root-C_FDEAqU.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"/><script>
+              window.Prism = window.Prism || {};
+              window.Prism.manual = true;
+            </script></head><body style="font-family:&#x27;M PLUS 1p&#x27;"><div class="relative from-slate-200 bg-gradient-to-b to-slate-300"><div class="grid transition-all duration-300 ease-in-out" style="grid-template-columns:280px 1fr"><aside class="h-screen sticky top-0 transition-all duration-300 ease-in-out w-[280px] pr-4 overflow-hidden border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-800 px-4"><div class="py-2"><div class="flex items-center justify-between mb-3"><h2 class="text-sm font-semibold transition-opacity duration-300 ease-in-out opacity-100">授業資料一覧</h2><button class="p-1 hover:bg-slate-200 dark:hover:bg-slate-700 rounded transition-colors duration-200" title="折りたたみ"><svg class="w-4 h-4 transform transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button></div><div class="mb-3 px-2"><button class="flex items-center gap-2 w-full text-xs text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 py-2 px-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700" title="全て開く"><svg class="w-3 h-3 transition-transform duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg><span>全て開く</span></button></div><nav class="space-y-1 transition-opacity duration-300 ease-in-out opacity-100"></nav></div></aside><main class="prose dark:prose-invert max-w-none bg-white dark:bg-slate-800 rounded w-5xl p-12 my-4 
+  mx-auto"><div class="relative"><div style="display:block"><h1 class="text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-700 pb-2">#02 PHP - データベース連携（CRUD完全版）</h1>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回のゴール</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">データベース・SQLの概念を理解する</li>
+<li class="relative ml-2">SQL の基本文法（INSERT、SELECT、UPDATE、DELETE）を書けるようになる</li>
+<li class="relative ml-2">PHPを通じて<strong class="font-semibold text-slate-900 dark:text-slate-100">CRUD</strong>（Create, Read, Update, Delete）全ての操作ができるようになる</li>
+<li class="relative ml-2">SQLインジェクション対策の重要性を学ぶ</li>
+<li class="relative ml-2">phpMyAdminでデータベースを操作できるようになる</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">funcs.php</code> を活用してコードの再利用性を高める</li>
+<li class="relative ml-2">関数化によってコードの保守性を向上させる</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">授業前準備</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">PHPの授業では毎回同じ手順を実施</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">授業開始前に以下の準備を実施する</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">XAMPP起動手順：</strong></p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">Apache と MySQL を起動</strong></p>
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Windows</strong>: Apache と MySQL が緑色になっていればOK</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Mac</strong>: MySQL Database と Apache Web Server が &quot;Running&quot; になっていればOK</li>
+</ul>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ファイル配置</strong></p>
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Windows</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">C:/XAMPP/htdocs/php02/</code></li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">Mac</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">/Applications/XAMPP/htdocs/php02/</code></li>
+</ul>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">動作確認</strong></p>
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">http://localhost/php02/</code> にアクセス</li>
+</ul>
+</li>
+</ol></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">データベースとSQLの基礎</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データベースとは何か？</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">データベース（DB）</strong> とは、「ある特定の条件に沿ってデータを集めたもの」です。</p><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">重要なポイント</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">単にデータを集めた&quot;だけ&quot;ではデータベースではない！
+データを効率的に管理・検索・更新できる仕組みが必要</p></div></div></div><div class="my-6 "><div class="infographic-content"><div class="text-center"><div class="inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4"><div class="w-8 h-8 text-slate-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg></div></div><div class="font-medium text-slate-800 mb-2">データベースの役割</div><div class="text-sm text-slate-600 max-w-md mx-auto"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">大量のデータを効率的に保存・検索・更新・削除できる仕組み</p></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">リレーショナルデータベース（RDB）とは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">リレーショナルデータベース</strong>は、データを<strong class="font-semibold text-slate-900 dark:text-slate-100">表（テーブル）の形式</strong>で管理する方式</p><div class="my-6 "><div class="infographic-content"><div class="space-y-4"><div class="bg-slate-50 p-4 rounded border border-slate-200"><div class="font-medium text-slate-800 mb-3">データベースの構造</div><div class="overflow-x-auto"><table class="w-full border-collapse bg-white"><thead><tr class="bg-blue-100"><th class="border border-slate-300 p-2 text-sm font-medium">ID</th><th class="border border-slate-300 p-2 text-sm font-medium">名前</th><th class="border border-slate-300 p-2 text-sm font-medium">メール</th><th class="border border-slate-300 p-2 text-sm font-medium">登録日</th></tr></thead><tbody><tr><td class="border border-slate-300 p-2 text-sm">1</td><td class="border border-slate-300 p-2 text-sm">田中太郎</td><td class="border border-slate-300 p-2 text-sm"><a class="text-slate-600 dark:text-slate-400 underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="mailto:tanaka@example.com">tanaka@example.com</a></td><td class="border border-slate-300 p-2 text-sm">2025-01-15</td></tr><tr class="bg-slate-50"><td class="border border-slate-300 p-2 text-sm">2</td><td class="border border-slate-300 p-2 text-sm">佐藤花子</td><td class="border border-slate-300 p-2 text-sm"><a class="text-slate-600 dark:text-slate-400 underline underline-offset-2 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="mailto:sato@example.com">sato@example.com</a></td><td class="border border-slate-300 p-2 text-sm">2025-01-16</td></tr></tbody></table></div><div class="grid grid-cols-2 gap-4 mt-4"><div class="text-sm"><div class="font-medium text-blue-700">縦方向（列・フィールド）</div><div class="text-slate-600">ID、名前、メールなどの項目</div></div><div class="text-sm"><div class="font-medium text-green-700">横方向（行・レコード）</div><div class="text-slate-600">1人分のデータセット</div></div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本用語：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">テーブル</strong>: データを格納する表</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">行（レコード）</strong>: 1件分のデータ（横方向）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">列（フィールド）</strong>: データの項目（縦方向）</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データベース管理システム（DBMS）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">DBMS（Database Management System）</strong> は、データベースを操作・管理するためのシステム</p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div><div class="font-medium text-slate-800">利用者（PHPアプリケーション）</div><div class="text-sm text-slate-600">SQL文でデータベースに命令を送信</div></div></div><div class="flex items-center justify-center"><div class="w-6 h-6 text-slate-400"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></div></div><div class="flex items-start p-3 bg-blue-50 rounded border border-blue-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div><div class="font-medium text-slate-800">DBMS（MySQL/MariaDB）</div><div class="text-sm text-slate-600">SQL文を解釈してデータベースを操作</div></div></div><div class="flex items-center justify-center"><div class="w-6 h-6 text-slate-400"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></div></div><div class="flex items-start p-3 bg-green-50 rounded border border-green-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg></div><div><div class="font-medium text-slate-800">データベース</div><div class="text-sm text-slate-600">実際のデータが保存される場所</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">RDBMS（Relational Database Management System）</strong> は、リレーショナルデータベース専用の管理システム</p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">MySQL/MariaDBについて：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">MySQL</strong>: 世界で最も人気のあるRDBMSの一つ</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">MariaDB</strong>: MySQLから派生した互換性のあるRDBMS</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">XAMPP</strong>: MariaDBがプリインストール（MySQLとほぼ同じ操作感）</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">SQLとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">SQL（Structured Query Language）</strong> は、RDBMSを操作するための専用言語</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">SQLでできること：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">CREATE</strong>: データベース・テーブルの作成</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">INSERT</strong>: データの登録</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">SELECT</strong>: データの取得・検索</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">UPDATE</strong>: データの更新</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">DELETE</strong>: データの削除</li>
+</ul><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">標準化された言語</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">SQLは国際標準（ISO）として規格化されているため、MySQL、PostgreSQL、SQLiteなど、どのRDBMSでも基本的な文法は共通</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">phpMyAdminとデータベース作成</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">phpMyAdminとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">phpMyAdmin</strong> は、WebブラウザからMySQLを操作・管理できるWebアプリケーション</p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-blue-50 rounded border border-blue-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-blue-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div class="font-medium text-blue-800">通常の操作（コマンドライン）</div></div><div class="text-sm text-blue-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>方法:</strong> ターミナルでSQL文を直接実行<br/>
+<strong>難易度:</strong> 高い<br/>
+<strong>対象:</strong> 上級者向け</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg></div><div class="font-medium text-green-800">phpMyAdmin（GUI）</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>方法:</strong> Webブラウザの操作画面<br/>
+<strong>難易度:</strong> 低い<br/>
+<strong>対象:</strong> 初心者にも優しい</p></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">アクセス方法：</strong></p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">http://localhost/dashboard/</code> → phpMyAdminをクリック</li>
+<li class="relative ml-2">直接アクセス: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">http://localhost/phpmyadmin/</code></li>
+</ol><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">日本語設定</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">英語表示の場合は、Language設定から「日本語 - Japanese」を選択</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回作成するデータベース構造</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">アンケートシステム用のデータベースを作成します：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-4"><div class="p-4 bg-slate-50 rounded border border-slate-200"><div class="font-medium text-slate-800 mb-2">データベース設計</div><div class="grid grid-cols-2 gap-4 text-sm"><div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>データベース名:</strong> <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_db</code></p></div><div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>テーブル名:</strong> <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_an_table</code></p></div></div></div><div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="bg-slate-100"><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">フィールド名</th><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">データ型</th><th class="p-3 text-left font-medium text-slate-800 border border-slate-200">役割</th></tr></thead><tbody><tr class="bg-white"><td class="p-3 font-mono text-blue-600 border border-slate-200">id</td><td class="p-3 text-slate-700 border border-slate-200">int(12) AUTO_INCREMENT PRIMARY_KEY</td><td class="p-3 text-sm text-slate-600 border border-slate-200">一意のID（自動採番）</td></tr><tr class="bg-slate-50"><td class="p-3 font-mono text-blue-600 border border-slate-200">name</td><td class="p-3 text-slate-700 border border-slate-200">varchar(64)</td><td class="p-3 text-sm text-slate-600 border border-slate-200">回答者の名前</td></tr><tr class="bg-white"><td class="p-3 font-mono text-blue-600 border border-slate-200">email</td><td class="p-3 text-slate-700 border border-slate-200">varchar(256)</td><td class="p-3 text-sm text-slate-600 border border-slate-200">メールアドレス</td></tr><tr class="bg-slate-50"><td class="p-3 font-mono text-blue-600 border border-slate-200">naiyou</td><td class="p-3 text-slate-700 border border-slate-200">text</td><td class="p-3 text-sm text-slate-600 border border-slate-200">アンケート内容</td></tr><tr class="bg-white"><td class="p-3 font-mono text-blue-600 border border-slate-200">indate</td><td class="p-3 text-slate-700 border border-slate-200">datetime</td><td class="p-3 text-sm text-slate-600 border border-slate-200">登録日時</td></tr></tbody></table></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データベースの作成手順</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">1. データベース作成：</strong></p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2">phpMyAdminにアクセス</li>
+<li class="relative ml-2">左サイドバーの「新規作成」をクリック</li>
+<li class="relative ml-2">以下の設定でデータベースを作成：<!-- -->
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">データベース名</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_db</code></li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">照合順序</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">utf8mb4_unicode_ci</code></li>
+</ul>
+</li>
+</ol><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">注意点</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">データベース名 <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_db</code> の後ろに半角スペースが入らないよう注意！
+過去にスペースが原因で動作しないケースがあった</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">2. テーブル作成：</strong></p><ol class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-decimal">
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_db</code> データベースが選択されていることを確認</p>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">以下を入力して「作成」をクリック：</p>
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">テーブル名</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">gs_an_table</code></li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">カラム数</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">5</code></li>
+</ul>
+</li>
+<li class="relative ml-2">
+<p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">各カラムの詳細設定：</p>
+</li>
+</ol><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- SQL文で表現すると以下のようになります
+CREATE TABLE gs_an_table (
+    id int(12) NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    name varchar(64) NOT NULL,
+    email varchar(256) NOT NULL,
+    naiyou text DEFAULT NULL,
+    indate datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">照合順序（Collation）について</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">照合順序</strong>は、データの並び替えや比較のルールを決める設定</p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="p-3 bg-slate-50 rounded border border-slate-200"><div class="font-medium text-slate-800 mb-2">主要な照合順序の比較</div><div class="space-y-3 text-sm"><div class="p-2 bg-blue-50 rounded"><div class="font-medium text-blue-800">utf8mb4_general_ci</div><div class="text-blue-700">A = a（区別しない）、🍣 = 🍺（区別しない）、は ≠ ぱ ≠ ば（区別する）</div></div><div class="p-2 bg-green-50 rounded"><div class="font-medium text-green-800">utf8mb4_unicode_ci</div><div class="text-green-700">A = a（区別しない）、🍣 = 🍺（区別しない）、は = ぱ = ば（区別しない）</div></div><div class="p-2 bg-orange-50 rounded"><div class="font-medium text-orange-800">utf8mb4_unicode_520_ci</div><div class="text-orange-700">A = a（区別しない）、🍣 ≠ 🍺（区別する）、は = ぱ = ば（区別しない）</div></div><div class="p-2 bg-red-50 rounded"><div class="font-medium text-red-800">utf8mb4_bin</div><div class="text-red-700">A ≠ a（区別する）、🍣 ≠ 🍺（区別する）、は ≠ ぱ ≠ ば（区別する）</div></div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">用語解説：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">utf8 vs utf8mb4</strong>: 最大バイト数の違い（3バイト vs 4バイト）<!-- -->
+<ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">utf8mb4は絵文字や特殊文字も表現可能</li>
+</ul>
+</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">ci (Case Insensitive)</strong>: 大文字小文字を区別しない</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">bin (Binary)</strong>: バイナリ比較（完全一致のみ）</li>
+</ul><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">推奨設定</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">一般的なWebアプリケーションでは <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">utf8mb4_unicode_ci</code> がおすすめ。
+日本語の処理が適切で、絵文字にも対応</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">CREATE（データ登録）処理</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">SQLの基本ルール</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">コメントの書き方：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- これはコメントです
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">文字列の書き方：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- シングルクォーテーション（&#x27;）を使用
+INSERT INTO users (name) VALUES (&#x27;田中太郎&#x27;);
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">クォーテーションの使い分け</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">SQL</strong>: シングルクォーテーション（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code>）を使用</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">PHP</strong>: ダブルクォーテーション（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&quot;</code>）またはシングルクォーテーション（<code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">&#x27;</code>）</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">混同しないよう注意！</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">INSERT（データ登録）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本構文：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">INSERT INTO テーブル名 (カラムA, カラムB, ...) VALUES (値1, 値2, ...);
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">実際の例：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">INSERT INTO gs_an_table(name, email, naiyou, indate) 
+VALUES (&#x27;どんぶラッコ&#x27;, &#x27;rakko@example.com&#x27;, &#x27;内容テスト&#x27;, sysdate());
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ポイント：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">id</code> は <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">AUTO_INCREMENT</code> なので指定不要（自動で連番が振られる）</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">sysdate()</code> は現在時刻を取得するSQL関数</li>
+<li class="relative ml-2">複数のデータを一度に登録することも可能</li>
+</ul><div class="my-6 "><div class="infographic-content"><div class="p-4 bg-slate-50 rounded border border-slate-200"><div class="font-medium text-slate-800 mb-3">INSERTの流れ</div><div class="space-y-2 text-sm"><div class="flex items-center"><div class="w-4 h-4 bg-blue-500 rounded-full mr-3"></div><div><strong>1.</strong> テーブル名を指定（gs_an_table）</div></div><div class="flex items-center"><div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div><div><strong>2.</strong> 挿入するカラムを指定（name, email, naiyou, indate）</div></div><div class="flex items-center"><div class="w-4 h-4 bg-orange-500 rounded-full mr-3"></div><div><strong>3.</strong> 対応する値を指定（VALUES以下）</div></div><div class="flex items-center"><div class="w-4 h-4 bg-purple-500 rounded-full mr-3"></div><div><strong>4.</strong> 実行されてデータがテーブルに追加される</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">複数データの登録：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">INSERT INTO gs_an_table(name, email, naiyou, indate) VALUES 
+(&#x27;田中太郎&#x27;, &#x27;tanaka@example.com&#x27;, &#x27;とても良いサービスです&#x27;, sysdate()),
+(&#x27;佐藤花子&#x27;, &#x27;sato@example.com&#x27;, &#x27;改善の余地があります&#x27;, sysdate()),
+(&#x27;山田次郎&#x27;, &#x27;yamada@example.com&#x27;, &#x27;満足しています&#x27;, sysdate());
+</code></pre></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">READ（データ取得）処理</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">SELECT（データ取得）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本構文：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">SELECT カラム名 FROM テーブル名;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">様々な取得方法：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- 全件・全カラム取得
+SELECT * FROM gs_an_table;
+
+-- 特定カラムのみ取得
+SELECT name FROM gs_an_table;
+SELECT name, email FROM gs_an_table;
+
+-- 条件指定
+SELECT * FROM gs_an_table WHERE id = 1;
+SELECT * FROM gs_an_table WHERE name = &#x27;どんぶラッコ&#x27;;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">*（アスタリスク）の意味</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">*</code> は「全てのカラム」を意味する。開発時は便利だが、本番環境では必要なカラムのみ指定することでパフォーマンスが向上する</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">条件指定・検索（WHERE句）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">比較演算子：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- 数値比較
+SELECT * FROM gs_an_table WHERE id = 1;       -- 等しい
+SELECT * FROM gs_an_table WHERE id &gt;= 3;      -- 以上
+SELECT * FROM gs_an_table WHERE id &lt; 5;       -- 未満
+SELECT * FROM gs_an_table WHERE id != 2;      -- 等しくない
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">論理演算子：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- AND（かつ）
+SELECT * FROM gs_an_table WHERE id &gt;= 1 AND id &lt;= 3;
+
+-- OR（または）
+SELECT * FROM gs_an_table WHERE id = 1 OR id = 5;
+
+-- NOT（否定）
+SELECT * FROM gs_an_table WHERE NOT name = &#x27;どんぶラッコ&#x27;;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">あいまい検索（LIKE句）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- 前方一致：「2022-06」で始まる
+SELECT * FROM gs_an_table WHERE indate LIKE &#x27;2022-06%&#x27;;
+
+-- 後方一致：「@gmail.com」で終わる  
+SELECT * FROM gs_an_table WHERE email LIKE &#x27;%@gmail.com&#x27;;
+
+-- 部分一致：「@」を含む
+SELECT * FROM gs_an_table WHERE email LIKE &#x27;%@%&#x27;;
+
+-- 特定文字数：「田中」の後に1文字
+SELECT * FROM gs_an_table WHERE name LIKE &#x27;田中_&#x27;;
+</code></pre></div></div><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="p-3 bg-blue-50 rounded border border-blue-200"><div class="font-medium text-blue-800">LIKE演算子のワイルドカード</div><div class="mt-2 space-y-1 text-sm text-blue-700"><div><strong>%</strong> : 0文字以上の任意の文字列</div><div><strong>_</strong> : 1文字の任意の文字</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">ソート・制限（ORDER BY・LIMIT）</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ソート（ORDER BY）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- 昇順（ASC）- 小さい順
+SELECT * FROM gs_an_table ORDER BY id ASC;
+
+-- 降順（DESC）- 大きい順  
+SELECT * FROM gs_an_table ORDER BY id DESC;
+
+-- 複数カラムでソート
+SELECT * FROM gs_an_table ORDER BY indate DESC, name ASC;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">取得件数制限（LIMIT）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- 最新5件取得
+SELECT * FROM gs_an_table ORDER BY indate DESC LIMIT 5;
+
+-- 3番目から5件取得（ページネーション）
+SELECT * FROM gs_an_table ORDER BY id ASC LIMIT 2, 5;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">実用例（最新投稿の取得）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- ブログの最新記事10件
+SELECT * FROM articles 
+ORDER BY created_at DESC 
+LIMIT 10;
+
+-- ランキング上位3位
+SELECT * FROM scores 
+ORDER BY score DESC 
+LIMIT 3;
+</code></pre></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">PDOによるデータベース接続</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">PDOとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">PDO（PHP Data Objects）</strong> は、PHPからデータベースに接続するためのクラス</p><div class="my-6 "><div class="infographic-content"><div class="space-y-4"><div class="text-center"><div class="inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4"><div class="w-8 h-8 text-slate-600"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></div></div><div class="font-medium text-slate-800 mb-2">PDOの役割</div><div class="text-sm text-slate-600 max-w-md mx-auto"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">PHPアプリケーションとデータベースの橋渡し役</p></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="p-3 bg-blue-50 rounded border border-blue-200"><div class="font-medium text-blue-800">1. 接続</div><div class="text-sm text-blue-700">データベースへの接続を確立</div></div><div class="p-3 bg-green-50 rounded border border-green-200"><div class="font-medium text-green-800">2. 実行</div><div class="text-sm text-green-700">SQL文を安全に実行</div></div><div class="p-3 bg-orange-50 rounded border border-orange-200"><div class="font-medium text-orange-800">3. 結果</div><div class="text-sm text-orange-700">データの取得・操作結果を返却</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">PDOの利点：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">セキュリティ</strong>: SQLインジェクション対策</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">汎用性</strong>: 複数のデータベース（MySQL、PostgreSQL、SQLiteなど）に対応</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">オブジェクト指向</strong>: クラスベースの操作</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本的な使い方：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// PDOインスタンスの作成
+$pdo = new PDO(&#x27;mysql:dbname=gs_db;charset=utf8;host=localhost&#x27;, &#x27;root&#x27;, &#x27;&#x27;);
+</code></pre></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データ登録機能の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">1. フォーム（index.php）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-html !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-html">&lt;form method=&quot;post&quot; action=&quot;insert.php&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;お名前:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required&gt;
+    
+    &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; required&gt;
+    
+    &lt;label for=&quot;naiyou&quot;&gt;ご意見:&lt;/label&gt;
+    &lt;textarea name=&quot;naiyou&quot; id=&quot;naiyou&quot; required&gt;&lt;/textarea&gt;
+    
+    &lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;
+&lt;/form&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">2. 登録処理（insert.php）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 1. POSTデータ取得
+$name = $_POST[&#x27;name&#x27;];
+$email = $_POST[&#x27;email&#x27;];
+$naiyou = $_POST[&#x27;naiyou&#x27;];
+
+// 2. データベース接続
+try {
+    // XAMPP環境での接続設定
+    $pdo = new PDO(&#x27;mysql:dbname=gs_db;charset=utf8;host=localhost&#x27;, &#x27;root&#x27;, &#x27;&#x27;);
+} catch (PDOException $e) {
+    exit(&#x27;DBConnection Error:&#x27; . $e-&gt;getMessage());
+}
+
+// 3. SQL文の準備と実行
+$sql = &quot;INSERT INTO gs_an_table(name, email, naiyou, indate) VALUES(:name, :email, :naiyou, sysdate())&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+
+// パラメータバインド（セキュリティ対策）
+$stmt-&gt;bindValue(&#x27;:name&#x27;, $name, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:email&#x27;, $email, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:naiyou&#x27;, $naiyou, PDO::PARAM_STR);
+
+$status = $stmt-&gt;execute();
+
+// 4. 処理結果の判定
+if ($status == false) {
+    // エラー処理
+    $error = $stmt-&gt;errorInfo();
+    exit(&quot;SQL_Error:&quot; . $error[2]);
+} else {
+    // 成功時はリダイレクト
+    header(&quot;Location: index.php&quot;);
+    exit();
+}
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">パスワード設定について</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">XAMPP</strong>: パスワードは空文字（&#x27;&#x27;）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">MAMP</strong>: パスワードは &#x27;root&#x27;</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">環境に応じて適切な設定を使用する</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データ一覧表示機能の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">select.php（一覧表示）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+require_once(&#x27;funcs.php&#x27;); // XSS対策関数を読み込み
+
+// 1. データベース接続
+try {
+    $pdo = new PDO(&#x27;mysql:dbname=gs_db;charset=utf8;host=localhost&#x27;, &#x27;root&#x27;, &#x27;&#x27;);
+} catch (PDOException $e) {
+    exit(&#x27;DBConnection Error:&#x27; . $e-&gt;getMessage());
+}
+
+// 2. データ取得SQL実行
+$sql = &quot;SELECT * FROM gs_an_table ORDER BY indate DESC&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$status = $stmt-&gt;execute();
+
+// 3. データ表示の準備
+$view = &quot;&quot;;
+if ($status == false) {
+    // エラー処理
+    $error = $stmt-&gt;errorInfo();
+    exit(&quot;SQL_Error:&quot; . $error[2]);
+} else {
+    // データの取得と表示用HTML生成
+    while ($res = $stmt-&gt;fetch(PDO::FETCH_ASSOC)) {
+        $view .= &#x27;&lt;div class=&quot;record&quot;&gt;&#x27;;
+        $view .= &#x27;&lt;h3&gt;&#x27; . h($res[&#x27;name&#x27;]) . &#x27;&lt;/h3&gt;&#x27;;
+        $view .= &#x27;&lt;p&gt;Email: &#x27; . h($res[&#x27;email&#x27;]) . &#x27;&lt;/p&gt;&#x27;;
+        $view .= &#x27;&lt;p&gt;内容: &#x27; . h($res[&#x27;naiyou&#x27;]) . &#x27;&lt;/p&gt;&#x27;;
+        $view .= &#x27;&lt;p&gt;投稿日: &#x27; . h($res[&#x27;indate&#x27;]) . &#x27;&lt;/p&gt;&#x27;;
+        $view .= &#x27;&lt;/div&gt;&#x27;;
+    }
+}
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;アンケート結果一覧&lt;/title&gt;
+    &lt;style&gt;
+        .record { 
+            border: 1px solid #ddd; 
+            margin: 10px; 
+            padding: 15px; 
+            border-radius: 5px; 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;アンケート結果一覧&lt;/h1&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;?= $view ?&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;index.php&quot;&gt;新規登録&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">重要なポイント：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-blue-50 rounded border border-blue-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><div class="text-lg font-bold">1</div></div><div><div class="font-medium text-slate-800">FETCH_ASSOC</div><div class="text-sm text-slate-600">連想配列でデータを取得（カラム名で指定可能）</div></div></div><div class="flex items-start p-3 bg-green-50 rounded border border-green-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><div class="text-lg font-bold">2</div></div><div><div class="font-medium text-slate-800">while文でループ</div><div class="text-sm text-slate-600">取得したデータの件数分だけ自動でループ</div></div></div><div class="flex items-start p-3 bg-orange-50 rounded border border-orange-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><div class="text-lg font-bold">3</div></div><div><div class="font-medium text-slate-800">h()関数でXSS対策</div><div class="text-sm text-slate-600">ユーザー入力データを安全に表示</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">funcs.php（共通関数）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+function h($value) {
+    return htmlspecialchars($value, ENT_QUOTES, &#x27;UTF-8&#x27;);
+}
+?&gt;
+</code></pre></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">セキュリティ対策</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">SQLインジェクションとは</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">SQLインジェクション</strong> は、悪意あるSQL文を注入してデータベースを不正操作する攻撃手法</p><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">非常に危険な脆弱性</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">SQLインジェクションが成功すると：</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2">全データの漏洩・削除</li>
+<li class="relative ml-2">管理者権限の取得</li>
+<li class="relative ml-2">システム全体の乗っ取り
+など、致命的な被害を受ける可能性がある</li>
+</ul></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">危険なコード例：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// 危険！bindを使わない方法
+$id = $_POST[&#x27;id&#x27;];
+$sql = &quot;SELECT * FROM gs_an_table WHERE id=&quot; . $id;
+$stmt = $pdo-&gt;prepare($sql);
+$status = $stmt-&gt;execute();
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">攻撃例：</strong>
+フォームに <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">1 OR &#x27;a&#x27; = &#x27;a&#x27;</code> と入力すると：</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">SELECT * FROM gs_an_table WHERE id=1 OR &#x27;a&#x27; = &#x27;a&#x27;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">この条件式は常に真になるため、全てのデータが取得されてしまう</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">bindValue()による対策</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">安全なコード（推奨）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// bindValueを使用
+$id = $_POST[&#x27;id&#x27;];
+$sql = &quot;SELECT * FROM gs_an_table WHERE id=:id&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">bindValue()の仕組み：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-4"><div class="p-4 bg-green-50 rounded border border-green-200"><div class="font-medium text-green-800 mb-3">プリペアドステートメントの動作</div><div class="space-y-2 text-sm text-green-700"><div class="flex items-center"><div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div><div><strong>1.</strong> SQL文をテンプレートとして準備（プレースホルダー :id を使用）</div></div><div class="flex items-center"><div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div><div><strong>2.</strong> パラメータを安全な形式に変換</div></div><div class="flex items-center"><div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div><div><strong>3.</strong> SQL文の構造を変更せずに値のみを挿入</div></div><div class="flex items-center"><div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div><div><strong>4.</strong> 悪意あるSQL文が実行されることを防ぐ</div></div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">パラメータの種類：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// 文字列
+$stmt-&gt;bindValue(&#x27;:name&#x27;, $name, PDO::PARAM_STR);
+
+// 整数
+$stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+
+// 真偽値
+$stmt-&gt;bindValue(&#x27;:is_active&#x27;, $isActive, PDO::PARAM_BOOL);
+
+// NULL値
+$stmt-&gt;bindValue(&#x27;:comment&#x27;, $comment, PDO::PARAM_NULL);
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">必ず守るべきルール</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ユーザーからの入力を含むSQL文では、必ずbindValue()を使用する！</strong></p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これは絶対に守るべきセキュリティの基本</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">SQLインジェクション攻撃の実例と対策</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">攻撃シナリオの検証：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// 検証用コード（学習目的のみ・本番では使用禁止）
+&lt;?php
+$view = &#x27;&#x27;;
+
+if ($_SERVER[&quot;REQUEST_METHOD&quot;] === &quot;POST&quot;) {
+    $id = $_POST[&#x27;id&#x27;];
+    
+    try {
+        $pdo = new PDO(&#x27;mysql:dbname=gs_db;charset=utf8;host=localhost&#x27;, &#x27;root&#x27;, &#x27;&#x27;);
+    } catch (PDOException $e) {
+        exit(&#x27;DBConnection Error:&#x27; . $e-&gt;getMessage());
+    }
+    
+    // ❌ 危険な方法
+    $sql = &quot;SELECT * FROM gs_an_table WHERE id=&quot; . $id;
+    echo &quot;実行されるSQL: &quot; . $sql . &quot;&lt;br&gt;&lt;br&gt;&quot;;
+    
+    $stmt = $pdo-&gt;prepare($sql);
+    $status = $stmt-&gt;execute();
+    
+    if ($status == false) {
+        $error = $stmt-&gt;errorInfo();
+        exit(&quot;SQL_Error:&quot; . $error[2]);
+    } else {
+        while ($res = $stmt-&gt;fetch(PDO::FETCH_ASSOC)) {
+            $view .= &#x27;&lt;p&gt;ID: &#x27; . $res[&#x27;id&#x27;] . &#x27;, 名前: &#x27; . $res[&#x27;name&#x27;] . &#x27;&lt;/p&gt;&#x27;;
+        }
+    }
+}
+?&gt;
+
+&lt;form method=&quot;post&quot;&gt;
+    ID: &lt;input type=&quot;text&quot; name=&quot;id&quot; placeholder=&quot;1 OR &#x27;a&#x27; = &#x27;a&#x27; を試してみてください&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;検索&quot;&gt;
+&lt;/form&gt;
+
+&lt;div&gt;
+    &lt;h3&gt;結果:&lt;/h3&gt;
+    &lt;?= $view ?&gt;
+&lt;/div&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">対策版（安全なコード）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// ✅ 安全な方法
+$sql = &quot;SELECT * FROM gs_an_table WHERE id=:id&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">検証結果の比較：</strong></p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-red-50 rounded border border-red-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-red-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="font-medium text-red-800">危険なコード</div></div><div class="text-sm text-red-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>入力:</strong> <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">1 OR &#x27;a&#x27; = &#x27;a&#x27;</code><br/>
+<strong>結果:</strong> 全てのデータが取得される<br/>
+<strong>リスク:</strong> データ漏洩、不正操作</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="font-medium text-green-800">安全なコード</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>入力:</strong> <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">1 OR &#x27;a&#x27; = &#x27;a&#x27;</code><br/>
+<strong>結果:</strong> エラーまたは該当なし<br/>
+<strong>利点:</strong> 攻撃を無効化</p></div></div></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">関数化によるコード改善</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">なぜ関数化が重要なのか？</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">現在のコードには<strong class="font-semibold text-slate-900 dark:text-slate-100">同じような処理が繰り返し</strong>書かれている。これを関数化することで：</p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-red-50 rounded border border-red-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-red-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="font-medium text-red-800">関数化前の問題</div></div><div class="text-sm text-red-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>コードの重複:</strong> DB接続処理が各ファイルに散在<br/>
+<strong>保守性の悪化:</strong> 修正時に複数箇所を変更<br/>
+<strong>可読性の低下:</strong> 本質的でない処理が混在<br/>
+<strong>エラー処理:</strong> 統一されていない</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="font-medium text-green-800">関数化後の利点</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>再利用性:</strong> 一度書けば何度でも使用可能<br/>
+<strong>保守性:</strong> 修正は関数内の1箇所のみ<br/>
+<strong>可読性:</strong> メイン処理に集中できる<br/>
+<strong>テスト:</strong> 関数単位でのテストが容易</p></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">DRY原則（Don&#x27;t Repeat Yourself）</strong>
+同じコードを繰り返し書くことを避け、一箇所に集約する設計原則</p></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">データベース接続関数の作成</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">funcs.php</code> に <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">db_conn()</code> 関数を追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+function h($value) {
+    return htmlspecialchars($value, ENT_QUOTES, &#x27;UTF-8&#x27;);
+}
+
+function db_conn() {
+    try {
+        // localhost環境の設定
+        $db_name = &quot;gs_db&quot;;         // データベース名
+        $db_id   = &quot;root&quot;;          // アカウント名
+        $db_pw   = &quot;&quot;;              // パスワード（MAMP の場合は &quot;root&quot;）
+        $db_host = &quot;localhost&quot;;     // DBホスト
+        
+        // 本番環境用の設定（さくらサーバーなど）
+        if ($_SERVER[&quot;HTTP_HOST&quot;] != &#x27;localhost&#x27;) {
+            $db_name = &quot;your_db_name&quot;;     // 本番環境のDB名
+            $db_id   = &quot;your_db_user&quot;;     // 本番環境のユーザー名
+            $db_pw   = &quot;your_db_password&quot;; // 本番環境のパスワード
+            $db_host = &quot;your_db_host&quot;;     // 本番環境のホスト
+        }
+        
+        return new PDO(&#x27;mysql:dbname=&#x27; . $db_name . &#x27;;charset=utf8;host=&#x27; . $db_host, $db_id, $db_pw);
+    } catch (PDOException $e) {
+        exit(&#x27;DB Connection Error:&#x27; . $e-&gt;getMessage());
+    }
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">関数の特徴：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-blue-50 rounded border border-blue-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><div class="text-lg font-bold">1</div></div><div><div class="font-medium text-slate-800">環境自動判定</div><div class="text-sm text-slate-600">localhost と本番環境を自動で切り替え</div></div></div><div class="flex items-start p-3 bg-green-50 rounded border border-green-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><div class="text-lg font-bold">2</div></div><div><div class="font-medium text-slate-800">エラーハンドリング</div><div class="text-sm text-slate-600">接続エラー時は適切なメッセージで終了</div></div></div><div class="flex items-start p-3 bg-orange-50 rounded border border-orange-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><div class="text-lg font-bold">3</div></div><div><div class="font-medium text-slate-800">PDOオブジェクト返却</div><div class="text-sm text-slate-600">すぐに使用可能な接続オブジェクトを返す</div></div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">既存ファイルの書き換え（insert.php）：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 古いコード（削除）
+/*
+try {
+    $pdo = new PDO(&#x27;mysql:dbname=gs_db;charset=utf8;host=localhost&#x27;, &#x27;root&#x27;, &#x27;&#x27;);
+} catch (PDOException $e) {
+    exit(&#x27;DBConnection Error:&#x27; . $e-&gt;getMessage());
+}
+*/
+
+// 新しいコード
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">コードの簡潔性</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">Before</strong>: 6行のDB接続コード
+<strong class="font-semibold text-slate-900 dark:text-slate-100">After</strong>: 2行で同じ機能</p><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これで保守性と可読性が大幅に向上！</p></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">エラー処理・リダイレクト関数の作成</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">SQLエラー関数の作成：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// SQLエラー関数：sql_error($stmt)
+function sql_error($stmt) {
+    $error = $stmt-&gt;errorInfo();
+    exit(&quot;SQLError:&quot; . $error[2]);
+}
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">リダイレクト関数の作成：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">// リダイレクト関数: redirect($file_name)
+function redirect($file_name) {
+    header(&quot;Location: &quot; . $file_name);
+    exit();
+}
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">insert.php の改善：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 1. POSTデータ取得
+$name = $_POST[&#x27;name&#x27;];
+$email = $_POST[&#x27;email&#x27;];
+$naiyou = $_POST[&#x27;naiyou&#x27;];
+
+// 2. DB接続
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+// 3. SQL実行
+$sql = &quot;INSERT INTO gs_an_table(name, email, naiyou, indate) VALUES(:name, :email, :naiyou, sysdate())&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:name&#x27;, $name, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:email&#x27;, $email, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:naiyou&#x27;, $naiyou, PDO::PARAM_STR);
+$status = $stmt-&gt;execute();
+
+// 4. 結果判定（改善後）
+if ($status == false) {
+    sql_error($stmt);     // 関数化
+} else {
+    redirect(&quot;index.php&quot;); // 関数化
+}
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div class="my-6 p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-emerald-800 dark:text-emerald-200">関数化の効果</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">エラー処理の統一</strong>: 全ファイルで同じエラー表示
+<strong class="font-semibold text-slate-900 dark:text-slate-100">リダイレクトの簡素化</strong>: 1行でページ遷移
+<strong class="font-semibold text-slate-900 dark:text-slate-100">保守性の向上</strong>: エラーメッセージ形式の変更が容易</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">UPDATE（データ更新）処理</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">更新処理の流れ</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">データの更新は以下の手順で行う：</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">各ステップの詳細：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><div class="text-lg font-bold">1</div></div><div><div class="font-medium text-slate-800">一覧画面（select.php）</div><div class="text-sm text-slate-600">編集リンクにIDパラメータを付与</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><div class="text-lg font-bold">2</div></div><div><div class="font-medium text-slate-800">詳細画面（detail.php）</div><div class="text-sm text-slate-600">IDでデータ取得し、フォームに表示</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><div class="text-lg font-bold">3</div></div><div><div class="font-medium text-slate-800">更新処理（update.php）</div><div class="text-sm text-slate-600">UPDATE SQLでデータベースを更新</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">UPDATE SQL文の基本</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本構文：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">UPDATE テーブル名 SET 列名1=値1, 列名2=値2, ... WHERE id=対象のID
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">具体例：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">UPDATE gs_an_table 
+SET name=&#x27;田中太郎&#x27;, email=&#x27;tanaka@example.com&#x27;, naiyou=&#x27;更新されました&#x27; 
+WHERE id=1;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">WHERE句を忘れるな！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">WHERE句を書き忘れると、テーブルの全データが更新されてしまう！</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- ❌ 危険！全データが更新される
+UPDATE gs_an_table SET name=&#x27;全員の名前が変わる&#x27;;
+
+-- ✅ 安全！特定のIDのみ更新
+UPDATE gs_an_table SET name=&#x27;田中太郎&#x27; WHERE id=1;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">この原則はDELETE文でも同様。必ずWHERE句で対象を限定する</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">UPDATEとINSERTの違い：</strong></p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-blue-50 rounded border border-blue-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-blue-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg></div><div class="font-medium text-blue-800">INSERT（新規作成）</div></div><div class="text-sm text-blue-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>目的:</strong> 新しいレコードを追加<br/>
+<strong>条件:</strong> WHERE句不要<br/>
+<strong>結果:</strong> レコード数が増える</p></div></div><div class="p-4 bg-green-50 rounded border border-green-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-green-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="font-medium text-green-800">UPDATE（更新）</div></div><div class="text-sm text-green-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>目的:</strong> 既存レコードを変更<br/>
+<strong>条件:</strong> WHERE句必須<br/>
+<strong>結果:</strong> レコード数は変わらない</p></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">select.php に編集リンクを追加</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">一覧画面に編集リンクを追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_an_table ORDER BY indate DESC&quot;);
+$status = $stmt-&gt;execute();
+
+$view = &quot;&quot;;
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    while ($r = $stmt-&gt;fetch(PDO::FETCH_ASSOC)) {
+        // 編集リンクを追加（IDをGETパラメータで渡す）
+        $view .= &#x27;&lt;div class=&quot;record&quot;&gt;&#x27;;
+        $view .= &#x27;&lt;a href=&quot;detail.php?id=&#x27; . h($r[&quot;id&quot;]) . &#x27;&quot;&gt;&#x27;;
+        $view .= h($r[&quot;id&quot;]) . &quot; | &quot; . h($r[&quot;name&quot;]) . &quot; | &quot; . h($r[&quot;email&quot;]);
+        $view .= &#x27;&lt;/a&gt;&#x27;;
+        $view .= &#x27;&lt;/div&gt;&#x27;;
+    }
+}
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;アンケート一覧&lt;/title&gt;
+    &lt;style&gt;
+        .record { 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            margin: 5px; 
+            border-radius: 3px; 
+        }
+        .record a { 
+            text-decoration: none; 
+            color: #333; 
+        }
+        .record:hover { 
+            background-color: #f0f0f0; 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;アンケート一覧&lt;/h1&gt;
+    &lt;?= $view ?&gt;
+    &lt;a href=&quot;index.php&quot;&gt;新規登録&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">重要なポイント：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">?id=</code> でIDパラメータをURL に付与</li>
+<li class="relative ml-2"><code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">h()</code> 関数でIDも必ずエスケープ</li>
+<li class="relative ml-2">CSSでホバー効果を追加して視認性向上</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">detail.php（詳細・編集画面）の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">IDでデータを取得してフォームに表示：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// IDパラメータの取得
+$id = $_GET[&quot;id&quot;];
+
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+// 特定IDのデータを取得
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_an_table WHERE id=:id&quot;);
+$stmt-&gt;bindValue(&quot;:id&quot;, $id, PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    $row = $stmt-&gt;fetch(); // 1件のみ取得
+}
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;アンケート編集&lt;/title&gt;
+    &lt;style&gt;
+        .form-group { margin: 15px 0; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type=&quot;text&quot;], input[type=&quot;email&quot;], textarea { 
+            width: 100%; 
+            padding: 8px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+        }
+        textarea { height: 100px; resize: vertical; }
+        input[type=&quot;submit&quot;] { 
+            background: #007cba; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+        }
+        input[type=&quot;submit&quot;]:hover { background: #005a87; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;アンケート編集&lt;/h1&gt;
+    
+    &lt;form method=&quot;POST&quot; action=&quot;update.php&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;name&quot;&gt;名前:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; value=&quot;&lt;?= $row[&quot;name&quot;] ?&gt;&quot; required&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+            &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; value=&quot;&lt;?= $row[&quot;email&quot;] ?&gt;&quot; required&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;naiyou&quot;&gt;内容:&lt;/label&gt;
+            &lt;textarea name=&quot;naiyou&quot; id=&quot;naiyou&quot; required&gt;&lt;?= $row[&quot;naiyou&quot;] ?&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        
+        &lt;!-- 隠しフィールドでIDを送信 --&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;id&quot; value=&quot;&lt;?= $row[&quot;id&quot;] ?&gt;&quot;&gt;
+        
+        &lt;input type=&quot;submit&quot; value=&quot;更新&quot;&gt;
+        &lt;a href=&quot;select.php&quot;&gt;一覧に戻る&lt;/a&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">重要なポイント：</strong></p><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-blue-50 rounded border border-blue-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div><div class="font-medium text-slate-800">fetch() vs fetch_all()</div><div class="text-sm text-slate-600">1件のみの場合は fetch() を使用</div></div></div><div class="flex items-start p-3 bg-green-50 rounded border border-green-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></div><div><div class="font-medium text-slate-800">hidden フィールド</div><div class="text-sm text-slate-600">IDをフォームで見えないように送信</div></div></div><div class="flex items-start p-3 bg-orange-50 rounded border border-orange-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div><div class="font-medium text-slate-800">value属性での初期値設定</div><div class="text-sm text-slate-600">データベースから取得した値を初期値として表示</div></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">update.php（更新処理）の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">更新処理の実装：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 1. POSTデータ取得
+$name   = $_POST[&quot;name&quot;];
+$email  = $_POST[&quot;email&quot;];
+$naiyou = $_POST[&quot;naiyou&quot;];
+$id     = $_POST[&quot;id&quot;];  // 隠しフィールドから取得
+
+// 2. DB接続
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+// 3. UPDATE SQL実行
+$sql = &quot;UPDATE gs_an_table SET name=:name, email=:email, naiyou=:naiyou WHERE id=:id&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:name&#x27;,   $name,   PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:email&#x27;,  $email,  PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:naiyou&#x27;, $naiyou, PDO::PARAM_STR);
+$stmt-&gt;bindValue(&#x27;:id&#x27;,     $id,     PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+
+// 4. 結果判定
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    redirect(&quot;select.php&quot;);
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">UPDATE処理の特徴：</strong></p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><div class="my-6 p-4 rounded-lg border bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-blue-800 dark:text-blue-200">bindValueのデータ型指定</div><div class="text-slate-700 dark:text-slate-300"><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">PDO::PARAM_STR</strong>: 文字列型（name, email, naiyou）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">PDO::PARAM_INT</strong>: 整数型（id）</li>
+</ul><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">適切な型指定により、SQLインジェクション対策がより強固になる</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">DELETE（データ削除）処理</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">削除処理の流れ</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">データの削除は以下の手順で行う：</p><div class="my-6 p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50/30 dark:bg-slate-800/30"><div class="text-center text-slate-500 dark:text-slate-400 text-sm py-4">図表を読み込み中...</div><div class="text-center w-full flex justify-center hidden"></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">削除処理の特徴：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">確認画面なし</strong>: 直接削除（実際のアプリでは確認が必要）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">GET パラメータ</strong>: IDをURLで受け取り</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">即座にリダイレクト</strong>: 削除後は一覧画面へ</li>
+</ul><div class="my-6 p-4 rounded-lg border bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-yellow-800 dark:text-yellow-200">削除処理の注意点</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">今回は学習用のシンプルな実装ですが、実際のアプリケーションでは：</p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">確認ダイアログ</strong>: 「本当に削除しますか？」</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">論理削除</strong>: データを完全に削除せず、フラグで管理</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">権限チェック</strong>: 削除権限があるユーザーかチェック</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">関連データの処理</strong>: 外部キー制約への対応</li>
+</ul></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">DELETE SQL文の基本</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">基本構文：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">DELETE FROM テーブル名 WHERE id=対象のID
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">具体例：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">DELETE FROM gs_an_table WHERE id=1;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-red-800 dark:text-red-200">WHERE句は絶対に忘れるな！</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">UPDATEと同様、<strong class="font-semibold text-slate-900 dark:text-slate-100">WHERE句を忘れると全データが削除</strong>される！</p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-sql !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-sql">-- NG: 全データが削除される
+DELETE FROM gs_an_table;
+
+-- OK: 特定のIDのみ削除
+DELETE FROM gs_an_table WHERE id=1;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">復旧不可能</strong>なため、DELETE文は特に慎重に実行する</p></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">DELETEとUPDATEの使い分け：</strong></p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="p-4 bg-red-50 rounded border border-red-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-red-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></div><div class="font-medium text-red-800">物理削除（DELETE）</div></div><div class="text-sm text-red-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>特徴:</strong> データが完全に消失<br/>
+<strong>用途:</strong> テストデータ、一時データ<br/>
+<strong>リスク:</strong> 復旧不可能<br/>
+<strong>パフォーマンス:</strong> 高速</p></div></div><div class="p-4 bg-blue-50 rounded border border-blue-200"><div class="flex items-center mb-3"><div class="w-6 h-6 text-blue-600 mr-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div class="font-medium text-blue-800">論理削除（UPDATE）</div></div><div class="text-sm text-blue-700"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong>特徴:</strong> 削除フラグで管理<br/>
+<strong>用途:</strong> 重要な業務データ<br/>
+<strong>利点:</strong> 復旧可能、履歴保持<br/>
+<strong>例:</strong> deleted_at カラムに削除日時</p></div></div></div></div></div></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">select.php に削除リンクを追加</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">一覧画面に削除リンクを追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+$stmt = $pdo-&gt;prepare(&quot;SELECT * FROM gs_an_table ORDER BY indate DESC&quot;);
+$status = $stmt-&gt;execute();
+
+$view = &quot;&quot;;
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    while ($r = $stmt-&gt;fetch(PDO::FETCH_ASSOC)) {
+        $view .= &#x27;&lt;div class=&quot;record&quot;&gt;&#x27;;
+        
+        // 編集リンク
+        $view .= &#x27;&lt;a href=&quot;detail.php?id=&#x27; . h($r[&quot;id&quot;]) . &#x27;&quot; class=&quot;edit-link&quot;&gt;&#x27;;
+        $view .= h($r[&quot;id&quot;]) . &quot; | &quot; . h($r[&quot;name&quot;]) . &quot; | &quot; . h($r[&quot;email&quot;]);
+        $view .= &#x27;&lt;/a&gt;&#x27;;
+        
+        // 削除リンク
+        $view .= &#x27;&lt;a href=&quot;delete.php?id=&#x27; . h($r[&quot;id&quot;]) . &#x27;&quot; class=&quot;delete-link&quot; &#x27;;
+        $view .= &#x27;onclick=&quot;return confirm(\&#x27;本当に削除しますか？\&#x27;)&quot;&gt;&#x27;;
+        $view .= &#x27;[削除]&#x27;;
+        $view .= &#x27;&lt;/a&gt;&#x27;;
+        
+        $view .= &#x27;&lt;/div&gt;&#x27;;
+    }
+}
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;アンケート一覧&lt;/title&gt;
+    &lt;style&gt;
+        .record { 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            margin: 5px; 
+            border-radius: 3px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .edit-link { 
+            text-decoration: none; 
+            color: #333; 
+            flex-grow: 1; 
+        }
+        .delete-link { 
+            color: #d32f2f; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            border: 1px solid #d32f2f; 
+            border-radius: 3px; 
+            font-size: 12px; 
+        }
+        .delete-link:hover { 
+            background-color: #d32f2f; 
+            color: white; 
+        }
+        .record:hover { 
+            background-color: #f0f0f0; 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;アンケート一覧&lt;/h1&gt;
+    &lt;?= $view ?&gt;
+    &lt;a href=&quot;index.php&quot;&gt;新規登録&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">改善点：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">確認ダイアログ</strong>: <code class="inline-block px-1.5 py-0.5 mx-0.5 text-sm font-mono bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded border border-slate-200 dark:border-slate-700">onclick=&quot;return confirm()&quot;</code> で削除前確認</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">視覚的区別</strong>: 削除リンクを赤色で表示</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">レイアウト</strong>: flexboxで編集・削除リンクを整列</li>
+</ul></div></details>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">delete.php（削除処理）の実装</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">削除処理の実装：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// 1. GETパラメータでIDを取得
+$id = $_GET[&quot;id&quot;];
+
+// 入力値検証
+if (!isset($id) || !is_numeric($id)) {
+    exit(&quot;不正なIDです&quot;);
+}
+
+// 2. DB接続
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+// 3. DELETE SQL実行
+$sql = &quot;DELETE FROM gs_an_table WHERE id=:id&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+
+// 4. 結果判定
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    redirect(&quot;select.php&quot;);
+}
+?&gt;
+</code></pre></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">セキュリティ対策の追加：</strong></p><div><div class="group relative my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700"><button class="absolute right-2 top-2 rounded bg-slate-800/70 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 z-10">コピー</button><pre class="language-php !m-0 !p-4 !bg-slate-900 dark:!bg-slate-950 !text-slate-100 overflow-x-auto"><code class="language-php">&lt;?php
+// より堅牢な削除処理
+$id = $_GET[&quot;id&quot;];
+
+// 入力値検証
+if (!isset($id) || !is_numeric($id) || $id &lt;= 0) {
+    exit(&quot;不正なIDです&quot;);
+}
+
+include(&quot;funcs.php&quot;);
+$pdo = db_conn();
+
+// 削除前に対象データの存在確認
+$check_sql = &quot;SELECT COUNT(*) FROM gs_an_table WHERE id=:id&quot;;
+$check_stmt = $pdo-&gt;prepare($check_sql);
+$check_stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+$check_stmt-&gt;execute();
+$count = $check_stmt-&gt;fetchColumn();
+
+if ($count == 0) {
+    exit(&quot;削除対象のデータが見つかりません&quot;);
+}
+
+// 削除実行
+$sql = &quot;DELETE FROM gs_an_table WHERE id=:id&quot;;
+$stmt = $pdo-&gt;prepare($sql);
+$stmt-&gt;bindValue(&#x27;:id&#x27;, $id, PDO::PARAM_INT);
+$status = $stmt-&gt;execute();
+
+if ($status == false) {
+    sql_error($stmt);
+} else {
+    redirect(&quot;select.php&quot;);
+}
+?&gt;
+</code></pre></div></div><div class="my-6 p-4 rounded-lg border bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 flex gap-3"><div class="flex-shrink-0"><svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div class="flex-1 min-w-0"><div class="font-semibold mb-1 text-green-800 dark:text-green-200">実際の削除処理でよく使われる手法</div><div class="text-slate-700 dark:text-slate-300"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">1. 二段階認証</strong>: 確認画面 → 削除実行
+<strong class="font-semibold text-slate-900 dark:text-slate-100">2. CSRF対策</strong>: ワンタイムトークンの使用
+<strong class="font-semibold text-slate-900 dark:text-slate-100">3. ログ記録</strong>: 削除操作の履歴を保存
+<strong class="font-semibold text-slate-900 dark:text-slate-100">4. バックアップ</strong>: 削除前にデータを別テーブルに保存
+<strong class="font-semibold text-slate-900 dark:text-slate-100">5. 権限チェック</strong>: ユーザーが削除権限を持っているか確認</p></div></div></div></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">CRUD完成！ファイル構成</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">CRUDアプリケーションの完成</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed">これでCRUD（Create, Read, Update, Delete）の全機能が完成！</p><div class="my-6 "><div class="infographic-content"><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="p-4 bg-blue-50 rounded border border-blue-200 text-center"><div class="w-8 h-8 text-blue-600 mx-auto mb-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg></div><div class="font-medium text-blue-800">Create</div><div class="text-sm text-blue-700">新規登録</div><div class="text-xs text-blue-600">INSERT</div></div><div class="p-4 bg-green-50 rounded border border-green-200 text-center"><div class="w-8 h-8 text-green-600 mx-auto mb-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div class="font-medium text-green-800">Read</div><div class="text-sm text-green-700">一覧・詳細</div><div class="text-xs text-green-600">SELECT</div></div><div class="p-4 bg-orange-50 rounded border border-orange-200 text-center"><div class="w-8 h-8 text-orange-600 mx-auto mb-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div><div class="font-medium text-orange-800">Update</div><div class="text-sm text-orange-700">編集・更新</div><div class="text-xs text-orange-600">UPDATE</div></div><div class="p-4 bg-red-50 rounded border border-red-200 text-center"><div class="w-8 h-8 text-red-600 mx-auto mb-2"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></div><div class="font-medium text-red-800">Delete</div><div class="text-sm text-red-700">削除</div><div class="text-xs text-red-600">DELETE</div></div></div></div></div><p class="my-2 text-slate-700 dark:text-slate-300 leading-relaxed"><strong class="font-semibold text-slate-900 dark:text-slate-100">ファイル構成の確認：</strong></p><ul class="mb-4 space-y-1 text-slate-700 dark:text-slate-300 pl-6 list-disc">
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">index.php</strong>: 新規登録フォーム（Create）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">insert.php</strong>: 登録処理（Create）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">select.php</strong>: 一覧表示（Read）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">detail.php</strong>: 詳細・編集フォーム（Read &amp; Update Form）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">update.php</strong>: 更新処理（Update）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">delete.php</strong>: 削除処理（Delete）</li>
+<li class="relative ml-2"><strong class="font-semibold text-slate-900 dark:text-slate-100">funcs.php</strong>: 共通関数群</li>
+</ul></div></details>
+<h2 class="text-2xl font-semibold mb-3 mt-12 text-slate-800 dark:text-slate-200">まとめ</h2>
+<details class="rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-4 my-4 hover:shadow transition outline-none focus:ring-0 focus:outline-none"><summary class="cursor-pointer select-none text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-bold">今回学んだこと</summary><div class="mt-6 text-slate-600 dark:text-slate-400"><div class="my-6 "><div class="infographic-content"><div class="space-y-3"><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-blue-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg></div><div><div class="font-medium text-slate-800">データベースの基本概念</div><div class="text-sm text-slate-600">RDB、テーブル、RDBMS、SQLの関係性</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-green-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></div><div><div class="font-medium text-slate-800">SQL基本文法（CRUD）</div><div class="text-sm text-slate-600">INSERT、SELECT、UPDATE、DELETE、WHERE、ORDER BY</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-orange-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></div><div><div class="font-medium text-slate-800">PDOによるDB接続</div><div class="text-sm text-slate-600">PHP からデータベースへの安全な接続方法</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-red-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div><div><div class="font-medium text-slate-800">セキュリティ対策</div><div class="text-sm text-slate-600">SQLインジェクション対策（bindValue必須）</div></div></div><div class="flex items-start p-3 bg-slate-50 rounded border border-slate-200"><div class="w-6 h-6 text-purple-600 mr-3 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><div><div class="font-medium text-slate-800">関数化によるコード改善</div><div class="text-sm text-slate-600">db_conn(), sql_error(), redirect() で再利用性向上</div></div></div></div></div></div></div></details></div><div></div></div></main></div></div><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/gs-textbook-php","future":{"unstable_middleware":false,"unstable_optimizeDeps":false,"unstable_splitRouteModules":false,"unstable_subResourceIntegrity":false,"unstable_viteEnvironmentApi":false},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/gs-textbook-php/assets/manifest-3e21a0cd.js";
+import * as route0 from "/gs-textbook-php/assets/root-DhgomBNp.js";
+import * as route1 from "/gs-textbook-php/assets/lessons._slug-DdYyauY5.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"routes/lessons.$slug":route1};
+
+import("/gs-textbook-php/assets/entry.client-DtWayQEr.js");</script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RC=function(b,c,e){c=document.getElementById(c);c.parentNode.removeChild(c);var a=document.getElementById(b);if(a){b=a.previousSibling;if(e)b.data="$!",a.setAttribute("data-dgst",e);else{e=b.parentNode;a=b.nextSibling;var f=0;do{if(a&&8===a.nodeType){var d=a.data;if("/$"===d)if(0===f)break;else f--;else"$"!==d&&"$?"!==d&&"$!"!==d||f++}d=a.nextSibling;e.removeChild(a);a=d}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data="$"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>
