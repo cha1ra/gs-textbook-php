@@ -4751,6 +4751,7 @@ if ($status == false) {
 `]})}),`
 `,e.jsxs(r,{type:"note",title:"配布コード",children:[e.jsxs(s.p,{children:["zipファイルをダウンロード後に展開し、XAMPPの",e.jsx(s.code,{children:"htdocs"}),"フォルダに配置してください！"]}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:["講義内資料: ",e.jsx(s.a,{href:"../../zip/php04.zip",children:"php04.zip"})]}),`
+`,e.jsxs(s.li,{children:["課題: ",e.jsx(s.a,{href:"../../zip/php_kadai.zip",children:"php_kadai.zip"})]}),`
 `]})]}),`
 `,e.jsxs(n,{summary:"授業前準備",children:[e.jsx(s.p,{children:e.jsx(s.strong,{children:"1. XAMPP起動"})}),e.jsxs(s.ul,{children:[`
 `,e.jsxs(s.li,{children:[e.jsx(s.strong,{children:"Windows"}),": Apache と MySQL が緑色になっていればOK"]}),`
